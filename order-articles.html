@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>123 Employee | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      href="assets/images/123Enterprise.png"
+      type="image/x-icon"
+    />
+
+    <!-- font/icon links -->
+
+    <!-- style links -->
+
+    <!-- script links -->
+    <script
+      src="https://kit.fontawesome.com/76c9115e26.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  </head>
+  <body>
+    <!-- navigation main -->
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="#"><img src="assets/images/123Enterprise.png" alt="" /></a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="testimonial.html">Testimonials</a></li>
+
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="order-articles.html">Order Articles</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+        body.classList.add("disabledScroll");
+      };
+      cancelBtn.onclick = () => {
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        body.classList.remove("disabledScroll");
+      };
+
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+    <!-- side navigation socials -->
+    <side>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/123Employee" target="_blank"
+            ><span>facebook</span
+            ><span><i class="fa-brands fa-facebook"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/davenmichaels" target="_blank"
+            ><span>twitter</span
+            ><span><i class="fa-brands fa-x-twitter"></i></span
+          ></a>
+        </li>
+        <li class="telephone">
+          <a href="contact-us.html"
+            ><span id="number">1-(844) 483-4176</span
+            ><span><i class="fa-solid fa-phone fa-shake"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/davenmichaels" target="_blank"
+            ><span>LinkedIn</span
+            ><span><i class="fa-brands fa-linkedin"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/Outsourcing4Business" target="_blank"
+            ><span>youtube</span
+            ><span><i class="fa-brands fa-youtube"></i></span
+          ></a>
+        </li>
+      </ul>
+    </side>
+    <header class="section-container order-articles-container">
+      <div class="header-content">
+        <span class="bg-blur"></span>
+        <span class="bg-blur header-blur"></span>
+        <h1><span>Order</span> Articles</h1>
+        <p>Our clients require articles written so we create them at cost.</p>
+        <button onClick="location.href='pricing.html'" class="btn">
+          View GET STARTED
+        </button>
+      </div>
+      <div class="header-image">
+        <img src="assets/images/enterprise-index-pic.png" alt="header" />
+      </div>
+    </header>
+
+    <!-- Order articles serction -->
+    <section class="section-container order-articles">
+      <div class="section-content">
+        <h2 class="section-header">Ready To Go Articles</h2>
+        <div class="paragraph">
+          <p>
+            <span
+              >Content is king. Article marketing is an excellent way to draw
+              attention to your business and distinguish you as the expert in
+              your field.
+            </span>
+            <br /><br />
+            Articles start at $11 for a single article and are as low as $6.50
+            in quantities of 100.
+            <br /><br />
+            Once your articles are complete, your 123Employee can submit them to
+            important article directories, post to your blogs, repurpose as
+            emails and draw attention to them using Social Bookmarking. Please
+            choose the article bundle of your choice.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="item-grid">
+            <p>1 Article-$11 per article</p>
+            <a href="contact-us.html"
+              ><img src="assets/images/order-now.png" alt=""
+            /></a>
+          </div>
+          <div class="item-grid">
+            <p>10 Articles- $10 per article</p>
+            <a href="contact-us.html"
+              ><img src="assets/images/order-now.png" alt=""
+            /></a>
+          </div>
+          <div class="item-grid">
+            <p>25 Articles-$9 per article</p>
+            <a href="contact-us.html"
+              ><img src="assets/images/order-now.png" alt=""
+            /></a>
+          </div>
+          <div class="item-grid">
+            <p>50 Articles- $8 per article</p>
+            <a href="contact-us.html"
+              ><img src="assets/images/order-now.png" alt=""
+            /></a>
+          </div>
+          <div class="item-grid">
+            <p>75 Articles- $7 per article</p>
+            <a href="contact-us.html"
+              ><img src="assets/images/order-now.png" alt=""
+            /></a>
+          </div>
+          <div class="item-grid">
+            <p>100 Articles - $6.50 per article</p>
+            <a href="contact-us.html"
+              ><img src="assets/images/order-now.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-container top-clients">
+      <h2 class="section-header">All The Top Marketers Use 123Employee!</h2>
+      <h3 class="section-subheader">
+        Clients who have used 123 Employee Virtual Assistant
+      </h3>
+
+      <div class="clients">
+        <div class="profile">
+          <img src="assets/images/testim-2.jpg" alt="" />
+          <a href="enterprise-testimonials.html"
+            ><span>Larry Steinhouse</span></a
+          >
+        </div>
+        <div class="profile">
+          <img src="assets/images/collin-daymude.jpg" alt="" />
+          <a href="enterprise-testimonials.html"><span>Collin Daymude</span></a>
+        </div>
+        <div class="profile">
+          <img src="assets/images/anushka-drescher.jpg" alt="" />
+          <a href="enterprise-testimonials.html"
+            ><span>Anushka Drescher</span></a
+          >
+        </div>
+        <div class="profile">
+          <img src="assets/images/roy-meyer.jpg" alt="" />
+          <a href="enterprise-testimonials.html"><span>Roy Meyers</span></a>
+        </div>
+        <div class="profile">
+          <img src="assets/images/casey-eberhart.jpg" alt="" />
+          <a href="enterprise-testimonials.html"><span>Casey Eberhart</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="partner-logos slider">
+        <div class="slide"><img src="assets/images/abc-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/forbes-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/nbc-logo.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/fox-news-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/news-week-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/USA Today logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/cbs-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/yahoo-logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/wsj-logo.png" alt="" /></div>
+      </div>
+    </section>
+    <script>
+      $(document).ready(function () {
+        $(".partner-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              setting: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              setting: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <!-- footer -->
+
+    <div class="footer-bar">
+      Copyright © 2024 Sixeleven Global Services - Workforce. All rights
+      reserved. | <a href="contact-us.html">Contact Us</a> |
+      <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Sitemap</a>
+      <p class="number">Have Questions? <span>Call: 1-(844) 483-4176</span></p>
+    </div>
+    <script src="assets/js/accordion.js"></script>
+  </body>
+</html>

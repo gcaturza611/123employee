@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>123 Employee | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      href="assets/images/123Enterprise.png"
+      type="image/x-icon"
+    />
+
+    <!-- font/icon links -->
+
+    <!-- style links -->
+
+    <!-- script links -->
+    <script
+      src="https://kit.fontawesome.com/76c9115e26.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="#"><img src="assets/images/123Enterprise.png" alt="" /></a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="testimonial.html">Testimonials</a></li>
+
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="order-articles.html">Order Articles</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+        body.classList.add("disabledScroll");
+      };
+      cancelBtn.onclick = () => {
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        body.classList.remove("disabledScroll");
+      };
+
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+    <!-- social side navigation -->
+    <side>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/123Employee" target="_blank"
+            ><span>facebook</span
+            ><span><i class="fa-brands fa-facebook"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/davenmichaels" target="_blank"
+            ><span>twitter</span
+            ><span><i class="fa-brands fa-x-twitter"></i></span
+          ></a>
+        </li>
+        <li class="telephone">
+          <a href="contact-us.html"
+            ><span id="number">1-(844) 483-4176</span
+            ><span><i class="fa-solid fa-phone fa-shake"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/davenmichaels" target="_blank"
+            ><span>LinkedIn</span
+            ><span><i class="fa-brands fa-linkedin"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/Outsourcing4Business" target="_blank"
+            ><span>youtube</span
+            ><span><i class="fa-brands fa-youtube"></i></span
+          ></a>
+        </li>
+      </ul>
+    </side>
+
+    <header class="section-container resources-container">
+      <div class="header-content">
+        <span class="bg-blur"></span>
+        <span class="bg-blur header-blur"></span>
+        <h2>
+          <i
+            >"When you have hundreds of employees, we have a commitment to
+            empower our staff and give back to the community..."</i
+          >
+        </h2>
+      </div>
+      <div class="header-image">
+        <img src="assets/images/enterprise-index-pic.png" alt="header" />
+      </div>
+    </header>
+    <!--partners section-->
+    <section class="partners">
+      <div class="partner-logos slider">
+        <div class="slide"><img src="assets/images/abc-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/forbes-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/nbc-logo.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/fox-news-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/news-week-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/USA Today logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/cbs-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/yahoo-logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/wsj-logo.png" alt="" /></div>
+      </div>
+    </section>
+    <script>
+      $(document).ready(function () {
+        $(".partner-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              setting: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              setting: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <!--partners section ends here-->
+
+    <!-- resources grid -->
+    <section class="section-container resources">
+      <div class="container">
+        <div class="content-title">
+          <h2>Free article submission sites</h2>
+          <p>
+            This means that any article you submit will be researchable by, and
+            available to, visitors the day after it is submitted.
+          </p>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.a1articles.com/')"
+            >
+              <h3>A1articles</h3>
+            </button>
+            <p>Free article directory site</p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.articlealley.com/')"
+            >
+              <h3>ArticleAlley.com</h3>
+            </button>
+            <p>
+              Article Alley is a free article directory. Article Alley is to
+              help authors promote and syndicate their content, content in this
+              sense of course meaning articles.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://articlesbase.com/')"
+            >
+              <h3>Articlebase</h3>
+            </button>
+            <p>
+              At ArticlesBase.com you can submit an article and literally have
+              thousands of readers worldwide, as your article is syndicated
+              across the globe. Many people visit ArticlesBase.com to gather
+              free articles to display on their websites.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.articlecity.com/')"
+            >
+              <h3>ArticleCity</h3>
+            </button>
+            <p>
+              ArticleCity.com offers writers the ability to submit and promote
+              your articles to our web site free of charge.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.hugedomains.com/domain_profile.cfm?d=articleclick.com')"
+            >
+              <h3>ArticleClick.com</h3>
+            </button>
+            <p>
+              You can find free articles and content for your websites and
+              newsletters. Allows you to submit your articles for syndication
+              and receive online recognition.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.articlecube.com/')"
+            >
+              <h3>ArticleCube.com</h3>
+            </button>
+            <p>
+              ArticleCube is an online article search engine and directory for
+              both publishers and authors. With ArticleCube you can search a
+              major article directory on the web.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.articledashboard.com/')"
+            >
+              <h3>Articledashboard</h3>
+            </button>
+            <p>
+              Article Dashboard is an online article directory for both
+              publishers and authors
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://articlesnatch.com/')"
+            >
+              <h3>ArticleSnatch.com</h3>
+            </button>
+            <p>Article Directory</p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>EzineArticles</h3>
+            </button>
+            <p>
+              Expert Authors & Writers are able to post their articles to be
+              featured within the site.e
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>GoArticles.com</h3>
+            </button>
+            <p>
+              Allows you to submit your article in diffrent Article directory
+              and also GoArticles provide authors, publishers and visitors with
+              the best article database on the Web.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://ignitepoint.com/')"
+            >
+              <h3>IdeaMarketers.com</h3>
+            </button>
+            <p>
+              IdeaMarketers let you add articles to there site, you can also
+              post it into press releases, books and ebooks. All about your
+              expertise – including audios and videos and a full press room.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://searchwarp.com/')"
+            >
+              <h3>SearchWarp</h3>
+            </button>
+            <p>
+              Article submission site and make sure that you submit to
+              SearchWarp must be original material that is solely owned by you.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.sooperarticles.com/')"
+            >
+              <h3>Sooper Articles</h3>
+            </button>
+            <p>
+              SooperArticles allows Authors to submit articles and get unlimited
+              exposure to their business for free
+            </p>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>Allows you to post videos</h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>Breakmedia.com</h3>
+            </button>
+            <p>
+              Break Media is a leading creator, publisher, and distributor of
+              digital entertainment content including video, editorial, and
+              games. The company’s properties include the largest humor site
+              online
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.brightcove.com/en/')"
+            >
+              <h3>Brightcove.com</h3>
+            </button>
+            <p>
+              Brightcove Video Cloud gives you everything you need to deliver
+              professional quality video to audiences on every screen.50 Videos
+              $99/mo 200 Videos$199/mo 500 Videos $499/mo 30 Day Trial
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.dailymotion.com/us')"
+            >
+              <h3>Dailymotion.com</h3>
+            </button>
+            <p>Free Membership</p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('')">
+              <h3>graspr.com</h3>
+            </button>
+            <p>
+              Graspr is an online video community that offers high quality
+              instructional content on a wide range of topics.You can find
+              videos on specific topics, rate and comment on videos, connect
+              people who share your interest
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.howcast.com/')"
+            >
+              <h3>Howcast.com</h3>
+            </button>
+            <p>Free Membership</p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('https://iviewtube.com/')">
+              <h3>iviewtube.com</h3>
+            </button>
+            <p>
+              iViewTube.com is a user friendly video and audio music site with a
+              rapidly growing community that offers the best videos and mp3
+              music files to listen, watch and share
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.itemfix.com/?r=ll#google_vignette')"
+            >
+              <h3>LiveLeak.com</h3>
+            </button>
+            <p>Free article submission site</p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('http://www.metacafe.com/')"
+            >
+              <h3>Metacafe.com</h3>
+            </button>
+            <p>
+              We’re the first and only entertainment destination solely
+              dedicated to showcasing the best short-form videos from the world
+              of Movies, Video Games, TV, Music and Sports
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('https://myspace.com/')">
+              <h3>MySpace.com</h3>
+            </button>
+            <p>
+              Myspace drives social interaction by providing a highly
+              personalised experience around entertainment and connecting people
+              to the music, celebrities, TV, movies, and games that they love.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('')">
+              <h3>Uqast</h3>
+            </button>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('https://www.veoh.com/')">
+              <h3>Veoh.com</h3>
+            </button>
+            <p>Free Membership</p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.viddler.com/')"
+            >
+              <h3>Viddler.com</h3>
+            </button>
+            <p>
+              Customize your player, overlay your logo, link back to your
+              website, build off our API.First 100 GB $100 minimum Next 150 GB
+              $0.75/GB Next 774 $0.35/GB Next 3TB $0.25/GB Over 4TB $0.15/GB
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('https://vimeo.com/')">
+              <h3>Vimeo.com</h3>
+            </button>
+            <p>
+              Vimeo was created by filmmakers and video creators who wanted to
+              share their creative work Basic-Free Plus:$9.95/mo $59.95/yr
+            </p>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>For the purpose of announcing something ostensibly newsworthy</h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.ecommercebytes.com/')"
+            >
+              <h3>ecomwire</h3>
+            </button>
+            <p>
+              EcommWire is your FREE press release service for news about
+              eCommerce-related business
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.pagerelease.com/')"
+            >
+              <h3>pagerelease.com</h3>
+            </button>
+            <p>
+              For the purpose of announcing something ostensibly newsworthy.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.pitchengine.com/')"
+            >
+              <h3>pitchengine.com</h3>
+            </button>
+            <p>
+              PitchEngine has evolved into a modern publishing platform enabling
+              users to create social and search optimized content that is
+              consumer-facing – like digital flyers, press releases, real estate
+              listings and more
+            </p>
+          </div>
+
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>netforcepress.com</h3>
+            </button>
+            <p>
+              Basic:Free Proffesional: $24.95/limited time only Business:
+              $49.95/limited time only
+            </p>
+          </div>
+
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>prfocus.com</h3>
+            </button>
+            <p>
+              prFocus is a free press release service for web sites, products,
+              services, or any other kind of information that you want published
+              to the general media.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.pressabout.com/')"
+            >
+              <h3>pressabout.com</h3>
+            </button>
+            <p>
+              PressAbout.com is a Free Press Release Distribution service in the
+              form of a blog.
+            </p>
+          </div>
+
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('http://ww25.upvery.com/?subid1=20240214-0111-522a-9c43-de635b6030db')"
+            >
+              <h3>upvery.com</h3>
+            </button>
+            <p>
+              UpVery is a free online press release service. You can not only
+              submit your press releases at no charge, but also make free money,
+              add free ‘do-follow’ backlinks, images and the like.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://theopenpress.com/')"
+            >
+              <h3>theopenpress.com</h3>
+            </button>
+            <p>Press release portal</p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.1888pressrelease.com/')"
+            >
+              <h3>1888pressrelease.com</h3>
+            </button>
+            <p>
+              Our unique services allow you to distribute releases to search
+              engines, newswires and websites to help increase awareness of your
+              product, company, or self for free. For a small fee, you can
+              upgrade your submission for maximum exposure
+            </p>
+          </div>
+
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('https://www.diigo.com/')">
+              <h3>Diigo.com</h3>
+            </button>
+            <p>
+              Diigo is a social bookmarking service, one of the best and most
+              popular social bookmarking, web annotation, collaborative research
+              services.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>Buddymarks.com</h3>
+            </button>
+            <p>
+              BuddyMarks.com has been called “”The online personal, group and
+              social bookmarks manager.
+            </p>
+          </div>
+
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>mylinkvault.com</h3>
+            </button>
+            <p>
+              Tend you to use multiple PCs on a regular basis, and also tend you
+              to bookmark a lot of sites.
+            </p>
+          </div>
+
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('https://blinklist.com/')">
+              <h3>blinklist.com</h3>
+            </button>
+            <p>
+              BlinkList has a lightening fast search engine that will help you
+              find the links that you are looking for in the fraction of a
+              second. You can search through your links faster than you can
+              search through Google.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('https://folkd.com/')">
+              <h3>Folkd.com</h3>
+            </button>
+            <p>
+              Using social bookmarks with folkd.com will enrich your web-surfing
+              experience. We provide a simple website and easy to use browser
+              buttons which allow you to: Save your favorite links and bookmarks
+              online and access them from anywhere at any time.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>bookmarktracker.com</h3>
+            </button>
+            <p>
+              BookmarkTracker is a complete, easy-to-use web-application that
+              allows you to safely store and organize your bookmarks online and
+              securely access them from anywhere on the Internet.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>mypip.com</h3>
+            </button>
+            <p>
+              With using our special ‘add to MyPIP’ function, adding a new
+              favorite is fast and easy. If you’re browsing a page you want to
+              add, simply click on the ‘add to MyPIP’ button in the toolbar and
+              the page will be added to your Personal Favorites Page.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>strategymix.com</h3>
+            </button>
+            <p>
+              $595/mo (StrategyMix StartUp Series) $995/10 hours (StrategyMix
+              Support Packs)
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://quickbooks.intuit.com/')"
+            >
+              <h3>quickbooks.intuit.com</h3>
+            </button>
+            <p>
+              give you access to the data you need, when you need it, and make
+              everyday tasks more efficient.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('https://evernote.com/')">
+              <h3>qevernote.com</h3>
+            </button>
+            <p>
+              Evernote Premium gives you bigger upload capacity, supports more
+              file types, and offers greater sharing options. Plus, you get PDF
+              searching, faster image recognition, and no ads
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>Quickbase</h3>
+            </button>
+            <p>
+              QuickBase, you’ll always have control over your data, your team
+              and your projects. Work in an effective, proactive, time-efficient
+              way, without the need for relying on a solution administrator or
+              technical support team
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.adobe.com/products/captivate.html')"
+            >
+              <h3>Adobe Contributee</h3>
+            </button>
+            <p>
+              Allows you to integrate authoring, reviewing, and website
+              management in a WYSIWYG HTML editor
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.malavida.com/en/soft/ulead-videostudio/')"
+            >
+              <h3>Ulead VideoStudio 11 (Video Editor)</h3>
+            </button>
+            <p>
+              Ulead VideoStudio is a complete application to edit video. With
+              Ulead VideoStudio you will be able to create your own videos with
+              professional quality
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.webpronews.com/')"
+            >
+              <h3>Twellow</h3>
+            </button>
+            <p>
+              Allows you to find people on Twitter by location and category as
+              well as find people that have your same interests.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>StartegyMix.com</h3>
+            </button>
+            <p>
+              Designed for small to medium Size Companies looking to implement
+              more systematic marketing processes so they can generate better
+              qualitu leads and increase sales.
+            </p>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>
+            Shopping carts for processing sales, email marketing & affiliate
+            tracking
+          </h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://keap.com/?cookieUUID=bf703385-7d3c-4e07-9037-2989517c2c03')"
+            >
+              <h3>Infusionsoft</h3>
+            </button>
+            <p>
+              A robust system for businesses to process sales, email marketing,
+              affiliate tracking and much much more. This is an advanced system.
+            </p>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.1shoppingcart.com/')"
+            >
+              <h3>1ShoppingCart</h3>
+            </button>
+            <p>
+              A robust system for businesses to process sales, email marketing,
+              affiliate tracking. This is a lower priced system that can work
+              for most businesses
+            </p>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>Credit card merchant accounts</h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.paypal.com/ph/business/accept-payments')"
+            >
+              <h3>Paypal Merchant Solutions</h3>
+            </button>
+          </div>
+          <hr />
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.aweber.com/')"
+            >
+              <h3>Email Marketing Software.</h3>
+            </button>
+            <p>Aweber</p>
+          </div>
+          <hr />
+
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.constantcontact.com/?pn=cjaffiliate')"
+            >
+              <h3>Constant Contact</h3>
+            </button>
+            >
+          </div>
+          <hr />
+          <div class="box">
+            <button class="btn" onClick="window.open('https://mailchimp.com/')">
+              <h3>MailChimp.</h3>
+            </button>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>Survey software to survey your clients and prospects</h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.surveymonkey.com/')"
+            >
+              <h3>Survey Monkey</h3>
+            </button>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>Article posting software</h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>Traffic Geyser</h3>
+            </button>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>Video posting software</h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>Pixel Pipe</h3>
+            </button>
+          </div>
+          <hr />
+
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://advertising.adobe.com/auth/login')"
+            >
+              <h3>TubeMogul</h3>
+            </button>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>Video Marketing Software</h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>YouTube Tool Box</h3>
+            </button>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>Twitter Marketing Software</h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>Tweetadder</h3>
+            </button>
+          </div>
+          <hr />
+
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://dan.com/buy-domain/tweetspinner.com?redirected=true')"
+            >
+              <h3>TweetSpinner</h3>
+            </button>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>Anti-spam Software</h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.spamarrest.com/tryit/index.jsp?1707834225797')"
+            >
+              <h3>Spam Arrest</h3>
+            </button>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>Social Media Marketing Software</h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.sokule.com/user_error.html')"
+            >
+              <h3>SoKule</h3>
+            </button>
+          </div>
+          <hr />
+
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>Facebook Minor</h3>
+            </button>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>Lead generating software</h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>ExtractMaster</h3>
+            </button>
+          </div>
+          <hr />
+
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>Scraper pro</h3>
+            </button>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>Press Release Submissions</h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button class="btn" onClick="window.open('#')">
+              <h3>Click to visit</h3>
+            </button>
+          </div>
+          <hr />
+        </div>
+
+        <div class="content-title">
+          <h2>LinkedIn Lead Generation</h2>
+        </div>
+        <div class="grid-rows">
+          <div class="box">
+            <button
+              class="btn"
+              onClick="window.open('https://www.toplinked.com/a/?a=165857')"
+            >
+              <h3>TopLinked</h3>
+            </button>
+          </div>
+          <hr />
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <div class="footer-bar">
+      Copyright © 2024 Sixeleven Global Services - Workforce. All rights
+      reserved. | <a href="contact-us.html">Contact Us</a> |
+      <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Sitemap</a>
+      <p class="number">Have Questions? <span>Call: 1-(844) 483-4176</span></p>
+    </div>
+  </body>
+</html>

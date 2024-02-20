@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>123 Employee | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      href="assets/images/123Enterprise.png"
+      type="image/x-icon"
+    />
+
+    <!-- font/icon links -->
+
+    <!-- style links -->
+
+    <!-- script links -->
+    <script
+      src="https://kit.fontawesome.com/76c9115e26.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="#"><img src="assets/images/123Enterprise.png" alt="" /></a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="testimonial.html">Testimonials</a></li>
+
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="order-articles.html">Order Articles</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+        body.classList.add("disabledScroll");
+      };
+      cancelBtn.onclick = () => {
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        body.classList.remove("disabledScroll");
+      };
+
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+    <!-- social side navigation -->
+    <side>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/123Employee" target="_blank"
+            ><span>facebook</span
+            ><span><i class="fa-brands fa-facebook"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/davenmichaels" target="_blank"
+            ><span>twitter</span
+            ><span><i class="fa-brands fa-x-twitter"></i></span
+          ></a>
+        </li>
+        <li class="telephone">
+          <a href="contact-us.html"
+            ><span id="number">1-(844) 483-4176</span
+            ><span><i class="fa-solid fa-phone fa-shake"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/davenmichaels" target="_blank"
+            ><span>LinkedIn</span
+            ><span><i class="fa-brands fa-linkedin"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/Outsourcing4Business" target="_blank"
+            ><span>youtube</span
+            ><span><i class="fa-brands fa-youtube"></i></span
+          ></a>
+        </li>
+      </ul>
+    </side>
+
+    <header class="section-container about-header">
+      <div class="header-content">
+        <span class="bg-blur"></span>
+        <span class="bg-blur header-blur"></span>
+        <h2>
+          <i
+            >"With over 8 Years of experience providing voice and BPO services…
+            we know a thing or two about the outsourcing business..."</i
+          >
+        </h2>
+      </div>
+      <div class="header-image">
+        <img src="assets/images/enterprise-index-pic.png" alt="header" />
+      </div>
+    </header>
+    <section class="highlight">
+      <div class="highlight-text">
+        <p>
+          123Employee Enterprise Solutions provide high quality voice based
+          outsourcing services. Our employees are based in our flagship facility
+          with close proximity to two regional colleges. Enterprise Solutions
+          delivers our highest level of service.
+        </p>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="section-container about-container">
+      <h2 class="section-header">
+        123Employee was founded in 2006 to meet the needs of small and
+        enterprise level businesses.
+      </h2>
+      <div class="about-flex">
+        <div class="about-image">
+          <img src="assets/images/about-us-1.JPG" alt="about" />
+        </div>
+        <div class="about-content">
+          <p>
+            Since then we have grown to a team of hundreds of outsourced voice
+            based agents. We set out to create a company that would make
+            outsourcing affordable to all businesses, while offering a high
+            level of on-going training for our employees. We help businesses all
+            over the globe increase productivity and lower expenses. We provide
+            business process outsourcing, or BPO, specializing in online and
+            offline marketing, customer service and virtual assistant services
+            from our 3 outsourcing centers. Our company features fully redundant
+            voice and data, enterprise grade network infrastructure, redundant
+            generators and all of the features of a larger provider, without the
+            high costs. 123Employee is the premiere outsourcing centers.
+          </p>
+          <button class="btn" onclick="location.href='pricing.html'">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </section>
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "80px",
+        duration: 2500,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal("", { delay: 300, origin: "top" });
+      ScrollReveal().reveal(".about-image", { delay: 500, origin: "left" });
+      ScrollReveal().reveal(".about-content", { delay: 800, origin: "right" });
+      ScrollReveal().reveal("", {
+        delay: 200,
+        origin: "bottom",
+        interval: 300,
+      });
+      ScrollReveal().reveal("", { delay: 400, origin: "top" });
+      ScrollReveal().reveal("", {
+        delay: 800,
+        origin: "bottom",
+        interval: 1000,
+      });
+      ScrollReveal().reveal("", {
+        delay: 500,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal("", { delay: 3000, origin: "left" });
+    </script>
+
+    <!-- footer -->
+
+    <div class="footer-bar">
+      Copyright © 2024 Sixeleven Global Services - Workforce. All rights
+      reserved. | <a href="contact-us.html">Contact Us</a> |
+      <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Sitemap</a>
+      <p class="number">Have Questions? <span>Call: 1-(844) 483-4176</span></p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>123 Employee | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      href="assets/images/123Enterprise.png"
+      type="image/x-icon"
+    />
+
+    <!-- font/icon links -->
+
+    <!-- style links -->
+
+    <!-- script links -->
+    <script
+      src="https://kit.fontawesome.com/76c9115e26.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  </head>
+  <body>
+    <!-- main navigation -->
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="#"><img src="assets/images/123Enterprise.png" alt="" /></a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="testimonial.html">Testimonials</a></li>
+
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="order-articles.html">Order Articles</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+        body.classList.add("disabledScroll");
+      };
+      cancelBtn.onclick = () => {
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        body.classList.remove("disabledScroll");
+      };
+
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+    <!-- social side navigation -->
+    <side>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/123Employee" target="_blank"
+            ><span>facebook</span
+            ><span><i class="fa-brands fa-facebook"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/davenmichaels" target="_blank"
+            ><span>twitter</span
+            ><span><i class="fa-brands fa-x-twitter"></i></span
+          ></a>
+        </li>
+        <li class="telephone">
+          <a href="contact-us.html"
+            ><span id="number">1-(844) 483-4176</span
+            ><span><i class="fa-solid fa-phone fa-shake"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/davenmichaels" target="_blank"
+            ><span>LinkedIn</span
+            ><span><i class="fa-brands fa-linkedin"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/Outsourcing4Business" target="_blank"
+            ><span>youtube</span
+            ><span><i class="fa-brands fa-youtube"></i></span
+          ></a>
+        </li>
+      </ul>
+    </side>
+
+    <!-- faqs header -->
+    <header class="section-container faq-header">
+      <div class="header-content">
+        <span class="bg-blur"></span>
+        <span class="bg-blur header-blur"></span>
+        <h1><span>FREQUENTLY</span> ASKED <span>QUESTIONS</span></h1>
+        <p>Simply call or email us. We are always happy to help</p>
+        <button onClick="location.href='about-us.html'" class="btn">
+          Learn More About 123
+        </button>
+      </div>
+      <div class="header-image">
+        <img src="assets/images/enterprise-index-pic.png" alt="header" />
+      </div>
+    </header>
+
+    <!-- faq section -->
+    <section class="section-container">
+      <div class="accordion-faq">
+        <h2 class="section-header">Why is 123 Employee Awesome?</h2>
+        <div class="faq">
+          <div class="question">
+            <h3>How does the hiring process work?</h3>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="answer">
+            <p>
+              You simply share your needs with us. We will assign an account
+              manager who will pull from our vast pool of in-house virtual
+              assistants. You will work directly with your account manager on a
+              daily basis.
+            </p>
+          </div>
+        </div>
+        <div class="faq">
+          <div class="question">
+            <h3>Can I set my reps hours and days?</h3>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="answer">
+            <p>
+              Yes, you choose the days or hours that suit your business needs.
+              We run a 24 hour clock as we have clients all over the globe.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>What are payment terms?</h3>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="answer">
+            <p>
+              Our service is pre-paid. Payment is due on the date you start your
+              Virtual Assistant service, by Visa, MasterCard or American
+              Express. You can even get points or frequent flyer miles when you
+              use your credit card!
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>Do you issue refunds?</h3>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="answer">
+            <p>
+              Although it’s rare, you can cancel anytime. During your first
+              month we will refund the pro-rated portion of your funds by within
+              15 days.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>Do I have to sign a contract?</h3>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="answer">
+            <p>
+              Our service is offered on a month-to-month basis. There are no
+              contracts.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>Do you have references?</h3>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="answer">
+            <p>
+              We have many satisfied clients who would be more than happy to
+              share their experiences. You can view some of them by clicking
+              here.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>How do I know my Virtual Assistant is actually working?</h3>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="answer">
+            <p>
+              Your dedicated reps are managed in house. We provide full in-depth
+              oversight. Our managers and your dedicated reps know your business
+              inside and out thus maintaining the quality of service at a much,
+              much lower price point. At the end of each shift you will receive
+              a detailed report from your agent outlining what transpired
+              throughout the day. In addition to that you can also order call
+              recording. With call recording we will email you all the audio
+              files from your agent calls throughout the day. This is an
+              excellent quality control solution.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>What happens if my Virtual Assistant is out sick?</h3>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="answer">
+            <p>
+              Since your rep is like your own in house staff, this is a
+              possibility. We cannot manage people’s health and prevent
+              illnesses and other unforeseen events. You would deal with this in
+              the same fashion as you would if it were at your US location. You
+              might require make up days for your representative and/or extended
+              work hours until the hours are made up.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>Can I change Virtual Assistant if I’m not happy?</h3>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="answer">
+            <p>
+              Keep in mind that you are not stuck with the representative that
+              you have. If it’s not working out for you, let us know and we will
+              find someone else for you immediately.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>Can I hire someone with a specific set of skills?</h3>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="answer">
+            <p>Of course, simply tell us what your needs</p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>How long does it take to get started?</h3>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="answer">
+            <p>
+              It can take as little as 1 day to hire your first VA depending on
+              your unique requirements and some other variables beyond our
+              control. The process is quick!
+            </p>
+          </div>
+        </div>
+
+        <div class="faq">
+          <div class="question">
+            <h3>Can I offer Incentives to my reps?</h3>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="answer">
+            <p>
+              The best way to motivate your reps and increase productivity
+              anywhere is to give a little something to strive for. So, while we
+              do not obligate clients to provide this additional compensation,
+              based on our experience, it more than pays for itself. The entire
+              amount goes directly to your reps. So a small amount goes a long
+              way! For inbound customer management, accounts receivable
+              management services or back office solutions customized to meet
+              your important needs, contact us.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Redundant usage -->
+
+    <!--partners section-->
+    <section class="partners">
+      <div class="partner-logos slider">
+        <div class="slide"><img src="assets/images/abc-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/forbes-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/nbc-logo.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/fox-news-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/news-week-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/USA Today logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/cbs-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/yahoo-logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/wsj-logo.png" alt="" /></div>
+      </div>
+    </section>
+    <script>
+      $(document).ready(function () {
+        $(".partner-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              setting: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              setting: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <!--partners section ends here-->
+    <!-- footer -->
+
+    <!-- footer bar -->
+    <div class="footer-bar">
+      Copyright © 2024 Sixeleven Global Services - Workforce. All rights
+      reserved. | <a href="contact-us.html">Contact Us</a> |
+      <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Sitemap</a>
+      <p class="number">Have Questions? <span>Call: 1-(844) 483-4176</span></p>
+    </div>
+  </body>
+  <script src="assets/js/accordion.js"></script>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>123 Employee | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      href="assets/images/123Enterprise.png"
+      type="image/x-icon"
+    />
+
+    <!-- font/icon links -->
+
+    <!-- style links -->
+
+    <!-- script links -->
+    <script
+      src="https://kit.fontawesome.com/76c9115e26.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+  </head>
+  <body>
+    <!-- main navigation -->
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo"><a href="#"><img src="assets/images/123Enterprise.png" alt=""></a></div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="testimonial.html">Testimonials</a></li>
+        
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="order-articles.html">Order Articles</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = ()=>{
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+        body.classList.add("disabledScroll");
+      }
+      cancelBtn.onclick = ()=>{
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        body.classList.remove("disabledScroll");
+      }
+  
+      window.onscroll = ()=>{
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+      }
+    </script>
+    <!-- social side navigation -->
+    <side>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/123Employee" target="_blank"
+            ><span>facebook</span
+            ><span><i class="fa-brands fa-facebook"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/davenmichaels" target="_blank"
+            ><span>twitter</span
+            ><span><i class="fa-brands fa-x-twitter"></i></span
+          ></a>
+        </li>
+        <li class="telephone">
+          <a href="contact-us.html"
+            ><span id="number">1-(844) 483-4176</span
+            ><span><i class="fa-solid fa-phone fa-shake"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/davenmichaels" target="_blank"
+            ><span>LinkedIn</span
+            ><span><i class="fa-brands fa-linkedin"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/Outsourcing4Business" target="_blank"
+            ><span>youtube</span
+            ><span><i class="fa-brands fa-youtube"></i></span
+          ></a>
+        </li>
+      </ul>
+    </side>
+
+    <!-- pricing.html -->
+    <!--pricing header section -->
+    <header class="section-container price-header">
+      <div class="header-content">
+        <span class="bg-blur"></span>
+        <span class="bg-blur header-blur"></span>
+        <h1>
+          <i>"If we don't feel we can help you, we won't waste your time..."</i>
+        </h1>
+      </div>
+      <div class="header-image">
+        <img src="assets/images/enterprise-index-pic.png" alt="header" />
+      </div>
+    </header>
+
+    <section class="section-container price-container">
+      <h2 class="section-header">Select a Package That Works For You!</h2>
+      <p class="section-subheader">
+        123Employee allows you to choose your employee(s). You give us a job
+        description and we match you up with the appropriate candidates with the
+        skill level, education and experience you desire. The possibilities are
+        endless.
+      </p>
+      <div class="price-grid">
+        <div class="price-card">
+          <div class="price-card-content">
+            <h4>- Silver -</h4>
+            <h3>40 Hours / Month</h3>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              10 Hours per week
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Local US number in ANY area code
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Full PBX features & Call Transfer
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Unlimited incoming/outgoing calls
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Latest PC with Office Software
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              high speed internet connection
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Support of American management
+            </p>
+          </div>
+          <div class="price-text">
+            <p>
+              MONTHLY <br /><span id="sale">$897</span><br /><span id="current"
+                >$597</span
+              >
+            </p>
+          </div>
+          <button
+            class="btn"
+            id="silver"
+            onclick="location.href='contact-us.html'"
+          >
+            Select Silver
+          </button>
+        </div>
+        <div class="price-card">
+          <div class="price-card-content">
+            <h4>- Gold -</h4>
+            <h3>80 Hours / Month ** Most Popular **</h3>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              20 Hours Per Week
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Local US number in ANY area code
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Full PBX features & Call Transfer
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Unlimited incoming/outgoing calls
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Latest PC with Office Software
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              high speed internet connection
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Support of American management
+            </p>
+          </div>
+          <div class="price-text">
+            <p>
+              MONTHLY <br /><span id="sale">$1197</span><br /><span id="current"
+                >$897</span
+              >
+            </p>
+          </div>
+          <button
+            class="btn price-btn"
+            id="gold"
+            onclick="location.href='contact-us.html'"
+          >
+            Select Gold
+          </button>
+        </div>
+        <div class="price-card">
+          <div class="price-card-content">
+            <h4>- Platinum -</h4>
+            <h3>160 Hours / Month</h3>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              20 Hours Per Week
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Local US number in ANY area code
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Full PBX features & Call Transfer
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Unlimited incoming/outgoing calls
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Latest PC with Office Software
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              high speed internet connection
+            </p>
+            <p>
+              <i class="fa-regular fa-circle-check"></i>
+              Support of American management
+            </p>
+          </div>
+          <div class="price-text">
+            <p>
+              MONTHLY <br /><span id="sale">$1897</span><br /><span id="current"
+                >$1397</span
+              >
+            </p>
+          </div>
+          <button
+            class="btn price-btn"
+            id="platinum"
+            onclick="location.href='contact-us.html'"
+          >
+            Select Platinum
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- highlight note in pricing -->
+    <section class="highlight" id="note-highlight">
+      <div class="highlight-text">
+        <p>
+          There Is No Risk. You Will Not Be Billed Until You Hire Your First
+          Employee.
+        </p>
+      </div>
+    </section>
+
+    <!-- Getting Started section -->
+    <section class="section-container getting-started-container">
+      <h2 class="section-header" id="getting-started">Getting Started</h2>
+      <hr style="border-top: 3px dashed white;">
+      <div class="getting-started-content">
+        <div class="left">
+          <p>We have made getting started risk free. You won't pay us ANYTHING 
+            upfront, this means you will have a chance to meet your 123 Employee 
+            before you hire, so you know what you will be getting before committing
+            your financial resources.<br><br>
+            <i>Our HR department will call you during business hours to review your 
+              requirements and facilitate the process. </i>
+            <br><br><span>With 123Employee a Dedicated Outsourced Employee is NOT all you get.</span>
+            <br><br><i>We provide the infrastructure and a whole host of services to your dedicated employee that if you had to pay for in the US would cost more than the $6 an hour you pay us.</i>
+            <br><br><span>If you add up all the costs of having an employee in addition to their salary, in most cases it easily adds an extra $5-$10 an hour, if you consider this, it’s like you are getting a FREE employee.</span>
+            <ul>
+              <li><i class="ri-checkbox-circle-line"></i> The IT Guy to keep everything running and virus free for your dedicated employee.</li>
+              <li><i class="ri-checkbox-circle-line"></i> The HR staff to find and retain your dedicated employee.</li>
+              <li><i class="ri-checkbox-circle-line"></i> The supervisor to make sure your dedicated employee is on-time and on task.</li>
+              <li><i class="ri-checkbox-circle-line"></i> The Payroll clerk to calculate and pay your dedicated employee.</li>
+              <li><i class="ri-checkbox-circle-line"></i> The space your dedicated employee works in, including cubicle, chair,etc.</li>
+              <li><i class="ri-checkbox-circle-line"></i> Enterprise grade telephone from a Tier 1 vendor with Headset.</li>
+              <li><i class="ri-checkbox-circle-line"></i> A dedicated phone line with unlimited incoming/outgoing calls.</li>
+              <li><i class="ri-checkbox-circle-line"></i> The Janitor to clean up after your dedicated employee.</li>
+              <li><i class="ri-checkbox-circle-line"></i> The desk, chair, computer.</li>
+              <li><i class="ri-checkbox-circle-line"></i> The power and redundant power.</li>
+              <li><i class="ri-checkbox-circle-line"></i> The office space and internet.</li>
+              <li><i class="ri-checkbox-circle-line"></i> The paper, ink, office supplies, cleaning supplies and bathroom supplies and a whole lot more...</li>
+            </ul>
+            <br>
+            <span>Add this all up and you are getting 1000′s of dollars worth of built in value.</span><br><br>
+            *We do charge a one-time admin fee. This covers everything, desk, chair, computer, internet, office, unlimited inbound outbound phone and a local number in the area code of your choice. This will also not be charged until you hire your first Virtual Assistant.
+          </p>
+        </div>
+        <div class="right">
+          <img src="assets/images/about-us-1.JPG" alt="">
+          <img src="assets/images/getting-started-2.jpg" alt="">
+          <img src="assets/images/getting-started-3.jpg" alt="">
+          <img src="assets/images/getting-started-4.jpg" alt="">
+          <img src="assets/images/getting-started-5.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- partners section -->
+    <section class="partners">
+      <div class="partner-logos slider">
+        <div class="slide"><img src="assets/images/abc-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/forbes-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/nbc-logo.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/fox-news-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/news-week-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/USA Today logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/cbs-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/yahoo-logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/wsj-logo.png" alt="" /></div>
+      </div>
+    </section>
+    <!-- partners section script -->
+    <script>
+      $(document).ready(function () {
+        $(".partner-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              setting: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              setting: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <script>
+    $(window).scroll(function(){
+      if($(window).scrollTop()){
+        $("nav").addClass("black");
+      }
+      else{
+        $("nav").removeClass("black");
+      }
+    });
+  </script>
+
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '80px',
+      duration: 2500,
+      delay: 400
+    });
+
+    ScrollReveal().reveal('', { delay: 300, origin: 'top'});
+    ScrollReveal().reveal('', { delay: 500, origin: 'left'});
+    ScrollReveal().reveal('.price-card', { delay: 200, origin: 'bottom', interval: 300});
+    ScrollReveal().reveal('', { delay: 400, origin: 'top'});
+    ScrollReveal().reveal('', { delay: 800, origin: 'bottom', interval: 1000});
+    ScrollReveal().reveal('', { delay: 500, origin: 'bottom'});
+    ScrollReveal().reveal('', { delay: 3000, origin: 'left'});
+  </script>
+
+    <!-- Redundant usage -->
+
+
+
+    <!-- footer bar -->
+    <div class="footer-bar">
+      Copyright © 2024 Sixeleven Global Services - Workforce. All rights
+      reserved. | <a href="contact-us.html">Contact Us</a> | <a href="#">Privacy</a> |
+      <a href="c">Terms</a> | <a href="#">Sitemap</a>
+      <p class="number">Have Questions? <span>Call: 1-(844) 483-4176</span></p>
+    </div>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>

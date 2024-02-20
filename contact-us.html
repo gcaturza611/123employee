@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>123 Employee | Home</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link
+          rel="icon"
+          href="assets/images/123Enterprise.png"
+          type="image/x-icon"
+        />
+    
+        <!-- font/icon links -->
+    
+        <!-- style links -->
+    
+        <!-- script links -->
+        <script
+          src="https://kit.fontawesome.com/76c9115e26.js"
+          crossorigin="anonymous"
+        ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    </head>
+  <body>
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo"><a href="#"><img src="assets/images/123Enterprise.png" alt=""></a></div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="testimonial.html">Testimonials</a></li>
+        
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#faq">FAQs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="order-articles.html">Order Articles</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = ()=>{
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+        body.classList.add("disabledScroll");
+      }
+      cancelBtn.onclick = ()=>{
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        body.classList.remove("disabledScroll");
+      }
+  
+      window.onscroll = ()=>{
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+      }
+    </script>
+    <!-- social side navigation -->
+    <!-- social side navigation -->
+    <side>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/123Employee" target="_blank"
+            ><span>facebook</span
+            ><span><i class="fa-brands fa-facebook"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/davenmichaels" target="_blank"
+            ><span>twitter</span
+            ><span><i class="fa-brands fa-x-twitter"></i></span
+          ></a>
+        </li>
+        <li class="telephone">
+          <a href="contact-us.html"
+            ><span id="number">1-(844) 483-4176</span
+            ><span><i class="fa-solid fa-phone fa-shake"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/davenmichaels" target="_blank"
+            ><span>LinkedIn</span
+            ><span><i class="fa-brands fa-linkedin"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/Outsourcing4Business" target="_blank"
+            ><span>youtube</span
+            ><span><i class="fa-brands fa-youtube"></i></span
+          ></a>
+        </li>
+      </ul>
+    </side>
+
+    <header class="section-container contact-header">
+      <div class="header-content">
+        <span class="bg-blur"></span>
+        <span class="bg-blur header-blur"></span>
+        <h1>
+          "Fill out your info below. We will get right back to you."
+        </h1>
+      </div>
+      <div class="header-image">
+        <img src="assets/images/enterprise-index-pic.png" alt="header" />
+      </div>
+    </header>
+    <!-- contact us -->
+    <section class="section-container" id="contact">
+      <div class="form-grid">
+        <div class="form-card">
+          <div class="form-card-content">
+            <h4>- CONTACT US -</h4>
+          </div>
+          <div class="contactForm">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <h2>Send Message</h2>
+              <input
+                type="hidden"
+                name="access_key"
+                value="639adb2a-4edd-4d8a-a6c8-19421c00748a"
+              />
+              <div class="inputBox">
+                <input type="text" name="name" required />
+                <span>Full Name</span>
+              </div>
+              <div class="inputBox">
+                <input type="email" name="email" required />
+                <span>Email</span>
+              </div>
+              <div class="inputBox">
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+                <span>Your Message</span>
+              </div>
+              <div class="h-captcha" data-captcha="true" required="required"></div>
+              <div class="inputBox">
+                <input type="submit"></input>
+              </div>
+              
+            </form>
+            <script
+              src="https://web3forms.com/client/script.js"
+              async
+              defer
+            ></script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <div class="footer-bar">
+      Copyright © 2024 Sixeleven Global Services - Workforce. All rights
+      reserved. | <a href="#">Contact Us</a> | <a href="#">Privacy</a> |
+      <a href="#">Terms</a> | <a href="#">Sitemap</a>
+      <p class="number">Have Questions? <span>Call: 1-(844) 483-4176</span></p>
+    </div>
+  </body>
+</html>

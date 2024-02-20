@@ -1,0 +1,2325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>123 Employee | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      href="assets/images/123Enterprise.png"
+      type="image/x-icon"
+    />
+
+    <!-- font/icon links -->
+
+    <!-- style links -->
+
+    <!-- script links -->
+    <script
+      src="https://kit.fontawesome.com/76c9115e26.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  </head>
+  <body>
+    <!-- main navigation -->
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="#"><img src="assets/images/123Enterprise.png" alt="" /></a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="testimonial.html">Testimonials</a></li>
+
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="order-articles.html">Order Articles</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+        body.classList.add("disabledScroll");
+      };
+      cancelBtn.onclick = () => {
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        body.classList.remove("disabledScroll");
+      };
+
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+    <!-- social side navigation -->
+    <side>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/123Employee" target="_blank"
+            ><span>facebook</span
+            ><span><i class="fa-brands fa-facebook"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/davenmichaels" target="_blank"
+            ><span>twitter</span
+            ><span><i class="fa-brands fa-x-twitter"></i></span
+          ></a>
+        </li>
+        <li class="telephone">
+          <a href="contact-us.html"
+            ><span id="number">1-(844) 483-4176</span
+            ><span><i class="fa-solid fa-phone fa-shake"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/davenmichaels" target="_blank"
+            ><span>LinkedIn</span
+            ><span><i class="fa-brands fa-linkedin"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/Outsourcing4Business" target="_blank"
+            ><span>youtube</span
+            ><span><i class="fa-brands fa-youtube"></i></span
+          ></a>
+        </li>
+      </ul>
+    </side>
+
+    <!-- TOP CLIENTS -->
+    <section class="section-container top-clients">
+      <div class="top-clients-header">
+        <h2 class="section-header">All The Top Marketers Use 123Employee!</h2>
+        <h3 class="section-subheader">
+          Clients who have used 123 Employee Virtual Assistant
+        </h3>
+      </div>
+
+      <div class="clients">
+        <div class="profile">
+          <img src="assets/images/testim-2.jpg" alt="" />
+          <a href="#larry-steinhouse"><span>Larry Steinhouse</span></a>
+        </div>
+        <div class="profile">
+          <img src="assets/images/collin-daymude.jpg" alt="" />
+          <a href="#collin-daymude"><span>Collin Daymude</span></a>
+        </div>
+        <div class="profile">
+          <img src="assets/images/anushka-drescher.jpg" alt="" />
+          <a href="#anushka-drescher"><span>Anushka Drescher</span></a>
+        </div>
+        <div class="profile">
+          <img src="assets/images/roy-meyer.jpg" alt="" />
+          <a href="#roy-meyer"><span>Roy Meyers</span></a>
+        </div>
+        <div class="profile">
+          <img src="assets/images/casey-eberhart.jpg" alt="" />
+          <a href="#casey-eberhart"><span>Casey Eberhart</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!--partners section-->
+    <section class="partners">
+      <div class="partner-logos slider">
+        <div class="slide"><img src="assets/images/abc-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/forbes-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/nbc-logo.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/fox-news-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/news-week-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/USA Today logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/cbs-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/yahoo-logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/wsj-logo.png" alt="" /></div>
+      </div>
+    </section>
+    <script>
+      $(document).ready(function () {
+        $(".partner-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              setting: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              setting: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <!-- testimonial.html -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="testimonials-modal">
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal1">
+                <img src="assets/images/testim-1.jpg" alt="" />
+                <h3>John Fariss</h3>
+                <p>
+                  HELLO FOLKS THIS IS JOHN FARISS WITH WORLDWIDE TRAVEL PLAN..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal1">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/f2wGFqogJqg"
+                    title="John from Worldwide Travel Plan - Testimonial (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hello folks this is john fariss with worldwide travel plan, we
+                  help people upgrade their lifestyle by saving them time and
+                  money on products and services such as wholesale travel, the
+                  best gourmet storable food on the planet, wellness products,
+                  high quality furniture, appliances, and even their new cars.
+                  worldwide travel plan’s members never have to worry that they
+                  paid too much. since we’ve added 123 employee as virtual
+                  assistants we’ve been able to focus on other aspects of our
+                  business. they handle everything from telemarketing, social
+                  media marketing, search engine optimization, personal
+                  calenders, email deployment, and set appointments for us. 123
+                  employee has helped us grow our business at a phenominal rate
+                  and they are so dependable all i can say is wow how did we
+                  ever get along without them. 123 employee makes it so easy,
+                  everyone needs to have a virtual assistant. i give them 5
+                  stars. they do an amazing job and i highly recommend 123
+                  employee as the answer to faster more productive growth. what
+                  i found is that both worldwide travel plan and 123 employee
+                  are about service and savings and keeping you at the top of
+                  their priority list. this is john fariss worldwide travel
+                  plan. thank you for your time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal2">
+                <img src="assets/images/mike-evans.jpg" alt="" />
+                <h3>Mike Evans</h3>
+                <p>
+                  Hey this is Mike Evans here,and i just wanna share how much i
+                  really enjoy of working..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal2">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/-n-dFg-6WJA"
+                    title="Mike Evans Testimonial for 123Employee the Premiere Outsourcing Company in the Philippines"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hey this is Mike Evans here,and i just wanna share how much i
+                  really enjoy of working with 123Employee, and the reason i
+                  enjoying working with them cause they make me money, i have a
+                  full time assistant he’s in Philippines and he works at the
+                  same hour as he may come at the 12noon my time and leave at
+                  9pm my time which is good for me cause i get up at 10AM, start
+                  working around noon, but the most important thing in this guy
+                  done for me is after i trained them is that he is now able to
+                  come up with the ideas on his own to help me make money. i
+                  mean that’s the most important thing. I’m in a very
+                  complicated business, the internet marketing site, i have a
+                  lot of links, and a lot of things that have in perfect order
+                  for me to make money and first i was able to train them to do
+                  that which is the most important thing, i was able to do that,
+                  and for me quite on he’s never make a mistake except when i
+                  gave him a wrong information.But on his in, he hasn’t make
+                  mistake, that the first thing but he is able to take
+                  initiative which is i asked him to do and make decision on his
+                  own.And then, also offer suggestions to help me make more
+                  money. So a lot of time he will think of things to do that i
+                  haven’t taught for hand focus on and for me that’s the biggest
+                  value that I’m getting from my personal assistant with
+                  123Employee who’s in the Philippines. The last thing i wanna
+                  say is you know, i was very skeptical first, i have tried
+                  other virtual assistant from India and China and Philippines
+                  as well, and you know i thought i could give them a lot of
+                  cheaper and i would found it on my own.And you know what i
+                  found is first of all these are the people they work from
+                  their home when their computer is break they stop on their
+                  work. With 123Employee that you can see they have their
+                  office, with the generators, air condition and lights and you
+                  know everyday that everything is gonna be working.And then you
+                  know, he has a seat and a desk in a real office and because of
+                  that I’ve got consistency from my experience with them.So
+                  again. I’m a (?) you kind of person and i never thought i want
+                  one or another assistant but now i found if i able double and
+                  triple and actually quintuple the amount of income I’m making
+                  because of my 123Employee assistant highly, highly recommend.
+                  Thanks! I’m Mike Evans
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content" id="larry-steinhouse">
+            <div class="box">
+              <button class="btn" data-target="#modal3">
+                <img src="assets/images/testim-2.jpg" alt="" />
+                <h3>Larry Steinhouse</h3>
+                <p>
+                  Hi my name is Larry Steinhouse with Mall Stars Video
+                  Productions Studios. My busi..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal3">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/zPENY5LvFzg"
+                    title="Outsourcing with 123Employee - Larry Steinhouse (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hi my name is Larry Steinhouse with Mall Stars Video
+                  Productions Studios. My business is a combination of on-line
+                  marketing and brick and mortar. Some of you may relate to the
+                  day to day tasks of owning a business like this. One day, I
+                  escaped my business and attended a seminar. While there, this
+                  guy said.. During that seminar, Daven suggested all the
+                  audience participants make a list of the things keeping them
+                  from doing what was important, like acquiring new business.
+                  Well I made my list. It included things like Facebook Fan page
+                  maintenance, LinkedIn and twitter posts. I also added things
+                  like e-mail marketing and campaigns. Article writing and so
+                  many more things I keep doing that I really shouldn’t. Daven
+                  surly convinced that I need to outsource this! But now I had
+                  to deal with my own inhibitions of outsourcing. First of all,
+                  I am here in the Philadelphia area and well the Philippines,
+                  even though it sounds alike, is all the way.. Well somewhere
+                  here! Many questions came to my mind like. What if there is
+                  language barrier? Can I trust someone so far away? Can they
+                  really do the tasks I need? And of course can I trust that
+                  they will actually be working when they say they are? I
+                  nervously called 123 Employee, and found that they actually
+                  have an interview process. You can interview candidates to
+                  make sure you have a good communication and trust level. .ok
+                  you obviously know this is a testimonial and a success story,
+                  so here is the bottom line. I am so amazed at the
+                  professionalism of 123employee but even more important, Cassie
+                  ias my Virtual Assistant, is wonderful! She really takes on
+                  the tasks with full responsibility. She even makes suggestions
+                  and researches ideas that will bring me business or traffic to
+                  my website. The only thing she can’t do, is bring me coffee!
+                  Our Mall Stars Video Production Studios is a concept that we
+                  expect to go national, and frankly I believe that with Cassie
+                  as my Virtual Assistant and Daven’s company 123employee, my
+                  chances of making that happen will greatly increase! Oh and if
+                  you have any questions or want to speak to me about this
+                  reference, I will be glad to tell you about my experience.
+                  Just contact with the information on the mall stars website
+                  and Cassie… I mean, I will get back to you! :) Thanks Daven,
+                  Thanks Cassie!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal4">
+                <img src="assets/images/nik-halik.jpg" alt="" />
+                <h3>Nik Halik</h3>
+                <p>
+                  I’m Nik Halik, the Thrillionaire. Hey Daven, you absolutely
+                  rock! Thank you so much f..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal4">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/eyh0I0KUh7w"
+                    title="Nik Halik Testimonial for 123Employee"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  I’m Nik Halik, the Thrillionaire. Hey Daven, you absolutely
+                  rock! Thank you so much for the intro to 123Employee. I have
+                  an amazing project manager and he has an amazing team and
+                  look, we’ve been able to do some really cool stuff in relation
+                  to social media, database management, promoting and marketing
+                  my events worldwide on a global scale. Look how many followers
+                  I’ve got here on my Twitter page. Look at my Facebook fan page
+                  – we’ve got 5 Facebook fan pages and we have so many likes and
+                  so many individuals that we interact with, and it’s a great
+                  marketing team. I want to thank you for your time. You have an
+                  amazing unique service unparalleled anywhere on the planet.
+                  For anybody contemplating outsourcing and delegating their
+                  life, ensure they use 123Employee. Daven, thank you so much.
+                  I’m Nik Halik.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal5">
+                <img src="assets/images/victoria-bowman.jpg" alt="" />
+                <h3>Victoria Bowman</h3>
+                <p>
+                  Hi I am Victoria Bowman and I have a PhD in Homeopathy in
+                  natural medicine. My busine..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal5">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/J2H8AsHUdiE"
+                    title="Virtual Assistant from 123Employee - Victoria Bowman Testimonial (866) 549-1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hi I am Victoria Bowman and I have a PhD in Homeopathy in
+                  natural medicine. My business is MyRealHealth.com and I love
+                  123Employee. In fact Charlie my Virtual Assistant is amazing
+                  and kudos to Richard who is my manager with 123Employee. The
+                  things that have happened since I have started with them are
+                  they have been submitting my articles to Ezine and they are
+                  getting published. Also, we are doing an email marketing
+                  program for one of the products that I represent and that is
+                  going very well. They also have edited my YouTube videos so I
+                  am all over YouTube and people are hitting it. They are
+                  spreading the word and I am getting more business as well as
+                  increasing my clout and my Pinterest presence on the web. So I
+                  endorse 123Employee. Take a look you will be glad you did. Bye
+                  now.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal6">
+                <img src="assets/images/sam-batier.jpg" alt="" />
+                <h3>Sam Batier</h3>
+                <p>
+                  Hello my name is Sam Batier with Super-trainer.com. Super
+                  trainer.com is ..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal6">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/uDyWK9SQAfU"
+                    title="Sam Batier with 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hello my name is Sam Batier with Super-trainer.com. Super
+                  trainer.com is a blog about showing personal trainers and
+                  fitness professionals how to automate their business and not
+                  to work so much in their business while on their business. As
+                  we know being the personal trainer most of my life, it was
+                  really bad because I had to get up at four o’clock in the
+                  morning, Will train clients from five o’clock till noon and
+                  then maybe get a little break from about 12 to 2 or 3 o’clock
+                  and you have to go back, repeat from 4 to 8- 9 o’clock and I’d
+                  never had any life. I was making an ok money but I had no
+                  life, no time to meet someone special, no time to have a
+                  social life, no time to do laundering. Nothing! So over years
+                  I systematized my own dreams called fitconcepts.com and I
+                  systematized my other bootcamp businesses. I have bootcamps
+                  right now. I have six bootcamps in California , I have six
+                  bootcamps in Chicago so I automate those business and I barely
+                  ever dare. So what I’m now I’m teaching other fitness
+                  professionals how to automate their business and be able to
+                  have a life. I mean, I don’t care how much money out there you
+                  making but if you don’t have a life it’s really not worth it.
+                  Now today I have a beautiful wife, I have a beautiful children
+                  and I can probably work wherever I want and I couldn’t done
+                  that without having a team of people that I can rely on to and
+                  what ‘i mean by that is somebody I can be able to call and be
+                  able to get a job done and job done correctly and a job done
+                  for a reasonable price. So that’s why I rely on 123Employee
+                  because 123Employee has a virtual assistants that are
+                  professional, that speak the language, that are supervised and
+                  somebody I can actually call. A lot of times we have a virtual
+                  assistants before I couldn’t get a hold of them, I didn’t know
+                  if they are working my project or not I couldn’t rely the
+                  message to them and there was a language barrier but
+                  123Employee they have taken the virtual assistant industry to
+                  a whole new level and it’s just a breath of fresh air that I
+                  can totally rely on to someone and know that the job gets done
+                  and they guarantee it. This is the cool thing about it, if
+                  something didn’t work they guarantee their job and they always
+                  on top of it. Great service! I cannot have been here at this
+                  event without 123Employee. I really appreciate it. Thank you.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal7">
+                <img src="assets/images/mike-crow.jpg" alt="" />
+                <h3>Mike Crow</h3>
+                <p>
+                  Hey this is Mike Crow with the Millionaire inspector
+                  community. I also coach..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal7">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/tbxAGmqB-YY"
+                    title="Mike Crow (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hey this is Mike Crow with the Millionaire inspector
+                  community. I also coach other coaches that are trying to
+                  create their own next program. You can go out to
+                  coachblueprint.com if you would like to get a free report on
+                  that. But that’s not what I really wanna here for. I really
+                  want you to know one of the secrets I used to help grow my
+                  coaching business. Now currently I’m using 123Employee. And I
+                  have a young lady by the name Sheila and she just does
+                  incredible job. She’s helping us do list building, she’s
+                  helping us set meet up groups, and she’s helping us make sure
+                  all kinds of information fully enforced out there in the
+                  internet. Now I’m gonna tell you another secret, I have ten
+                  people that worked for me and I can touch any single day. I
+                  didn’t hire the virtual assistant for me, I hired it for my
+                  top two people and then I actually said: hey you know what I
+                  said we’ve gonna have get rid of these person, I don’t think
+                  they are doing that much force and both of them almost quit on
+                  me because they said if you do that we gotta do all her work
+                  and we don’t wanna do that. We wanna make sure that you keep
+                  her. So you know what she ain’t goin anywhere anytime soon.
+                  123Employee has been taken really good care of my people which
+                  mean my people taken really good care of me, which means more
+                  business. Daven thank you. 123Employee thank you so much
+                  guys!!!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content" id="roy-meyer">
+            <div class="box">
+              <button class="btn" data-target="#modal8">
+                <img src="assets/images/roy-meyer.jpg" alt="" />
+                <h3>Roy Meyer</h3>
+                <p>
+                  Hi, my name is Roy Meyer and I’m currently here at 123
+                  Employee, the number one outsourcing ..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal8">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/Ze8UyoPeGEw"
+                    title="123 Employee Review - Roy Meyer"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hi, my name is Roy Meyer and I’m currently here at 123
+                  Employee, the number one outsourcing center in the
+                  Philippines. Now I’ve been working with 123 for a couple of
+                  years now, and I can tell you they have made all the
+                  difference in the success of my business and the reason my
+                  business has grown and to continually generate more and more
+                  income. Now one of the things that’s been great is it’s freed
+                  me up from having to do all the tasks that I just simply just
+                  don’t have time to do. It allowed me just to focus on the IGAs
+                  or the income generating activities in my business. So if you
+                  want to make a difference in your business I highly recommend
+                  you check them out. You go to 123Employee.com, find out what
+                  they’re about, give LJ a call and see what they can do for
+                  you. Because I can tell you, I would not be where I’m at in my
+                  business and my life today if it wasn’t for 123 Employee. So
+                  once again, this is Roy Meyer and I high recommend you give
+                  them a call.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal9">
+                <img src="assets/images/tim-maccoy.jpg" alt="" />
+                <h3>Tim McCoy</h3>
+                <p>
+                  Aloha everybody,Tim McCoy from the beaches of Maui on my 2nd
+                  day trip/vacation and..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal9">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/ANCcmVW7TFo"
+                    title="Tim McCoy with 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Aloha everybody,Tim McCoy from the beaches of Maui on my 2nd
+                  day trip/vacation and 1 of the reasons why I’m able to do
+                  this. I’d like to thank Lito and the team over 123 employee
+                  for billing in for me. Entering phone during my quickbooks,
+                  helping customers. I think they’re doing a great job. Whenever
+                  I recommend to you for watching this videos and to sign up to
+                  123 employee as soon as possible. Aloha!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal10">
+                <img src="assets/images/tracy-walker.jpg" alt="" />
+                <h3>Tracy Walker</h3>
+                <p>
+                  Hey guys. This is Tracy Walker with keepallthecash.com and
+                  before getting plugged..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal10">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/_3r6sPdRDL8"
+                    title="123Employee - Tracy Walker Testimonial (866) 549-1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hey guys. This is Tracy Walker with keepallthecash.com and
+                  before getting plugged into 123Employee, I was probably like a
+                  lot of entrepreneurs where I had so many different ideas and
+                  so many different things going on in my business that I just
+                  couldn’t implement them all. So I decided to take a chance,
+                  get started with 123Employee, get my own VA and what she does
+                  for me is she does all of my marketing. If I say to her
+                  listen, I need you to post a blog post for me, she’ll post it.
+                  If I ask her to do any keyword research for me, she does that.
+                  She does a lot of my syndication, meaning that she posts on
+                  Facebook for me, she posts on Pinterest for me, she does my
+                  Instagram work for me. She does my articles and doing
+                  back-linking and all these wonderful things and she uploads my
+                  videos to my YouTube channel. So if you’re ready to outsource
+                  your business and actually get to back to living your life and
+                  having fun in your business, I highly recommend you get
+                  plugged into 123Employee, Daven will take are of you.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal11">
+                <img src="assets/images/marbeth-dunn.jpg" alt="" />
+                <h3>Marbeth Dunn</h3>
+                <p>
+                  Hi, I’m Marbeth Dunn, yourjoyjourney.com. And I’m so happy
+                  today to tell you ..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal11">
+              <div class="header">
+                <div class="title">test</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/bViT7xjKq7k"
+                    title="123Employee Testimonial - Marbeth Dunn http://www.123Employee.com"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hi, I’m Marbeth Dunn, yourjoyjourney.com. And I’m so happy
+                  today to tell you about Daven Michaels 123Employee. I was a
+                  little reticent at the beginning to work with a VA, I didn’t
+                  quite understand how it was going to be but I love my VA. He
+                  audits my audios; I have a radio show, radio show host of the
+                  Great Metamorphosis on the Law of Attraction radio network. He
+                  edits my audios, he’s fantastic. And he also posts on social
+                  media, he posts my blogs and he posts them all over social
+                  media for me, because you know as a busy entrepreneur you
+                  don’t have time to do all this yourself. So Daven’s people
+                  have saved my life, made me have more time in the day to play.
+                  Thank you, Daven.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal12">
+                <img src="assets/images/gail-kinsbury.jpg" alt="" />
+                <h3>Gail Kinsbury</h3>
+                <p>
+                  Hi my name is Gail Kinsbury and I worked with speakers,
+                  trainers, authors all over the world..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal12">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/evSom0RsQao"
+                    title="Gail Kingsbury on 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hi my name is Gail Kinsbury and I worked with speakers,
+                  trainers, authors all over the world and I help them get on
+                  the stages, I’m producing events I travel a tone. I’m a single
+                  mom with three kids and a very very busy life. I decided to go
+                  ahead and used an employee from Daven Michaels with
+                  123Employee and what we’ve done with that is. a time that is
+                  given me back in my life and to be able to spend with my kids.
+                  I can focus on my clients for just having her do a little bit
+                  of things like research foe an event, getting links out of my
+                  affiliate account, getting things posted, creating a twitter
+                  profile for me that I never had time to even bother with and
+                  where how to do it, how to put new picture on a twitter
+                  page,Clueless!?! She got it done in less than two hours and
+                  it’s just been a really great seamless experience working with
+                  123Employee. if you have the opportunity, I suggest you do it
+                  too!.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal13">
+                <img src="assets/images/victor-vaga.jpg" alt="" />
+                <h3>Victor Vaga Jr.</h3>
+                <p>
+                  I now a working consultants I wanted to share to you my
+                  experience with my VA..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal13">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/bVc9ybarlWQ"
+                    title="Victor Vaga Jr. with 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  I now a working consultants I wanted to share to you my
+                  experience with my VA with 123Employee. Since I have used my
+                  VA she has been phenomenal, she ha handled all of my social
+                  media marketing my email marketing even taken my inbound phone
+                  calls and she is doing an amazing job, my staff loves her,
+                  she’s easy to work with, she’s a hard worker. One great
+                  experience is I was at the seminar and I checked my email and
+                  in a few hours i had a hundred and forty three twitter
+                  followers just following my emails.SO for those that are small
+                  business owners and entrepreneurs I recommend 123Employee,
+                  they would just take all paper works headache away. They are
+                  willing to do I mean they are just at your service, you give
+                  them everything you need and they will take care the rest so I
+                  highly recommend 123Employee.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal14">
+                <img src="assets/images/lori-heffernon.jpg" alt="" />
+                <h3>Lori Heffernon</h3>
+                <p>
+                  Hi my name is Lori Heffernon and I’m Nic Shilling and were
+                  business owners..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal14">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/NoLDAMofUVA"
+                    title="Outsource Live! -  Lori Heffernon &amp; Nic Shilling (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hi my name is Lori Heffernon and I’m Nic Shilling and were
+                  business owners and happen for several years. Where here today
+                  at 2011 outsource live right here at Westin in LA. It’s been a
+                  fantastic week end and I came here to learn how to delegate
+                  more. Lori has been using 123Employee for about a year now and
+                  I have been having a hard time letting go however I’m excited
+                  to had back in and hit tomorrow Monday and get my listed
+                  delegating away. Awesome! “It’s really excited to learn a lot,
+                  there was a lot of great speakers here today. Were really
+                  appreciate for all the great information that Beejal gave us,
+                  step by step system that we can must take right home and
+                  implement. Thank you to Daven and Beejal. Daven thanks for
+                  going through and finding one next step and starting
+                  123Employee and Beejal thanks for sharing your family with us,
+                  your story in India and just everything that you have shown us
+                  here today. It’s been amazing! We look forward to ride all the
+                  fence with you guys. Have a great afternoon.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content" id="collin-daymude">
+            <div class="box">
+              <button class="btn" data-target="#modal15">
+                <img src="assets/images/collin-daymude.jpg" alt="" />
+                <h3>Collin Daymude</h3>
+                <p>
+                  Hey Collin Daymude here. I just speak all over the world and
+                  I’m an entrepreneur..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal15">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/kTXZA8gdiJY"
+                    title="Collin Daymude with 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hey Collin Daymude here. I just speak all over the world and
+                  I’m an entrepreneur, I’ve written four books, I’m busy
+                  traveling all of the time. So to get stuff done, I went to
+                  Daven and said I don’t know what your VA’s can do but I just
+                  keep here and about them so please give me the loads out. He
+                  sent me this long PDF file of everything his VA can do.
+                  Virtual assistants there it. I mean you just have to get one.
+                  so here’s the problem I had. I actually had come up with new
+                  ideas and ask people what can my VA do for me because she gets
+                  stuff done in a day,amazing! She took seven thousand gmail
+                  contact and sort them into folders it was amazing! Everyday
+                  she checks my inbox, filters things, she sort them, she gets
+                  rid of the junk she took my PDF copies of all my expenses for
+                  the last year bank statement, she categorize all of them.
+                  Amazing! she saves my so much time which is unbelievable. I
+                  have to ask her, she comes to me when she’s done with the
+                  project, she says Collin what else do you have for me, I mean
+                  when else do you ever get that kind of treatment from
+                  somebody. So I actually have to ask people what can I have my
+                  VA do today, because i have to be creative, i had to go back
+                  to Daven long list of stuff to figure out oh! she can do this,
+                  she can do that and then I give her another project plus the
+                  ongoing stuff she has. So you gotta get 123Employee, check it
+                  out, call Daven, It will be the thing you’ve ever done.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal16">
+                <img src="assets/images/adam-holland.jpg" alt="" />
+                <h3>Adam Holland</h3>
+                <p>
+                  Hey everybody this is Adam Holland from
+                  globalleadershipmax.com and I am here at 7th figure..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal16">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/ZrIrZMdjVEI"
+                    title="Adam Holland with 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hey everybody this is Adam Holland from
+                  globalleadershipmax.com and I am here at 7th figure empire
+                  speaking event and I am actually here with Daven Michaels and
+                  his the owner of 123Employee.com. I’ve been using his service
+                  123employee for the last two months, I’ve had a virtual
+                  assistant working on all sort of stuff for me on my website.
+                  they’ve set up a frequently ask question page from my sites
+                  and I was actually limiting and reducing a lot of my customer
+                  service saving my time, money and energy there, but i also had
+                  another go start working on Ebook and I’m just about finish
+                  now I actually just git an email from my personal assistant
+                  saying that the last chapter done so now I launches it and
+                  that about five to ten thousand dollars i business for my
+                  company virtually hands off. What i gave them was an outline
+                  and I came up with all the material and everything so just
+                  Kudos to you Daven! Awesome product, awesome customer service
+                  of communication from your team and I highly recommend it. So
+                  checked out 123Employee.com
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal17">
+                <img src="assets/images/alka-dalal.jpg" alt="" />
+                <h3>Alka Dalal</h3>
+                <p>
+                  Hi I’m Alka Dalal and I’m from Santa Monica California. Well I
+                  have something.
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal17">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/E3UpWoBBT14"
+                    title="Alka Dalal Testimonial on 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hi I’m Alka Dalal and I’m from Santa Monica California. Well I
+                  have something to give, to contribute to because I’m a
+                  123employee client and not just client I’m client for just 1
+                  full year. I’ve used them and Ive been very very happy with
+                  them and the reason I say that because it freed lot of my time
+                  off and this is what I came up with my book, ” Creative
+                  Genius: Tips to Unleash yours. This is a great book, it’s on
+                  Amazon.com and the reason I could right this book and I’m also
+                  writing many other books, my second book is coming up soon the
+                  reason is that I’m using 123Employee. They’re very wonderful
+                  to me, they do all my social networking, my articles posting
+                  and so many things they do for me that it frees my time off
+                  and I do what I’m good at like to train leaders in creativity
+                  and internet marketing so I do lots of those things for
+                  myself. I write books, and I go around and talk to people
+                  network so I can do so many otter things where I have my
+                  123Employee doing all the works for me in the back end in the
+                  office and the are very very easy to deal with, they speak
+                  excellent English, they write excellent English and I am
+                  really very very happy, so go for it people, 123Employee!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal18">
+                <img src="assets/images/blake-goodwin.jpg" alt="" />
+                <h3>Blake Goodwin</h3>
+                <p>
+                  Hi! My name is Blake Goodwin. And I’m the CEO and Founder of a
+                  rapidly expanding..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal18">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/8tycX1AziQI"
+                    title="Blake Goodwin loves using 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hi! My name is Blake Goodwin. And I’m the CEO and Founder of a
+                  rapidly expanding video marketing firm. And I just want to
+                  share with you real quickly an experience that I just had with
+                  my Virtual Assistant with 123Employee. I just got another
+                  Virtual Assistant, this is not my first one, her name is
+                  Hannah and she’s going to be booking speaking engagements for
+                  me and she’s already gotten everything together, has got
+                  script together, her English is outstanding I mean this girl
+                  is going to knock it out of the part for me and I’m gonna be
+                  stages all over America before you know it. I’m so excited.
+                  Hannah, thank you so much and I’m really looking forward to
+                  working together.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal19">
+                <img src="assets/images/marc-kossman.jpg" alt="" />
+                <h3>Marc Kossman</h3>
+                <p>
+                  Hi, this is Dr. Marc Kossman of Personal Success Marketing and
+                  I have high words ..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal19">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/suvtZSs7f6k"
+                    title="Outsourcing To Get Your Book to Number 1 On Amazon! (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hi, this is Dr. Marc Kossman of Personal Success Marketing and
+                  I have high words of praise for 123Employee and Daven
+                  Michaels. Our personal assistant John is the secret ingredient
+                  that allowed us to take our books fly somewhere on the rank of
+                  3 Million on Amazon.com to a number 1 bestseller in our
+                  category. There are just so many things that you can outsource
+                  as an author and get the job done and so you got to check out
+                  123Employee, we very highly recommend it did the job for us.
+                  Right, it was like a breath of fresh air and what did he do
+                  for us? He cleared the sight didn’t he? He just wiped it all
+                  gone, it’s all gone so that we can focus on getting our book
+                  done. We got the book, we got it done and now we have John.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content" id="anushka-drescher">
+            <div class="box">
+              <button class="btn" data-target="#modal20">
+                <img src="assets/images/anushka-drescher.jpg" alt="" />
+                <h3>Anushka Drescher</h3>
+                <p>
+                  I am Anushka Drescher from Burkley, California and 2 weeks ago
+                  ..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal20">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/mY8qeTrXquo"
+                    title="Outsourcing Testimonial From Anushka Drescher on 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  I am Anushka Drescher from Burkley, California and 2 weeks ago
+                  I started working with 123Employee. I got a wonderful
+                  assistant named Maria and she has helped me so much just in
+                  the last 2 weeks. Some of the examples the way she’s helped me
+                  is that she has created a mind map for my whole business. All
+                  of the things that I need to do, she’s put them on a visual
+                  map online. She has helped build a database of customers.
+                  Right now I’m here at Super Teaching at CEO Space, I take my
+                  electronic notes everyday, I highlight the parts that are
+                  action items, I email her my notes everyday and she creates
+                  another visual mind map of all the actions I’ve said I need to
+                  take. When I get home I know exactly what I need to do. Maria
+                  has been amazing, she’s always ready to please, she’s always
+                  friendly, she’s always helpful. I am just so grateful that I
+                  came across her and she’s going to save me a lot of time and
+                  money. She’s going to be preparing a newsletter for me that I
+                  get paid for $500 to do it once a month. It’ll take her about
+                  2 hours to do it once I train her and I will pay for her
+                  entire salary for the whole month. I love 123Employee!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content" id="casey-eberhart">
+            <div class="box">
+              <button class="btn" data-target="#modal21">
+                <img src="assets/images/casey-eberhart.jpg" alt="" />
+                <h3>Casey Eberhart</h3>
+                <p>
+                  Hey everybody, Casey Eberhart coming to you from sunny Los
+                  Angeles, California..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal21">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/C412Q1xMTV4"
+                    title="Casey Eberhart on outsourcing your twitter and 123employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Hey everybody, Casey Eberhart coming to you from sunny Los
+                  Angeles, California. I hope you are having as awesome of a day
+                  as I am. I just wanted to take a quick minute to give a quick
+                  shout out to the guys and gals over at 123Employee.com. I got
+                  to tell you, before we got involved in 123Employee and
+                  outsourcing some of our scheduling and inbound and outbound
+                  calls and our social media we just had an opposite ran
+                  completely disorganized and messy. About 6 months ago, just to
+                  give you a quick example, 6 months ago my Twitter account had
+                  a couple of thousand followers as of today I’m in about 20,
+                  000. You can check that out, very easy for you to go check
+                  out, you can follow me on Twitter and figure that out all on
+                  your own and I got to tell you the outsourced employees over
+                  there are friendly, they’re fantastic, they get done what they
+                  say they’re going to do in less time that I could ever find
+                  somebody here to do it. I highly, highly recommend using
+                  123Employee to take care of all of your tasks. Then you look
+                  around and may not be the best at or you may not like to do
+                  them, these guys can do them at a rate that’s unmatchable,
+                  unbeatable and you will not get better service. So check out
+                  123Employee.com. Again Caset Eberhart coming to you from Los
+                  Angeles.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal22">
+                <img src="assets/images/chris-carter.jpg" alt="" />
+                <h3>Chris Carter</h3>
+                <p>
+                  Hello my name is Chris Carter I’m a local niche marketer and
+                  online marketer...
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal22">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/ettsEiGr8ic"
+                    title="(M) Chris Carter on Outsourcing with 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Hello my name is Chris Carter I’m a local niche marketer and
+                  online marketer. We used 123Employee for our outbound sales
+                  for a lot of product and services and things we do inside of
+                  our business that it saves me a tone of time. In fact one of
+                  the gentlemen Luijey was fantastic and helping us builds the
+                  list and put things together. Folks when you wanna do the
+                  things or half things done that you don’t need to do that
+                  blowing to pay crater; you know what? You just might not know
+                  how to do and you know you need to get it done make sure you
+                  join 123Employee and have it done for you. You deserve the
+                  amount of time in your life that you are enjoying instead of
+                  working
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal23">
+                <img src="assets/images/darius-askaripour.jpg" alt="" />
+                <h3>Darius Askaripour</h3>
+                <p>
+                  Hi, Darius Askaripour here from the Innovative Investors
+                  wanting ..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal23">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/Et3ZlNWIerc"
+                    title="(M)  Darius Askaripour Outsourcing for Investors (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hi, Darius Askaripour here from the Innovative Investors
+                  wanting to make a real quick video for my good friend Daven
+                  Michaels. Daven owns a company called 123Employee and if
+                  you’re not aware of getting virtual assistants you need to get
+                  on it and get on it fast. You know, virtual assistants are
+                  intricate part to any business but they really help you bridge
+                  the gap of needing help, of getting employees, of training
+                  people because we know good and well that employees are not
+                  cheap, usually they are not. We know that in turn sometimes
+                  they are a little iffy, they are a little shaky but having a
+                  virtual assistant is a necessary component to any business
+                  that you are trying to systematize and work you are trying to
+                  form out. Number 1 reason being is how cheap it is but there
+                  are some down falls, there are some negative things about
+                  virtual assistants. The first thing is you got to train them,
+                  you got to educate them, you got to go through 20 of them to
+                  find one good one that was up until I met Daven and started
+                  working with 123Employee. The reason being is Daven is a
+                  genius at this business. He really filters the people he has,
+                  he really interviews them, he kind of puts people in
+                  categories so they know what they are good at so that way if
+                  you need a person for Social Media or you need a person for
+                  pay per click or you need a person for a call center or
+                  advertising, mortgage or whatever may be, he has people
+                  already good in that field and all these people speak English
+                  perfect, they are educated, they are professional, they give
+                  you reports, they are accountable and the best thing is you
+                  give them the task you don’t have to worry about so I love
+                  123Employee. I went through a lot, a lot of virtual assistants
+                  until I found them. I’ve got 1 girl over there, Lunny, she’s
+                  incredible. She basically does the work load of 15 people that
+                  we need to hire here so I appreciate Daven, love the company
+                  and if you’re thinking about it get on board. Get in as soon
+                  as possible. It will really help you become more efficient in
+                  your business. Thanks a lot Daven!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal24">
+                <img src="assets/images/mindly-sylvester.jpg" alt="" />
+                <h3>Mindy Sylvester</h3>
+                <p>
+                  Hi, I’m Mindy Sylvester and I just want to tell you about my
+                  experience..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal24">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/lzmdYqhv5qw"
+                    title="Mindy Sylvester with her experience on outsourcing 123employee  (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <hr />
+                <p>
+                  Hi, I’m Mindy Sylvester and I just want to tell you about my
+                  experience with 123Employee. I am a real estate agent and a
+                  professional speaker and I have so much work to do, I got so
+                  much going on and I really needed a little relief. I enjoy
+                  traveling and just having fun of being with my family and I
+                  seem to have gone bugged down with a lot of little details so
+                  I heard about 123Employee and I hire my virtual assistant and
+                  it was one of the best things I’ve ever done. I’ve freed up so
+                  much time. My assistant is so wonderful. I got an interview
+                  with 2 different assistants and they were both wonderful but I
+                  picked one and my experience has been amazing! My virtual
+                  assistant is so attentive and so intelligent and so willing to
+                  do the things that I need to get done and she does them so
+                  quickly and definitely I have the best experience and I’ve
+                  just been able to live such a good life now because of it.
+                  I’ve actually took almost the whole month off last month but
+                  I’m still making money, I’m still getting deals closed and my
+                  internet presence has increased a lot, gotten a lot more
+                  leads. They just can do things that I can’t do especially with
+                  the internet so I highly recommend 123Employee. They can do a
+                  wide variety of things and your life will get a lot easier,
+                  it’s very affordable and it’s a really good investment. So, if
+                  you are looking to have a little bit more fun in life, free up
+                  some time so that you can focus your time and energy on the
+                  things that you love and income generating opportunities then
+                  definitely hire 123Employee.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal25">
+                <img src="assets/images/balke-goodwin-2.jpg" alt="" />
+                <h3>Blake-Goodwin</h3>
+                <p>
+                  Many people have been asking me – “Blake, how do you get it
+                  all done...
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal25">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/R_PC4CtcUdY"
+                    title="Outsourcing Testimonial from Blake Goodwin on 123employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Many people have been asking me – “Blake, how do you get it
+                  all done? How do you get so much done so fast? We are seeing
+                  the amounts of work that you are able to keep putting out. I
+                  constantly see you on Facebook, on Twitter, on MySpace, on
+                  Youtube and you’re out there in all your Social Networks” and
+                  the answer is I have a secret weapon in my back pocket and the
+                  secret weapon is called 123Employee. I’ve been using
+                  123Employee now for a long time and it’s really just allowed
+                  me to go to the gym, to go out to the golf course, to spend
+                  time with my wife and my family and it’s just allowed me to
+                  get into a real comfortable position knowing that everything
+                  is going to be taken care of behind the scenes. All the time I
+                  am getting contact going – “Blake I just saw your new post you
+                  did on Facebook” and I’m like going “I haven’t even logged in
+                  to Facebook in 6 months”, so it’s just awesome and I invite
+                  you to enjoy this experience too. It’s one of my secret
+                  weapons. I would like to share all secret weapons and
+                  strategies that I’m using but 123Employee is one that will
+                  definitely sky rocket you to the next level.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal26">
+                <img src="assets/images/justin-tillman.jpg" alt="" />
+                <h3>Justin Tillman</h3>
+                <p>
+                  Hi, how are you doing today? My name is Justin Tillman and I
+                  just want to give..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal26">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/2pAyYByF9GY"
+                    title="Outsourcing Client Justin Tilman (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Hi, how are you doing today? My name is Justin Tillman and I
+                  just want to give you a quick testimonial about 123Employee.
+                  It’s an excellent service and the reason why it’s such good
+                  service is because being a young entrepreneur you kind of
+                  focus on the little tasks as well as the big tasks, split your
+                  time up you got 24 hours in a day. So, after being able to
+                  leverage my time in actually working with 123Employee I am
+                  able to now have a virtual assistant who works with me and
+                  she’s able to take care of some of the other tasks that might
+                  have normally taken up all my time for the day which would
+                  have had me working all weekends. Now, I can spend it with my
+                  family and I really enjoyed my weekends. It’s an awesome
+                  service and I recommend that you definitely try it out and use
+                  it for yourself. Thank you.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal27">
+                <img src="assets/images/bardi-toto.jpg" alt="" />
+                <h3>Bardi Toto</h3>
+                <p>
+                  My name is Bardi Toto and I’m doing a testimonial for
+                  123Employee..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal27">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/hAvHlQ6oE-s"
+                    title="Bardi Toto on outsourcing with 123employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  My name is Bardi Toto and I’m doing a testimonial for
+                  123Employee. They are phenomenal! Actually, my agent has built
+                  up my groups on Facebook and my fan pages. I have now over
+                  2500 people on my groups and my fans. I could not have done it
+                  without 123Employee. They are awesome!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal28">
+                <img src="assets/images/fabricio-cruz.jpg" alt="" />
+                <h3>Fabricio Cruz</h3>
+                <p>
+                  Hey, this is Fabricio Cruz! I just want to take a quick
+                  moment...
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal28">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/VB_I90DKCHE"
+                    title="Fabricio Cruz on Outsourcing with 123employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Hey, this is Fabricio Cruz! I just want to take a quick moment
+                  to say how much I appreciate 123Employee. First off, I am an
+                  internet entrepreneur. I’ve been online for the last 15 years
+                  or so, for the most part it’d been kind of a one man show but
+                  things really started to explore once I got my first
+                  123Employee. Basically, I had them doing my customer support
+                  via telephone, via email and the thing is I started out really
+                  really slow, I kind of regret that. I wish I would have
+                  started much faster because once I got rolling with them and
+                  once I understood what I was doing, you know, I just realized
+                  why wasn’t I doing this a long time ago. So, I just want to
+                  encourage anyone who is, maybe they feel like they’re limited
+                  on time or what not give 123Employee a try. The awesome thing
+                  about them is that they give you the opportunity to select
+                  your employee before you even pay them a penny. That was
+                  really comforting for me because you know the face and the
+                  voice of your business is really important because it
+                  represents you so you go to make sure that you find somebody
+                  who is adequate to represent that face and that voice so
+                  anyway just wanted to send that quick note that I highly
+                  recommend 123Employee, couldn’t live without them. I already
+                  got 2 of them and I’m going to be in the process getting my
+                  3rd here very very soon. My business has more than doubled
+                  over the last year as a result of having my 123Employee
+                  working for me. So, anyway this is Fabricio Cruz check them
+                  out and you won’t be sorry.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal29">
+                <img src="assets/images/fernando-orlando.jpg" alt="" />
+                <h3>Fernando from Orlando</h3>
+                <p>
+                  Hey, this is Fernando from Orlando and I’ve been using the
+                  123Employee..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal29">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/YZ5Fsadm_BA"
+                    title="(M) Outsourcing Testimonial of Fernando from Orlando on 123employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Hey, this is Fernando from Orlando and I’ve been using the
+                  123Employee VA for the past 11 months and what’s done for me
+                  is actually a lot of freedom. I’ve been able to work a lot
+                  less after living the four hour week back 3 years ago. I’ve
+                  been trying a lot of VA’s, firing a lot of VA’s and I’m very
+                  happy that I’ve been able to have Mildred from 123Employee in
+                  my team and she’s the one that actually deals with all the
+                  short sale paper work in take. She makes sure that lenders get
+                  everything from short sale processing. So she is busy, she
+                  takes care of everything. If she has any questions she texts
+                  me and I text her back, it’s just great! People can go to my
+                  site fernandobuyshouses.com and put in information of their
+                  homes and sell their homes. Mildred sometimes takes care of
+                  that and I actually have more time to do coaching. I’ve been
+                  buying houses for 7 years so coaching is something that I can
+                  do more of because I’m working less. So, thanks so much for
+                  the VA’s at 123Employee because I am able to work less and
+                  that’s the name of the game!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal30">
+                <img src="assets/images/jason-web.jpg" alt="" />
+                <h3>Jason Web</h3>
+                <p>
+                  So, I’m Jason Web. I am the owner of Web IP Law Group. We’re
+                  an..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal30">
+              <div class="header">
+                <div class="title">test</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/1TfwrSMOnsU"
+                    title="(M) Outsourcing Testimonials from Jason Web on 123employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  So, I’m Jason Web. I am the owner of Web IP Law Group. We’re
+                  an intellectual property law firm. We focus on patents,
+                  trademarks, copyrights, licensing, things like that. Also, I
+                  have a personal assistant with 123Employee. He’s been
+                  fantastic! He works a few hours a day for me. I know exactly
+                  when he starts working and when he finishes. Whenever he
+                  finishes work, he always tells me what he did which therefore
+                  confirms that what I’m assigning to do is accomplished and I
+                  love that. I have him doing several different tasks. Some of
+                  them are fairly complicated but I know that all I have to do
+                  is I just send him an email and I say do this, its super
+                  quick. What used to take me 15 to 20 minutes all of a sudden
+                  now it just takes a few seconds of my time and my time so
+                  valuable and I have to have that kind of help. So, I’m really
+                  appreciative of my employee and I definitely plan to use
+                  123Employee for a long time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal31">
+                <img src="assets/images/frank-sousa.jpg" alt="" />
+                <h3>Frank Sousa</h3>
+                <p>
+                  Hi my name is Frank Sousa and I am one of the code developers
+                  of traffic..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal31">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/jrwPu2D4bB4"
+                    title="Frank Sousa on Outsourcing with 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Hi my name is Frank Sousa and I am one of the code developers
+                  of traffic geyser and I wanna tell you we’ve been using a 123
+                  employee for last two years or so and I have to tell you that
+                  people that we deal with are absolutely wonderful. The work
+                  ethic s that they have is absolutely amazing. One of the
+                  problems I saw sometimes in the past with other Philippine
+                  workers was the fact they would lose their internet connection
+                  and we couldn’t depend on them, and that hasn’t happened not
+                  even once with 123 employee and I guess the reason for that
+                  because they have redundant systems their so they never go
+                  down. They’ve been very very helpful to me and I would
+                  absolutely recommend them to anybody.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal32">
+                <img src="assets/images/larry-goins.JPG" alt="" />
+                <h3>Larry Goins</h3>
+                <p>
+                  Hey guys it’s Larry Goins how are you ‘doing? I gotta tell
+                  you, you have got..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal32">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/mHSQ6fa2n1Q"
+                    title="Larry Goins on Outsourcing with 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Hey guys it’s Larry Goins how are you ‘doing? I gotta tell
+                  you, you have got to have a VA, a virtual assistants and if
+                  you gonna get a VA to do everything that you need to do from
+                  managing your social media, your social network, your
+                  facebook, your twitter account, posting videos, submitting
+                  articles and answering your emails, oh my God I used to spend
+                  half a day answering my email. If you gonna get a VA you need
+                  to use 123 employee. These guys were the best; they already
+                  trained to work with business owners, entrepreneurs and real
+                  estate investors. So take it from me, Larry Goins work with
+                  123 employee and they will help you free up your life. Thanks
+                  a lot.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal33">
+                <img src="assets/images/heath-barnes.jpg" alt="" />
+                <h3>Heath Barnes</h3>
+                <p>
+                  Hi my name is Heath Barnes and I used 123 employee for
+                  outsourcing of social media ..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal33">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/JRJjeivkKHc"
+                    title="(M)  Heath Barnes on 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Hi my name is Heath Barnes and I used 123 employee for
+                  outsourcing of social media, marketing, helping me organize
+                  systems and strategies for our new business. Our VA is Honey
+                  Isong and we started using her in October and for example our
+                  facebook contacts have won from literally zero. I did not have
+                  a facebook page before that now I have, it’s a second week of
+                  December and I have over five hundred contacts. I would highly
+                  highly recommend 123 employee and we will be hiring one to two
+                  more assistants this month. Thank you!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal34">
+                <img src="assets/images/hollis-carter.jpg" alt="" />
+                <h3>Hollis Carter</h3>
+                <p>
+                  Hey Hollis Carter here and I wanna shoot a quick personal
+                  video to..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal34">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/-U5SnYo-5RU"
+                    title="(M) Hollis Carter on 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Hey Hollis Carter here and I wanna shoot a quick personal
+                  video to let you know about my experience with 123Employee.
+                  It’s been an amazing experience. Right now I have a live
+                  clients who are operating a new software system and I knew
+                  that one thing that would really get them to that next level
+                  would be working with 123Employee so that they can actually
+                  have someone dependable, very reliable and trained and really
+                  educated so that they can outsource the things that they work
+                  and they don’t really gonna have time to do, so that now my
+                  clients are actually sees success guaranteed because these
+                  employees they are getting are trained, they have excellent
+                  management team behind them and I understand whats going on
+                  and I’m really impressed the way they’re clients see results
+                  very quickly there’s actually someone there that they can work
+                  with and depend on to get things done. So I give 123Employe my
+                  full back and really enjoy it and I think if you are looking
+                  or trying to outsource some work or you have client of your
+                  own who need something to really help them to get the next
+                  level, the place that they can depend on to get outsourcing
+                  done I definitely recommend 123Employe!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal35">
+                <img src="assets/images/robert-lord.JPG" alt="" />
+                <h3>Robert Lord</h3>
+                <p>
+                  Hey everyone Robert Lord here with Direct Source Mania. I just
+                  want ..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal35">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/4WNdvjyDT-c"
+                    title="Offshoring Philippines - Robert Lord (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Hey everyone Robert Lord here with Direct Source Mania. I just
+                  want to take the minute to talk to you about Daven Michaels
+                  123Employee. Now I’ve been using his services for about nine
+                  (9) months now and believe it or not my facebook has exploded,
+                  my twitter has exploded. I can’t believe the amount of work
+                  and time and effort these guys put in to my accounts. I feel
+                  like they are my very own employees and I absolutely love
+                  them. 123Employee is a way to go! Robert Lord will see you
+                  later.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal36">
+                <img src="assets/images/adam-kappel.jpg" alt="" />
+                <h3>Adam Kappel</h3>
+                <p>
+                  Hey there this is Adam Kappel from atomic apps and I’ve known
+                  Daven Michaels ..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal36">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/UMYsUoN5iIM"
+                    title="Adam Kappel on 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Hey there this is Adam Kappel from atomic apps and I’ve known
+                  Daven Michaels from 123Employee for a while and I’ve just
+                  recently step into his outsourcing program and starting to
+                  give some task to a VA and at first I was a little bit
+                  hesitant to do it. I was always having a challenge of really
+                  delegating my task and giving it to somebody and not really
+                  knowing what was gonna happen and I have to say since starting
+                  with 123Employee it has been extreme line process to give them
+                  a task and they just get on it and they just figure out how
+                  they do it and they get it done for you and I completely
+                  eliminated my challenges and I completely eliminated my
+                  worrying of giving somebody else a task that I was so good at,
+                  so concern about giving it and soon as I gave it to them, they
+                  picked it up quickly, they learned it quickly and they get it
+                  done and they put it into a system that really really works .
+                  So thank you Daven, thank you everyone over at 123Employee,
+                  I’ve looking forward for a long standing relationship with
+                  you.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal37">
+                <img src="assets/images/dustin-mathews.jpg" alt="" />
+                <h3>Dustin Mathews</h3>
+                <p>
+                  Hi everyone it’s Dustin Mathews from 7 figure speaking empire.
+                  I gotta tell you..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal37">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/80933RAhw5Q"
+                    title="Dustin Mathews with 123Employee (866) 549 1296"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Hi everyone it’s Dustin Mathews from 7 figure speaking empire.
+                  I gotta tell you when I have Daven Michaels and 123Employee.
+                  Here’s a cool part, I have a virtual assistant right now
+                  that’s building my twitter followers and I don’t even like
+                  interact. They just do, I just gave them a task and they just
+                  go out and do my social media and they like blowing up my
+                  twitter followers and I think that’s the coolest thing and as
+                  an entrepreneur you wanna get to situations like that where
+                  things are already running. Without you, you have a hand with
+                  them that running without you and thing getting done and so
+                  I’m like a big fan and I just wanna tell the world about it
+                  and I think you should your own virtual assistant to help you
+                  with whatever it is, social media, do administrative task,
+                  take phone calls, make phone calls for you. And so if you get
+                  the opportunity to enroll in Daven’s system, 123Emplopyee and
+                  get your own virtual assistant I highly highly recommend it,
+                  it’s the first step of really getting your life back and it’s
+                  been completely awesome. So thank you once again.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal38">
+                <img src="assets/images/todd-proffit.jpg" alt="" />
+                <h3>Todd proffit</h3>
+                <p>
+                  Okay. Well, Todd Proffit here with Proffware and Proffit
+                  Development.com..
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal38">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <iframe
+                    width="532"
+                    height="290"
+                    src="https://www.youtube.com/embed/41Tg_DnOzVA"
+                    title="123Employee Review - Todd Profit"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <p>
+                  Okay. Well, Todd Proffit here with Proffware and Proffit
+                  Development.com. And you know I went to Daven and Beejal’s
+                  Beyond Business Live here, I guess kind of close to a year
+                  ago. I’ve been working with of 123 Accelerator and 123
+                  Employee here for about a year. And they developed our
+                  software, just amazing. So they have our highest regard and of
+                  course we highly recommend them. If you’re thinking about
+                  going into business with them or going to one of their
+                  seminars or events, or having them design software for you, or
+                  your back office support, or your marketing or SEO work; all I
+                  can say is these guys are the best of the best, and you know,
+                  thank you so much. I can’t thank you all enough. You were the
+                  first place I stopped that actually gave me solutions to some
+                  of the – well the hurdles that I had been challenged with in
+                  my business, in our business, you know I have multiple
+                  employees, and we’re a multi-million dollar business. And I
+                  couldn’t get to that next level, and I couldn’t have done it
+                  without you guys. I’ve been at a stall for years, and you made
+                  it happen! 123 Accelerator and 123 Employee. So from Aspen,
+                  Colorado, Todd Proffit, hey take these guys and take
+                  everything you can from them. I don’t mean take in a weird
+                  way, I mean you know anything they’re offering. So get out
+                  there and enjoy the ride with them, because they have a great
+                  one in store for you, depending on where you’re at and what
+                  you’re doing, I’m sure they can benefit you in one way, shape
+                  or form. So until next time, enjoy.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal39">
+                <img src="assets/images/david-seagraves.JPG" alt="" />
+                <h3>David Seagraves</h3>
+                <p>
+                  Hello. My name is David Seagraves. I'm the founder of
+                  TrepMula.
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal39">
+              <div class="header">
+                <div class="title"></div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <p>
+                    <a
+                      href="https://www.123employee.com/testimonials.html?wvideo=1oqta0e7tp#david-seagraves"
+                      ><img
+                        src="https://embed-ssl.wistia.com/deliveries/f918df840b181a44944fbf3012275a538dd69d0c.jpg?image_play_button_size=2x&amp;image_crop_resized=960x545&amp;image_play_button=1&amp;image_play_button_color=7b796ae0"
+                        width="400"
+                        height="226.66666666666669"
+                        style="width: 400px; height: 226.667px"
+                    /></a>
+                  </p>
+                  <p>
+                    <a
+                      href="https://www.123employee.com/testimonials.html?wvideo=1oqta0e7tp#david-seagraves"
+                      >Testimonials</a
+                    >
+                  </p>
+                  <video src=""></video>
+                </div>
+                <hr />
+                <p>
+                  Hello. My name is David Seagraves. I’m the founder of
+                  TrepMula. I’m a 123 Employee client and the reason why I chose
+                  them is because I thought - I had a lot of big ideas, but I
+                  knew that I couldn’t do all those ideas. And it was really
+                  clear to me that I needed help. It turned out that they were a
+                  really good decision. They gave me a week to ramp up with my
+                  Virtual Assistant, get our system straight, get myself
+                  organized, make my directives clear, and so as a result I’m
+                  getting my database built which has been going on now and I am
+                  really seeing some strong results. I have a product to sell,
+                  which to me is an important part of my business model. The
+                  database is an essential part of what I’m doing. They’ve made
+                  it extremely easy for me to accumulate the information I need
+                  and I have a lot of other projects I’ve got to do, a lot of
+                  marketing stuff, a lot of activities with support and with
+                  sales. They’re going to help me with all of those things.
+                  There isn’t anything I don’t think that they can’t do. So I
+                  plan to use them as much as I can for as long as I can. Highly
+                  recommended, 123 Employee is a great deal.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="overlay"></div>
+        </div>
+        <script src="assets/js/modal.js"></script>
+      </div>
+    </section>
+
+    <!-- partners section -->
+    <section class="partners">
+      <div class="partner-logos slider">
+        <div class="slide"><img src="assets/images/abc-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/forbes-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/nbc-logo.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/fox-news-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/news-week-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/USA Today logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/cbs-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/yahoo-logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/wsj-logo.png" alt="" /></div>
+      </div>
+    </section>
+    <!-- partners section script -->
+    <script>
+      $(document).ready(function () {
+        $(".partner-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              setting: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              setting: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <!-- Redundant usage -->
+
+    <!-- footer bar -->
+    <div class="footer-bar">
+      Copyright © 2024 Sixeleven Global Services - Workforce. All rights
+      reserved. | <a href="contact-us.html">Contact Us</a> |
+      <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Sitemap</a>
+      <p class="number">Have Questions? <span>Call: 1-(844) 483-4176</span></p>
+    </div>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>

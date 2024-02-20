@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>123 Employee | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      href="assets/images/123Enterprise.png"
+      type="image/x-icon"
+    />
+
+    <!-- font/icon links -->
+
+    <!-- style links -->
+
+    <!-- script links -->
+    <script
+      src="https://kit.fontawesome.com/76c9115e26.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+  </head>
+  <body>
+    <!-- main navigation -->
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo"><a href="#"><img src="assets/images/123Enterprise.png" alt=""></a></div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="testimonial.html">Testimonials</a></li>
+        
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="order-articles.html">Order Articles</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = ()=>{
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+        body.classList.add("disabledScroll");
+      }
+      cancelBtn.onclick = ()=>{
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        body.classList.remove("disabledScroll");
+      }
+  
+      window.onscroll = ()=>{
+        this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+      }
+    </script>
+    <!-- social side navigation -->
+    <side>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/123Employee" target="_blank"
+            ><span>facebook</span
+            ><span><i class="fa-brands fa-facebook"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/davenmichaels" target="_blank"
+            ><span>twitter</span
+            ><span><i class="fa-brands fa-x-twitter"></i></span
+          ></a>
+        </li>
+        <li class="telephone">
+          <a href="contact-us.html"
+            ><span id="number">1-(844) 483-4176</span
+            ><span><i class="fa-solid fa-phone fa-shake"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/davenmichaels" target="_blank"
+            ><span>LinkedIn</span
+            ><span><i class="fa-brands fa-linkedin"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/Outsourcing4Business" target="_blank"
+            ><span>youtube</span
+            ><span><i class="fa-brands fa-youtube"></i></span
+          ></a>
+        </li>
+      </ul>
+    </side>
+
+    <!-- header section -->
+    <header class="section-container index-header">
+      <div class="header-content">
+        <span class="bg-blur"></span>
+        <span class="bg-blur header-blur"></span>
+        <h4>BEST CONTACT CENTER WORLDWIDE</h4>
+        <h1><span>CREATE</span> YOUR PROFIT <span>CENTER</span></h1>
+        <p>
+          How can high quality voice services transform your business and your
+          customer appreciation?
+        </p>
+        <button onClick="location.href='about-us.html'" class="btn">
+          Learn More About 123 <i class="fa-solid fa-arrow-right fa-beat"></i>
+        </button>
+      </div>
+      <div class="header-image">
+        <img src="assets/images/enterprise-index-pic.png" alt="header" />
+      </div>
+    </header>
+
+    <!-- partners section -->
+    <section class="partners">
+      <div class="partner-logos slider">
+        <div class="slide"><img src="assets/images/abc-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/forbes-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/nbc-logo.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/fox-news-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/news-week-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/USA Today logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/cbs-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/yahoo-logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/wsj-logo.png" alt="" /></div>
+      </div>
+    </section>
+    <!-- partners section script -->
+    <script>
+      $(document).ready(function () {
+        $(".partner-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              setting: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              setting: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <!-- landing page section -->
+    <section class="section-container landing-container">
+      <h2>Clients are hiring 123 Employee Virtual Assistants to help with:</h2>
+      <div class="landing-grid">
+        <div class="grid-content">
+          <img src="assets/images/screen.png" alt="" />
+        </div>
+        <div class="grid-content">
+          <p><i class="fa-solid fa-circle-check"></i> Social Media</p>
+          <p><i class="fa-solid fa-circle-check"></i> Facebook</p>
+          <p><i class="fa-solid fa-circle-check"></i> Twitter</p>
+          <p><i class="fa-solid fa-circle-check"></i> Article Marketing</p>
+          <p><i class="fa-solid fa-circle-check"></i> Video Marketing</p>
+          <p><i class="fa-solid fa-circle-check"></i> Blogs</p>
+          <p><i class="fa-solid fa-circle-check"></i> Social Bookmarking</p>
+        </div>
+        <div class="grid-content">
+          <p><i class="fa-solid fa-circle-check"></i> Datamining</p>
+          <p><i class="fa-solid fa-circle-check"></i> Research</p>
+          <p><i class="fa-solid fa-circle-check"></i> Telemarketing</p>
+          <p>
+            <i class="fa-solid fa-circle-check"></i> Customer Support/Service
+          </p>
+          <p><i class="fa-solid fa-circle-check"></i> Virtual Assistantt</p>
+          <p><i class="fa-solid fa-circle-check"></i> Personal Assistant</p>
+          <p><i class="fa-solid fa-circle-check"></i> And much more…</p>
+        </div>
+      </div>
+      <div class="landing-footer">
+        <p>
+          Find out how 123Employee can help you, simply call or email our
+          knowledgeable friendly support staff. We are happy to help.
+        </p>
+        <a href="pricing.html"
+          ><button class="btn box-btn">Get Started</button></a
+        >
+      </div>
+    </section>
+
+    <!--box section-->
+    <section class="section-container box-container">
+      <div class="box-grid">
+        <div class="box-card">
+          <div class="box-card-content">
+            <h1>SERVICES</h1>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Telemarketing
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Inbound Calls
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Help Desk
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Tech Support
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Monitoring
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Appointment Setting
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Operational Support
+            </p>
+          </div>
+          <a href="pricing.html"
+            ><button class="btn box-btn">Learn More</button></a
+          >
+        </div>
+        <div class="box-card">
+          <div class="box-card-content">
+            <h1>VERTICALS</h1>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Banking & Financial Services
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Communications
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Consumer Goods
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Energy & Utilities
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Healthcare
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Info, Media & Entertainment
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Insurance
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Life Sciences
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Manufacturing
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Retail
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Technology
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Transportation & Logistics
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Travel & Hospitality
+            </p>
+          </div>
+          <a href="pricing.html"
+            ><button class="btn box-btn">Learn More</button></a
+          >
+        </div>
+        <div class="box-card">
+          <div class="box-card-content">
+            <h1>WHY CHOOSE US</h1>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Experience
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Exceptional Training
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Track Record
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Good English Speakers
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              Customer Excellence
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              New Facility & Equipment
+            </p>
+            <p>
+              <i class="fa-solid fa-square-check"></i>
+              State-of-the-Art
+            </p>
+          </div>
+          <a href="pricing.html"
+            ><button class="btn box-btn">Learn More</button></a
+          >
+        </div>
+      </div>
+      <p class="bottom-text">
+        Our rates are very competitive and custom created to meet your needs.
+        Please contact us and allow us to create a voice service package to meet
+        your needs. We are able to scale up and down to meet the changing needs
+        of your business.
+      </p>
+    </section>
+
+    <!-- NOTE/HIGHLIGHT -->
+    <section class="highlight">
+      <div class="highlight-text">
+        <p><b>Enterprise Services</b> is a specialized division of 123Employee, the premier US managed Marketing and BPO service provider. Enterprise Services provide exceptional voice trained employees to provide a range of voice related services</p>
+      </div>
+    </section>
+
+    <!--services-->
+    <section class="section-container services-container">
+      <h2 class="section-header">Our Elite Voice agents can help with:</h2>
+      <p class="section-subheader">
+        <i>"We understand the importance of high quality voice services." <br> "That voice represents your business..."</i>
+      </p>
+      <div class="services-image">
+        <img src="assets/images/services-2.jpg" alt="services" />
+        <div class="services-grid">
+          <div class="services-card">
+            <span><i class="fa-solid fa-headset"></i></span>
+            <div class="services-card-content">
+              <h4>Telemarketing</h4>
+            </div>
+          </div>
+          <div class="services-card">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <div class="services-card-content">
+              <h4>Inbound Calls</h4>
+          
+            </div>
+          </div>
+          <div class="services-card">
+            <span><i class="fa-solid fa-circle-question"></i></span>
+            <div class="services-card-content">
+              <h4>Help Desk</h4>
+            </div>
+          </div>
+          <div class="services-card">
+            <span><i class="fa-solid fa-screwdriver-wrench"></i></span>
+            <div class="services-card-content">
+              <h4>Tech Support</h4>
+            </div>
+          </div>  
+          <div class="services-card">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <div class="services-card-content">
+              <h4>Monitoring</h4>
+            </div>
+          </div>
+          <div class="services-card">
+            <span><i class="fa-solid fa-calendar"></i></span>
+            <div class="services-card-content">
+              <h4>Appointment Setting</h4>
+            </div>
+          </div>
+          <div class="services-card">
+            <span><i class="fa-solid fa-file-invoice"></i></span>
+            <div class="services-card-content">
+              <h4>Billing</h4>
+            </div>
+          </div>
+          <div class="services-card">
+            <span><i class="fa-solid fa-gears"></i></span>
+            <div class="services-card-content">
+              <h4>Operational Support</h4>
+            </div>
+          </div>      
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- highlight -->
+    <section class="highlight">
+      <div class="highlight-text">
+        <p>At 123Employee we have programs to empower our staff and give back to the local community</p>
+      </div>
+    </section>
+
+    <!-- explore grid section -->
+    <section class="section-container explore-container">
+      <div class="explore-header">
+        <h5 class="section-header">Your success depends on our success, and our success depends on our employees. 
+          Our company culture encourages team building, community service and empowerment. This results in happier team members and lower attrition. <br><br>
+          Take a look at just some of our culture, team building and community outreach programs:</h5>
+      </div>
+      <div class="explore-grid">
+        <div class="explore-card">
+          <span><i class="fa-solid fa-school fa-beat"></i></span>
+          <h4>Helping out at local schools</h4>
+        </div>
+        <div class="explore-card">
+          <span><i class="fa-solid fa-hand-holding-heart fa-beat"></i></span>
+          <h4>Physical and hearing impaired education centers</h4>
+        </div>
+        <div class="explore-card">
+          <span><i class="fa-solid fa-seedling fa-beat"></i></span>
+          <h4>12Tree Employee - Planting trees in the local community</h4>
+        </div>
+        <div class="explore-card">
+          <span><i class="fa-solid fa-handshake-simple fa-beat"></i></span>
+          <h4>123Employee to Entrepreneur - Helping our employees build their dreams</h4>
+        </div>
+        <div class="explore-card">
+          <span><i class="fa-solid fa-book-medical fa-beat"></i></span>
+          <h4>The 123 Fun Run - Encouraging better health education</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTE/HIGHLIGHT -->
+    <section class="highlight">
+      <div class="highlight-text">
+        <p>Don't take our word for it. Listen to what our clients have to say about us.</p>
+      </div>
+    </section>
+
+    <!-- Redundant usage -->
+
+    <!-- Testimonials slider -->
+    <section class="section-container testim" id="testim">
+      <div class="testim-title">
+        <h2>All The Top Marketers Use 123Employee!</h2>
+        <h3>Clients who have used 123 Employee Virtual Assistant</h3>
+      </div>
+      <div class="wrap">
+
+          <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+          <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+
+          <ul class="dots" id="testim-dots">
+              <li class="dot active"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+              <li class="dot"></li>
+          </ul>
+
+          <div class="cont" id="testim-content">
+              <div class="active">
+                  <div class="img"><img src="assets/images/testim-2.jpg"></div>
+                  <h2>Larry Steinhouse</h2>
+                  <p>I am so amazed at the professionalism of 123Employee but even more important, Cassie, as my Virtual Assistant, is wonderful!
+                    She really takes on the tasks with full responsibility. She even makes suggestions and researches ideas that will bring me 
+                    business or traffic to my website. The only thing she can’t do is bring me coffee!
+                    Our Mall Stars Video Production Studios is a concept that we expect to go national, and frankly I believe that with Cassie as 
+                    my Virtual Assistant and Daven’s company 123Employee, my chances of making that happen will greatly increase!</p>
+              </div>
+              
+              <div>
+                  <div class="img"><img src="assets/images/collin-daymude.jpg"></div>
+                  <h2>Collin Daymude</h2>
+                  <p>She took seven thousand Gmail contacts and sorted them into folders. It was amazing! Everyday she checks my inbox, filters things, 
+                    she sorts them, she gets rid of the junk, she took my PDF copies of all my expenses for the last year's bank statement, and 
+                    categorized all of them. Amazing! She saves me so much time which is unbelievable. I have to ask her, she comes to me when she’s 
+                    done with the project, she says Collin what else do you have for me? I mean when else do you ever get that kind of treatment from 
+                    somebody? I had to go back to Daven with a long list of stuff to figure out. Oh! she can do this, she can do that and then I give her another project plus the ongoing 
+                    stuff she has. So you gotta get 123Employee, check it out, call Daven, it will be the best thing you’ve ever done.</p>
+              </div>
+              
+              <div>
+                  <div class="img"><img src="assets/images/anushka-drescher.jpg"></div>
+                  <h2>Tim McCoy</h2>
+                  <p> She has helped build a database of customers. Right now I’m here at Super Teaching at CEO Space, I take my electronic notes everyday, 
+                    I highlight the parts that are action items, I email her my notes everyday and she creates another visual mind map of all the actions 
+                    I need to take. When I get home I know exactly what I need to do. Maria has been amazing, she’s always ready to please, she’s always friendly, 
+                    she’s always helpful. I am just so grateful that I came across her and she’s going to save me a lot of time and money.</p>
+              </div>
+              
+              <div>
+                  <div class="img"><img src="assets/images/roy-meyer.jpg"></div>
+                  <h2>Roy Meyers</h2>
+                  <p>I’ve been working with 123 for a couple of years now, and I can tell you they have made all the difference in the success of my business and 
+                    the reason my business has grown and continuesto generate more and more income. Now one of the things that’s been great is it’s freed me up 
+                    from having to do all the tasks that I simply just don’t have time to do. It allowed me just to focus on the IGAs or income generating activities 
+                    in my business.</p>
+              </div>
+              
+              <div>
+                  <div class="img"><img src="assets/images/casey-eberhart.jpg"></div>
+                  <h2>Casey Eberhart</h2>
+                  <p>I got to tell you, before we got involved in 123Employee and outsourcing some of our scheduling and inbound and outbound calls and our social media, 
+                    we had an office that was completely disorganized and messy. Just to give you a quick example, 6 months ago my Twitter account had a couple of thousand 
+                    followers, now as of today I’m in about 20,000. You can check that out, very easy for you to go check out, you can follow me on Twitter and figure that 
+                    out all on your own and I got to tell you the outsourced employees over there are friendly, they’re fantastic, they get done what they say they’re going 
+                    to do in less time that I could ever find somebody here to do it. I highly, highly recommend using 123Employee to take care of all of your tasks.</p>
+              </div>
+          </div>
+          
+      </div>
+      <div class="testim-button">
+          <a href="testimonial.html"><button class="btn box-btn">Read More</button></a>
+        </div>
+    </section>
+
+    <!-- footer bar -->
+    <div class="footer-bar">
+      Copyright © 2024 Sixeleven Global Services - Workforce. All rights
+      reserved. | <a href="contact-us.html">Contact Us</a> | <a href="#">Privacy</a> |
+      <a href="#">Terms</a> | <a href="#">Sitemap</a>
+      <p class="number">Have Questions? <span>Call: 1-(844) 483-4176</span></p>
+    </div>
+
+  </body>
+
+  <script src="assets/js/script.js"></script>
+  <script>
+    $(window).scroll(function(){
+      if($(window).scrollTop()){
+        $("nav").addClass("black");
+      }
+      else{
+        $("nav").removeClass("black");
+      }
+    });
+  </script>
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '80px',
+      duration: 2500,
+      delay: 400
+    });
+
+    ScrollReveal().reveal('', { delay: 300, origin: 'top'});
+    ScrollReveal().reveal('', { delay: 500, origin: 'left'});
+    ScrollReveal().reveal('.box-card, .explore-card', { delay: 200, origin: 'bottom', interval: 300});
+    ScrollReveal().reveal('', { delay: 400, origin: 'top'});
+    ScrollReveal().reveal('', { delay: 800, origin: 'bottom', interval: 1000});
+    ScrollReveal().reveal('', { delay: 500, origin: 'bottom'});
+    ScrollReveal().reveal('', { delay: 3000, origin: 'left'});
+  </script>
+</html>

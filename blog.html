@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>123 Employee | Home</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="icon"
+      href="assets/images/123Enterprise.png"
+      type="image/x-icon"
+    />
+
+    <!-- font/icon links -->
+
+    <!-- style links -->
+
+    <!-- script links -->
+    <script
+      src="https://kit.fontawesome.com/76c9115e26.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="#"><img src="assets/images/123Enterprise.png" alt="" /></a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact-us.html">Contact</a></li>
+          <li><a href="testimonial.html">Testimonials</a></li>
+
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="order-articles.html">Order Articles</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+        body.classList.add("disabledScroll");
+      };
+      cancelBtn.onclick = () => {
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        body.classList.remove("disabledScroll");
+      };
+
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+    <!-- social side navigation -->
+    <side>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/123Employee" target="_blank"
+            ><span>facebook</span
+            ><span><i class="fa-brands fa-facebook"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/davenmichaels" target="_blank"
+            ><span>twitter</span
+            ><span><i class="fa-brands fa-x-twitter"></i></span
+          ></a>
+        </li>
+        <li class="telephone">
+          <a href="contact-us.html"
+            ><span id="number">1-(844) 483-4176</span
+            ><span><i class="fa-solid fa-phone fa-shake"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/davenmichaels" target="_blank"
+            ><span>LinkedIn</span
+            ><span><i class="fa-brands fa-linkedin"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/Outsourcing4Business" target="_blank"
+            ><span>youtube</span
+            ><span><i class="fa-brands fa-youtube"></i></span
+          ></a>
+        </li>
+      </ul>
+    </side>
+
+    <header class="section-container blog-header">
+      <div class="header-content">
+        <span class="bg-blur"></span>
+        <span class="bg-blur header-blur"></span>
+        <h2>
+          <i
+            >"When you have hundreds of employees, we have a commitment to
+            empower our staff and give back to the community..."</i
+          >
+        </h2>
+      </div>
+      <div class="header-image">
+        <img src="assets/images/enterprise-index-pic.png" alt="header" />
+      </div>
+    </header>
+    <!--partners section-->
+    <section class="partners">
+      <div class="partner-logos slider">
+        <div class="slide"><img src="assets/images/abc-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/forbes-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/nbc-logo.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/fox-news-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/news-week-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/USA Today logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/cbs-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/yahoo-logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/wsj-logo.png" alt="" /></div>
+      </div>
+    </section>
+    <script>
+      $(document).ready(function () {
+        $(".partner-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              setting: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              setting: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <!--partners section ends here-->
+
+    <!-- blog grid -->
+    <section class="blog">
+      <div class="container">
+        <div class="blog-modal">
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal1">
+                <img
+                  src="assets/images/What-Is-The-Difference-Between-Outsourcing-.png"
+                  alt=""
+                />
+                <h3>
+                  What Is The Difference Between Outsourcing And Off-Shoring
+                </h3>
+                <p>
+                  Outsourcing is not about getting a cheap workforce to do as
+                  much work as possible at a cheap rate in a developing
+                  economy...
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal1">
+              <div class="header">
+                <div class="title">
+                  What Is The Difference Between Outsourcing And Off-Shoring
+                </div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <img
+                    src="assets/images/What-Is-The-Difference-Between-Outsourcing-.png"
+                    alt=""
+                  />
+                </div>
+                <hr />
+                <p>
+                  Many people confuse off-shoring with outsourcing. Outsourcing
+                  is not about getting a cheap workforce to do as much work as
+                  possible at a cheap rate in a developing economy. You can
+                  outsource your social media management to Chicago if you want.
+                  The point is to get work off your desk or to get specialist
+                  skills that you don’t have yourself or within the team.
+                  Off-shoring, on the other hand, is purely about lowering costs
+                  by transferring some business processes abroad to increase
+                  corporate profitability.
+                  <br /><br />
+                  Traditionally, only big companies are associated with
+                  off-shoring, but with the age of the internet, this is also
+                  accessible to smaller businesses.
+                  <br /><br />
+                  For small businesses, the two certainly overlap, but it’s
+                  important to distinguish the difference to better identify
+                  your motives for outsourcing and therefore apply the best
+                  strategies. Now, it’s when you may want to look a little
+                  deeper to understand the difference between offshoring and
+                  outsourcing and hopefully it may help you to understand
+                  better. Although the two may sound the same and have some
+                  similar properties, there are some distinct differences
+                  between offshoring and outsourcing.
+                  <br /><br />
+                  Offshoring usually offers a cost-saving advantage by getting
+                  work done in different countries. While outsourcing refers to
+                  the process of having work contracted out to a third-party
+                  company.
+                  <br /><br />
+                  It is completely possible to outsource work without having to
+                  offshore it. The benefits of outsourcing are aplenty – you can
+                  take advantage of specialized skills from a different company,
+                  receive cost efficiency bonuses as well as improved labour
+                  flexibility. Basically, outsourcing helps to complete multiple
+                  jobs at a faster rate, reducing costs, while running it more
+                  effectively in terms of profitable operations within your
+                  organization.
+                  <br /><br />
+                  Next, let’s talk a little bit more on the benefits of
+                  offshoring which include taking advantage of lower prices from
+                  skilled labour in a different country. In most cases, the
+                  offering of offshore options can also provide you with better
+                  availability of labour and materials as well as a much larger
+                  talent pool for getting things done.
+                  <br /><br />
+                  Similarly, for offshoring, it allows your core staff to focus
+                  on more important tasks and to spend less time on tasks that
+                  don’t require immediate attention. Hence, this helps your
+                  staff to be more time focused on the bigger picture that will
+                  require more time to work on especially when it comes to
+                  making strategic decisions that will help your business to
+                  grow and develop.
+                  <br /><br />
+                  You must be wondering how outsourcing first came about? It all
+                  started as early as 1980 and throughout the modern business
+                  world, this is something that happens quite often. Companies
+                  continue to grow and in order to have the skills that are
+                  necessary to continue building a company, specialized skills
+                  need to be sourced quickly and effectively in order to scale.
+                  <br /><br />
+                  With both outsourcing and offshoring solutions working
+                  together, it’s possible to achieve high-quality value and
+                  expansion for your company. It is important however to
+                  remember to differentiate between the two in their full
+                  definition.
+                  <br /><br />
+                  While you can outsource and offshore at the same time,
+                  offshoring doesn’t always mean outsourcing. Offshoring could
+                  be an extension of your local team but in a different country,
+                  a new labour supply or other aspects of production that can
+                  improve the overall performance of your company. Keep the main
+                  differences between these two in mind if you’re interested in
+                  making improvements in your company through a proposal to
+                  outsource or offshore.
+                  <br /><br />
+                  Daven Michaels is a New York Times Best Selling Author and CEO
+                  of premiere global outsourcing company, 123Employee. The
+                  company employs hundreds of young bright individuals on three
+                  continents. His International event, Beyond Marketing Live!
+                  inspires entrepreneurs to build & grow their business with
+                  revolutionary new theories and systems allowing them to design
+                  the business and personal lifestyle of their dreams.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal2">
+                <img
+                  src="assets/images/Here’s-What-You-Can-Outsource.jpg"
+                  alt=""
+                />
+                <h3>
+                  If You’re Ready To Outsource: Here’s What You Can Outsource
+                </h3>
+                <p>
+                  Some businesses can handle normal daily activities but need
+                  outside help to take on new projects that don’t justify
+                  another employee...
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal2">
+              <div class="header">
+                <div class="title">
+                  If You’re Ready To Outsource: Here’s What You Can Outsource
+                </div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <img
+                    src="assets/images/Here’s-What-You-Can-Outsource.jpg"
+                    alt=""
+                  />
+                </div>
+                <hr />
+                <p>
+                  Some businesses can handle normal daily activities but need
+                  outside help to take on new projects that don’t justify
+                  another employee. Other businesses are just struggling to
+                  manage day-to-day business. Still others are seeking ways to
+                  get more done or cut expenses in this challenging economy.
+                  <br /><br />
+                  There are many valid reasons to consider outsourcing, but here
+                  are some of the most compelling.
+                  <br /><br />
+                  Focus on core business activities. For many businesses, the
+                  primary motivation to outsource is that it frees owners,
+                  managers and employees to spend their time on income
+                  generating activities. Improve opportunities for growth.
+                  Frequently opportunities for company growth and a desire to
+                  expand business operations exist, but resources to make it
+                  happen are lacking. Increase efficiency and effectiveness. In
+                  many cases, outsourcing allows access to expert talent.
+                  Outsource service firms can offer innovative approaches, the
+                  latest technology, and creative, cutting-edge solutions that
+                  otherwise aren’t available. Improve your bottom line by
+                  decreasing your expenses. A skilled contractor or firm can
+                  generally perform work less expensively than a full-time
+                  employee can, and the costs of hiring, training, and
+                  maintaining employees are eliminated, as are taxes and
+                  benefits. Here’s what you can, and should, be outsourcing.
+                  <br /><br />
+                  1. Administrative tasks
+                  <br /><br />
+                  Scheduling, travel arrangements, data entry, typing and other
+                  administrative tasks can usually be handled by a virtual
+                  assistant or administrative service. While these tasks are
+                  crucial to the proper functioning of any business, they are
+                  not usually core business activities.
+                  <br /><br />
+                  Where to find help: Assistant Match, Assist, match businesses
+                  with screened administrative service providers and offer
+                  directories of professionally trained virtual assistants.
+                  <br /><br />
+                  2. Lead generation and customer service
+                  <br /><br />
+                  Sales calls are often a matter of numbers; more calls equal
+                  more sales and leads. Once the initial outreach has been made,
+                  closing the sale can be handled by the internal sales force. A
+                  talented salesperson’s skills can be better utilized to close
+                  sales and handle clients, rather than make cold calls. It can
+                  also be a great deal more efficient to outsource customer
+                  support than it is to maintain a qualified support staff,
+                  especially for product-based companies.
+                  <br /><br />
+                  3. Accounting and financial duties
+                  <br /><br />
+                  Accounting firms or individuals can help with many financial
+                  services including bookkeeping, invoicing and accounts payable
+                  and receivable, as well as financial reporting, analysis and
+                  planning. Outsourcing payroll processing alone can save
+                  considerable hours, headaches and dollars. Many financial
+                  contractors will bundle these tasks for even greater savings.
+                  <br /><br />
+                  4. Marketing
+                  <br /><br />
+                  Effective marketing determines how both brand and company
+                  reputation are perceived in the marketplace. A marketing firm
+                  or consultant can often provide an outside perspective that an
+                  internal marketing staff cannot. Professional freelance
+                  writers can develop higher-quality, polished content that will
+                  improve marketing efforts. Website design, brand development,
+                  press releases and online marketing duties such as social
+                  media, blogging and search engine optimization are good
+                  candidates for outsourcing as well.
+                  <br /><br />
+                  5. IT operations
+                  <br /><br />
+                  It can be extremely expensive to handle IT operations
+                  in-house. The average business has limited ability and
+                  knowledge to manage all of its IT needs. Unless you’re an IT
+                  company, IT is a maintenance and repair function, not a core
+                  business activity. The potential advantages of outsourcing IT
+                  tasks are enormous.
+                  <br /><br />
+                  6. Human resources
+                  <br /><br />
+                  Employee acquisition and human resource functions can easily
+                  be administered by an outside agency. Outside firms are more
+                  skilled at advertising, screening suitable applicants and
+                  checking references. Using an HR or employment service to
+                  manage employee benefits can also be wise, since they must
+                  stay up to date on the latest employment laws and standards.
+                  <br /><br />
+                  Often, the best way to locate high-quality outsourcing
+                  prospects is through recommendations from your professional
+                  network. A referral from someone you know and trust is a much
+                  more reliable gauge of quality and is usually based on the
+                  level of skill and not simply the cheapest cost. Professional
+                  groups or associations and LinkedIn can also be great sources.
+                  <br /><br />
+                  Daven Michaels is a New York Times Best Selling Author and CEO
+                  of premiere global outsourcing company, 123Employee. The
+                  company employs hundreds of young bright individuals on three
+                  continents. His International event, Beyond Marketing Live!
+                  inspires entrepreneurs to build & grow their business with
+                  revolutionary new theories and systems allowing them to design
+                  the business and personal lifestyle of their dreams.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal3">
+                <img src="assets/images/BUSINESS-OUTSOURCING-TIPS.png" alt="" />
+                <h3>BUSINESS OUTSOURCING TIPS</h3>
+                <p>
+                  The global economic environment is caught up with an
+                  interesting trend known as outsourcing. Business outsourcing
+                  covers different areas of a company...
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal3">
+              <div class="header">
+                <div class="title">BUSINESS OUTSOURCING TIPS</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <img
+                    src="assets/images/BUSINESS-OUTSOURCING-TIPS.png"
+                    alt=""
+                  />
+                </div>
+                <hr />
+                <p>
+                  The global economic environment is caught up with an
+                  interesting trend known as outsourcing. Business outsourcing
+                  covers different areas of a company or organization’s business
+                  activities and operations. Outsourcing has completely changed
+                  the mode of operating business in this present dispensation.
+                  <br /><br />
+                  Basically, there is in-country outsourcing and offshore
+                  outsourcing. When a company outsources part of its business
+                  activities to an outsourcing contractor in the same country
+                  where the business is residing, this is called in-country
+                  outsourcing. But, when the outsourcing contractor resides in
+                  another part of the world other than the country where the
+                  outsourced company resides, this is known as offshore
+                  outsourcing. Business IT is one of the most outsourced
+                  operations or functions, both in-country and offshore.
+                  <br /><br />
+                  Why Should You Outsource Your Business Operations
+                  <br /><br />
+                  1. It can be cost-effective
+                  <br /><br />
+                  Business outsourcing can be cost-effective sometimes compared
+                  to carrying out the functions in-house. The overall cost of
+                  certain areas of business operations such as IT Management can
+                  be greatly reduced by embarking on outsourcing. Generally,
+                  areas covered under cost-savings include re-pricing, scope
+                  reduction, cost-restructuring, re-negotiation as well as
+                  quality levels definitions.
+                  <br /><br />
+                  2. Access to Talent
+                  <br /><br />
+                  An organization or company gains access to a larger talent
+                  pool when it chooses business outsourcing. Such company would
+                  also become a beneficiary of sustainable source of skills,
+                  particularly in IT, engineering as well as science. This is a
+                  big plus to a company that has limited or less knowledge and
+                  skill set in these specified areas. So, a company needs not to
+                  lag in certain areas just because it does not have the
+                  required manpower skills or adequate facilities in such area.
+                  Outsourcing has made everything possible for a business or
+                  organization.
+                  <br /><br />
+                  3. Liability Shift
+                  <br /><br />
+                  As a company outsources specific business processes or
+                  functions that are not within its core expertise, it
+                  indirectly shifts or transfers part of the company’s liability
+                  to the outsourcing contractor. Thus, the outsourcing company
+                  bears part or whole responsibility of any undesirable out
+                  come. Well, it all depends on the terms of the contract that
+                  is binding on both parties. Now, when embarking on business
+                  outsourcing, ensure that sufficient research is carried out on
+                  the outsourcing contractor. Some of the things you should
+                  research about the company include;
+                  <br /><br />
+                  Proof of required skill possession in the intended business
+                  operation or function. An outsourcing company that is
+                  specialized in IT outsourcing may not perform satisfactorily
+                  in HR outsourcing, except it has multi-skilled staff. It is
+                  really more efficient to contract a company that has proven
+                  skills in the business area you need outsourced.
+                  <br /><br />
+                  Check the portfolio: the portfolio should contain
+                  certifications in specific outsourcing areas as well as
+                  general outsourcing certifications. It should also contain
+                  proof of membership to relevant outsourcing body, either
+                  locally or internationally. Also, references of past projects
+                  and their contacts should be part of the portfolio of a
+                  competent business outsourcing vendor.
+                  <br /><br />
+                  Business outsourcing will help your business in several areas,
+                  including gaining a competitive edge in the present harsh
+                  business environment.
+                  <br /><br />
+                  Daven Michaels is a New York Times Best Selling Author and CEO
+                  of premiere global outsourcing company, 123Employee. The
+                  company employs hundreds of young bright individuals on three
+                  continents. His International event, Beyond Marketing Live!
+                  inspires entrepreneurs to build & grow their business with
+                  revolutionary new theories and systems allowing them to design
+                  the business and personal lifestyle of their dreams.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal4">
+                <img
+                  src="assets/images/What-Outsourcing-Means-For-Your-Business.jpg"
+                  alt=""
+                />
+                <h3>What Outsourcing Means For Your Business</h3>
+                <p>
+                  Companies can outsource any position whatsoever. Still, today,
+                  we see companies using it for non-fundamental roles, ...
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal4">
+              <div class="header">
+                <div class="title">
+                  What Outsourcing Means For Your Business
+                </div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <img
+                    src="assets/images/What-Outsourcing-Means-For-Your-Business.jpg"
+                    alt=""
+                  />
+                </div>
+                <hr />
+                <p>
+                  Companies can outsource any position whatsoever. Still, today,
+                  we see companies using it for non-fundamental roles, those
+                  whose function is to provide support to the central
+                  infrastructure of the company or aid in the day-to-day
+                  operations of the company.
+                  <br /><br />
+                  Due to some misunderstandings all around, outsourcing can
+                  sometimes be a rather polarizing term. Employees tend to see
+                  it as a threat to their job while employers think that the
+                  whole process of outsourcing can be more trouble than it’s
+                  worth. Under the wrong circumstances, both of these things can
+                  definitely be true. If however, the outsourcing process is
+                  handled properly, there’s no reason for the process to be a
+                  problematic one.
+                  <br /><br />
+                  First of all, in addressing the employee issue, there’s no
+                  reason for your business to incur the expense of buying all of
+                  the necessary equipment and hiring the personnel to run a
+                  proper IT department in the first place if IT is not what your
+                  business does. These are expenses that your business has no
+                  need to carry the burden of to begin with, so jobs that should
+                  exist should not be jobs that are in danger. Minimizing the
+                  costs of operation for your business in an area such as this
+                  allows your business to make more money and, if necessary,
+                  allows your business the freedom to create other, more
+                  essential, positions since funds that would have been eaten up
+                  by another department have been freed up.
+                  <br /><br />
+                  Concerning the difficulty of the outsourcing process, there’s
+                  no reason that transition should be a very difficult one.
+                  There are entire companies out there that base their operation
+                  on providing outsourced services. The outsourcing process can
+                  be as simple as identifying one of these companies that best
+                  meets your needs, making sure that the company is reliable and
+                  trustworthy, and letting the deal go forward naturally from
+                  there. These companies already have the overhead and other
+                  necessary equipment to house and provide the relevant services
+                  and they have already hired the appropriate personnel to staff
+                  these operations. There is no need for you or your business to
+                  incur the time consuming, expensive process of building and
+                  acquiring all of the necessary physical property and to go
+                  through the tedious work of hiring the appropriate workers to
+                  staff the operation.
+                  <br /><br />
+                  It can be as simple as doing an internet search, investigating
+                  the returned results to make sure that they are valid, and
+                  placing an order; that is all it takes to outsource certain
+                  aspects of your business. This saves you costs on expenses and
+                  it saves you time, thus keeping you from misspending some very
+                  valuable resources that could be working harder for you in
+                  other areas of your business.
+                  <br /><br />
+                  This article will tell you what is outsourcing and how it
+                  helps your business, also business areas you can outsource,
+                  types of outsourcing, and a few more tips before you take a
+                  plunge into the industry.
+                  <br /><br />
+                  Daven Michaels is a New York Times Best Selling Author and CEO
+                  of premiere global outsourcing company, 123Employee. The
+                  company employs hundreds of young bright individuals on three
+                  continents. His International event, Beyond Marketing Live!
+                  inspires entrepreneurs to build & grow their business with
+                  revolutionary new theories and systems allowing them to design
+                  the business and personal lifestyle of their dreams.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal5">
+                <img
+                  src="assets/images/Digital-marketing-in-2021-and-beyond.png"
+                  alt=""
+                />
+                <h3>Digital Marketing In 2021 And beyond</h3>
+                <p>
+                  The digital marketing landscape may always be in a state of
+                  constant flux with technology changing all the time,...
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal5">
+              <div class="header">
+                <div class="title">Digital Marketing In 2021 And beyond</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <img
+                    src="assets/images/Digital-marketing-in-2021-and-beyond.png"
+                    alt=""
+                  />
+                </div>
+                <hr />
+                <p>
+                  The digital marketing landscape may always be in a state of
+                  constant flux with technology changing all the time, but the
+                  one thing that never changes is the need for leads to fill
+                  company’s sales funnels. And a lot of these leads come from
+                  digital marketing efforts.
+                  <br /><br />
+                  Many companies find themselves trying to do it all, but when
+                  it comes to filling the sales pipeline it might be most
+                  beneficial to place the process of collecting leads through
+                  digital efforts in the hands of the most capable. If that’s
+                  in-house, great! However, the complex world of digital
+                  marketing is often more cost effective to partner with a
+                  third-party expert.
+                  <br /><br />
+                  Focus on what your business does best.
+                  <br /><br />
+                  When launching a business, it’s critical to do what you are
+                  good at; sticking with your core competency is an absolute
+                  must. So, before deciding whether to partner with the experts
+                  you need to understand your company and its capabilities.
+                  <br /><br />
+                  If you’re fantastic at creating a product, but not so good at
+                  taking it to market, then that should be your main focus and
+                  you should let the experts handle creating the demand to drive
+                  sales.
+                  <br /><br />
+                  A lot of companies have limited resources in the way of
+                  marketing, with interns or a very small team responsible for
+                  driving all channels including email, paid search, search
+                  engine optimization (SEO), content creation, social media
+                  presence, etc. While most of these channels are relatively
+                  easy to setup, not everyone understand how to drive results or
+                  there are simply too many to manage efficiently and
+                  effectively for a small team.
+                  <br /><br />
+                  Marketing is not cheap and is often one of the first budgets
+                  to get cut when costs need to decrease. The general rule of
+                  thumb suggests between 6-20 percent of total revenue for most
+                  businesses’ marketing budget. This includes all paid
+                  advertisements, all of the necessary tools, and the salaries
+                  of the staff members if you choose to keep your efforts
+                  in-house.
+                  <br /><br />
+                  Inbound marketing is all about creating new leads for your
+                  business. If you opt for in-house, full-time digital marketing
+                  staff, it’s going to entail a significant investment of both
+                  time and money.
+                  <br /><br />
+                  Financial concerns aside, the digital marketing industry is
+                  changing all the time. Frankly, the task of planning and
+                  carrying out your marketing efforts may be so time-consuming
+                  that it makes it near-impossible to stay up to date with every
+                  new strategy and trend that comes along.
+                  <br /><br />
+                  Third-party partners dedicate their entire business to making
+                  sure they are aware of the latest trends in digital marketing,
+                  so the burden of doing so does not fall to their client. They
+                  are often flexible and have the ability to pivot based on new
+                  technology or the latest best practice.
+                  <br /><br />
+                  Perhaps you’re not ready to relinquish complete control of
+                  your digital marketing efforts. There is always the option of
+                  taking a blended approach and only partnering with the experts
+                  for tasks you feel the least comfortable managing like SEO
+                  which can be rather complex.
+                  <br /><br />
+                  They will be able to help you in the planning stage to help
+                  you best utilize your budget to help you avoid gaps and keep
+                  new leads coming into your sales funnel.
+                  <br /><br />
+                  Daven Michaels is a New York Times Best Selling Author and CEO
+                  of premiere global outsourcing company, 123Employee. The
+                  company employs hundreds of young bright individuals on three
+                  continents. His International event, Beyond Marketing Live!
+                  inspires entrepreneurs to build & grow their business with
+                  revolutionary new theories and systems allowing them to design
+                  the business and personal lifestyle of their dreams.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal6">
+                <img
+                  src="assets/images/5-Time-Consuming-Jobs-that-Need-Outsourcing-by-Small-Business-Owners.jpg"
+                  alt=""
+                />
+                <h3>
+                  5 Time-Consuming Jobs That Need Outsourcing By Small Business
+                  Owners
+                </h3>
+                <p>
+                  Frankly speaking, operating cost can overtake small businesses
+                  very fast...
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal6">
+              <div class="header">
+                <div class="title">
+                  5 Time-Consuming Jobs That Need Outsourcing By Small Business
+                  Owners
+                </div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <img
+                    src="assets/images/5-Time-Consuming-Jobs-that-Need-Outsourcing-by-Small-Business-Owners.jpg"
+                    alt=""
+                  />
+                </div>
+                <hr />
+                <p>
+                  Frankly speaking, operating cost can overtake small businesses
+                  very fast. However, quite a lot of entrepreneurs and business
+                  owners hamper their revenue development by doing all in order
+                  to save a few amounts in the process. Tactical outsourcing
+                  solves this predicament. A lot of entrepreneurs and business
+                  owners rebuff outsourcing due to the additional cost.
+                  <br /><br />
+                  Nevertheless, they didn’t border to work out the value of
+                  chances lost as a result of their investing too much time in
+                  energy-consuming jobs that can best be left to others. In a
+                  nutshell, they save cost without making money.
+                  <br /><br />
+                  Consequently, discussed here are five major outsourcing
+                  opportunities for small entrepreneurs and small business
+                  owners in the spirit of creating extra time to develop their
+                  various businesses.
+                  <br /><br />
+                  1. Editing
+                  <br /><br />
+                  Look for somebody who is a professional in editing and word
+                  crafting if your business needs a lot of written materials.
+                  Outsource your content creation and editing aspect of your
+                  business to a third party to guarantee accuracy.
+                  <br /><br />
+                  2. Accounting
+                  <br /><br />
+                  Apart from the fact that accounting is energy-sapping and
+                  time-consuming, it is more of a specialty trade. Outsourcing
+                  accounting and bookkeeping aspects of your business to
+                  certified accountants is quite beneficial as they are familiar
+                  with the ethics and rules that can keep you away from trouble.
+                  <br /><br />
+                  Hence, look for a good bookkeeper to carry out the day-to-day
+                  keeping of your accounting records. In addition, you need a
+                  great payroll company to be in charge of paychecks,
+                  withholding taxes and CPA for tax accounting.
+                  <br /><br />
+                  3. Banking
+                  <br /><br />
+                  In the present day, a good number of banks have small business
+                  experts who are capable of helping you with grants, loans,
+                  lines of credit, cash flow, and lots more. if you are looking
+                  for money to operate your business, your outsourcing banker
+                  can come to your aid.
+                  <br /><br />
+                  4. Social media
+                  <br /><br />
+                  Take it or leave it, reaching out on social media platforms
+                  can be time consuming. However, there are some third parties
+                  out there that are ready to take up this aspect of your
+                  business. They will respond to posts, post your messages,
+                  articles, and look for connected people to link to, and many
+                  more. Outsource this critical aspect of your business.
+                  <br /><br />
+                  5. Artwork
+                  <br /><br />
+                  This comprises of letterhead, logos, and website art among
+                  others. Few business owners can carry out this assignment
+                  well. Therefore, look for extraordinarily gifted designers who
+                  can take care of all of your artwork needs for at an
+                  affordable rate.
+                  <br /><br />
+                  By and large, do your best and consider outsourcing the rest
+                  to professionals on the field.
+                  <br /><br />
+                  Daven Michaels is a New York Times Best Selling Author and CEO
+                  of premiere global outsourcing company, 123Employee. The
+                  company employs hundreds of young bright individuals on three
+                  continents. His International event, Beyond Marketing Live!
+                  inspires entrepreneurs to build & grow their business with
+                  revolutionary new theories and systems allowing them to design
+                  the business and personal lifestyle of their dreams.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal7">
+                <img
+                  src="assets/images/OUTSOURCING-IN-THE-WORLD-OF-PROCUREMENT.jpg"
+                  alt=""
+                />
+                <h3>OUTSOURCING – IN THE WORLD OF PROCUREMENT</h3>
+                <p>
+                  In the world of Outsourcing, the various classes of projects
+                  that can be outsourced are numerous...
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal7">
+              <div class="header">
+                <div class="title">
+                  OUTSOURCING – IN THE WORLD OF PROCUREMENT
+                </div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <img
+                    src="assets/images/OUTSOURCING-IN-THE-WORLD-OF-PROCUREMENT.jpg"
+                    alt=""
+                  />
+                </div>
+                <hr />
+                <p>
+                  In the world of Outsourcing, the various classes of projects
+                  that can be outsourced are numerous. The company holds the
+                  discretion as to the projects to outsource, and the projects
+                  to keep in-house. Companies outsource Procurement as a
+                  service, to third party in a bid to take that load off them,
+                  and save cost.
+                  <br /><br />
+                  Projects like Procurement could be a sensitive aspect in most
+                  organizations. The concerns of handling procurement, whether
+                  in-house or outsourced, usually border around cutting costs/
+                  unnecessary expenditure on the company’s needs, as they are
+                  more about finding out ways of investing on things that will
+                  yield direct income to the organization.
+                  <br /><br />
+                  It is important that you are able to ascertain whether or not
+                  you are hitting your organization’s targets with you
+                  Procurement Outsourcing partnership. We notice that many
+                  companies do not have this testimony, and more often than not,
+                  run at a loss or are just not achieving their expectations or
+                  goals by outsourcing their procurement.
+                  <br /><br />
+                  Don’t only think “save money”; also think – can I reinvest the
+                  monies saved as a result of outsourcing my procurement needs?
+                  <br /><br />
+                  In the apprehensions of the risks of engaging procurement
+                  firms to handle your procurement needs, keep in mind that no
+                  business is without risks. Sudden unforeseen matters can creep
+                  up on the smoothest sails, and sometimes, the Innovations of
+                  the crew are just what they need to stay afloat. Outsourcing
+                  firms are usually that crew that work through unforeseen
+                  challenges with their expertise and methods “outside the
+                  book”, to make sure they deliver to in record time, and
+                  meeting the expectations of their clients.
+                  <br /><br />
+                  Because procurements outsourcing entail some multi-reliance
+                  and optioning, there can be a whole lot of damage control when
+                  it comes to the relationships between the distributors or
+                  sellers and the clients who happen to be the procurement
+                  outsourcing firms, and if not – the company directly in need
+                  of the items. In such cases of dealing directly with
+                  suppliers, companies are faced with monotonous delivery, or
+                  sometimes disappointments that could lead to a major strain in
+                  the seller and buyer relationship. Time taken in searching for
+                  new (equally or more reliable) options may cause a stalling,
+                  and in some cases, a major setback in company operations. That
+                  is where the role of a procurement outsourcing firm comes in
+                  handy, where the setbacks one or two suppliers would have
+                  caused a company, are prevented.
+                  <br /><br />
+                  The fears of diversion of clients’ patronage should not be a
+                  challenge where this is properly managed by the organization.
+                  <br /><br />
+                  Outsourcing firms are usually your “invisible partners” that
+                  work underground in making the whole wheel turn.
+                  <br /><br />
+                  Daven Michaels is a New York Times Best Selling Author and CEO
+                  of premiere global outsourcing company, 123Employee. The
+                  company employs hundreds of young bright individuals on three
+                  continents. His International event, Beyond Marketing Live!
+                  inspires entrepreneurs to build & grow their business with
+                  revolutionary new theories and systems allowing them to design
+                  the business and personal lifestyle of their dreams.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal8">
+                <img src="assets/images/THE-FUTURE.jpg" alt="" />
+                <h3>Outsourcing The Future</h3>
+                <p>
+                  Evaluating the past is necessary in order to determine the
+                  future as we could find useful and salvageable models...
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal8">
+              <div class="header">
+                <div class="title">Outsourcing The Future</div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <img src="assets/images/THE-FUTURE.jpg" alt="" />
+                </div>
+                <hr />
+                <p>
+                  Evaluating the past is necessary in order to determine the
+                  future as we could find useful and salvageable models. The
+                  modern hospital is such a model for outsourcing.
+                  <br /><br />
+                  Early in the days, hospitals barely had effective medicines
+                  and operations were catastrophic. Between the 19th and the
+                  20th century, hospitals had a way better chance of improving
+                  health as medicine became “scientific”. As health alongside
+                  the hospitals in developed countries, sicknesses like
+                  tuberculosis, cholera began to receive less focus as hospitals
+                  concentrated on more challenging issues like cancer, genetic
+                  research and heart disease.
+                  <br /><br />
+                  To meet up with the new challenges, hospitals needed advanced
+                  and sophisticated equipment’s. It was no longer enough to have
+                  lots of beds and test tubes in labs. Although medical
+                  practitioners were talented, they lacked the required training
+                  to utilize and maintain these modern equipment’s. Hence,
+                  outsourcing became very important.
+                  <br /><br />
+                  Now, a network of organizations such as insurance groups,
+                  governmentorganisa?ons, education, specialty clinics as well
+                  as the recent data outsourcers(who make use of tools like IBM
+                  Watson) work together to treat patients.
+                  <br /><br />
+                  Let us analyze how the transformation of hospitals foretell
+                  the evolution of outsourcing.
+                  <br /><br />
+                  Outsourcing of the last generation: In nations like China and
+                  India, outsourcing used to be induced by lower wages.
+                  Businesses hired more people offshore than they had onshore.
+                  However, offshore companies had less equipment and were less
+                  automated. The mode of work had to change, but the goals of
+                  all parties were met. The offshore economy had to spend money
+                  purchasing equipment which raised operational cost and slowed
+                  down implementation.
+                  <br /><br />
+                  Size: While Europe and the United States already had big
+                  factories handling car and airplane production, outsourcing
+                  completely scaled when it was moved to China. Over the past 10
+                  years, China built over 500 new cites in order to accommodate
+                  workers that would be needed by new industries. This scaling
+                  of operations created a new type of outsourcing. For instance,
+                  outsourcing industries that assemble electronic parts.
+                  <br /><br />
+                  Increased reliability: In the early days of outsourcing, it
+                  was perceived as unreliable. Some projects like “Lift and
+                  Shift” failed. With the scaling of outsourcing at the
+                  beginning of the 21st century, about 50% of outsourcing was a
+                  success. Those who failed lacked necessary skills, or skipped
+                  some steps. Outsourcing has now become more successful
+                  generally, especially when creditable outsourcing sites are
+                  engaged.
+                  <br /><br />
+                  Computer support: Large industries used to run their own IT
+                  department, right now the likes of Microsoft Azure and Amazon
+                  Web Services (AWS) handle IT responsibilities of plenty
+                  enterprises. For small businesses in America, marketplaces
+                  like Amazon have literarily snapped up warehousing and
+                  distribution.
+                  <br /><br />
+                  Advancement in automation and robot invention via technology
+                  are revolutionizing manufacturing models, which is leading to
+                  more business activities being outsourced, hence the need for
+                  multi-dimensional outsourcing.
+                  <br /><br />
+                  Daven Michaels is a New York Times Best Selling Author and CEO
+                  of premiere global outsourcing company, 123Employee. The
+                  company employs hundreds of young bright individuals on three
+                  continents. His International event, Beyond Marketing Live!
+                  inspires entrepreneurs to build & grow their business with
+                  revolutionary new theories and systems allowing them to design
+                  the business and personal lifestyle of their dreams.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal9">
+                <img
+                  src="assets/images/Recruitment-Process-Outsourcing-What-You-Stand-to-Gain-.jpg"
+                  alt=""
+                />
+                <h3>
+                  Recruitment Process Outsourcing – What You Stand To Gain!
+                </h3>
+                <p>
+                  The most important benefit you stand to gain with recruitment
+                  process outsourcing is increased cost effectiveness...
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal9">
+              <div class="header">
+                <div class="title">
+                  Recruitment Process Outsourcing – What You Stand To Gain!
+                </div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <img
+                    src="assets/images/Recruitment-Process-Outsourcing-What-You-Stand-to-Gain-.jpg"
+                    alt=""
+                  />
+                </div>
+                <hr />
+                <p>
+                  The most important benefit you stand to gain with recruitment
+                  process outsourcing is increased cost effectiveness. In
+                  addition, you are freeing up time to search for the right
+                  workforce and re-targeting it at tasks that will directly grow
+                  and expand your business. However, make sure you only hire a
+                  skillful and experienced offshore recruitment vendor.
+                  <br /><br />
+                  Here are the highlights of the gains that come with
+                  outsourcing recruitment process;
+                  <br /><br />
+                  Benefit #1: You will Spend Far Less
+                  <br /><br />
+                  It’s a well known fact that once outsourcing solution is
+                  adopted for any aspect of business, huge cost saving would
+                  follow. This is no different when recruitment process
+                  outsourcing is involved. Besides, the outsourced vendor would
+                  deploy innovative recruitment techniques, combined with
+                  industry best practices for the task. That’s not all, the huge
+                  cost that you would have incurred to train the newly hired
+                  staff in-house is significantly cut back when recruitment
+                  process vendors take up the whole aspects of recruitment,
+                  including training.
+                  <br /><br />
+                  Benefit #2: You can be sure of Hiring Qualified Workforce
+                  <br /><br />
+                  When you take advantage of RPO (Recruitment Process
+                  Outsourcing), you have increased chances of hiring the right
+                  people for the task in question. This is especially true when
+                  the outsourcing vendor has in its team people that specialize
+                  in the business task you have need of workers. So, instead of
+                  guess work, the appropriate criteria are employed in hiring
+                  and interviewing prospects. Subsequently, the quality outcome
+                  when you engage the workforce will help boost the image of
+                  your business.
+                  <br /><br />
+                  Benefit #3: Fast-Forward Recruitment Process
+                  <br /><br />
+                  It’s faster to use an outsourcing recruitment vendor to hire a
+                  workforce. This is because the vendor is already familiar with
+                  the terrain and knows exactly what to look out for in
+                  candidates. As a result, you don’t have to experience delay in
+                  finding and hiring the right people for your team. Delay in
+                  getting the right workers can potentially affect any business
+                  negatively. It’s good to know you can completely eliminate
+                  such delay by leveraging RPO.
+                  <br /><br />
+                  Benefit #4: You can Hardly go wrong with RPO
+                  <br /><br />
+                  The bottom line is; with all the benefits of RPO highlighted
+                  above, you can hardly go wrong with your recruitment process.
+                  And, when you get it right with your choice of employees, you
+                  can be sure of faster business growth and expansion,
+                  culminating to increased profits ultimately.
+                  <br /><br />
+                  So, do not delay any longer in embracing recruitment process
+                  outsourcing.
+                  <br /><br />
+                  Daven Michaels is a New York Times Best Selling Author and CEO
+                  of premiere global outsourcing company, 123Employee. The
+                  company employs hundreds of young bright individuals on three
+                  continents. His International event, Beyond Marketing Live!
+                  inspires entrepreneurs to build & grow their business with
+                  revolutionary new theories and systems allowing them to design
+                  the business and personal lifestyle of their dreams.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-content">
+            <div class="box">
+              <button class="btn" data-target="#modal10">
+                <img
+                  src="assets/images/3-Outsourcing-Myths-and-What-You-Should-Really-Know-.jpg"
+                  alt=""
+                />
+                <h3>3 Outsourcing Myths And What You Should Really Know</h3>
+                <p>
+                  When it comes to outsourcing, different people have different
+                  opinions. And, some of such opinions are held tightly in
+                  ignorance...
+                </p>
+              </button>
+            </div>
+            <div class="modal" id="modal10">
+              <div class="header">
+                <div class="title">
+                  3 Outsourcing Myths And What You Should Really Know
+                </div>
+                <button class="btn close-modal">&times;</button>
+              </div>
+              <div class="body">
+                <div class="video">
+                  <img
+                    src="assets/images/3-Outsourcing-Myths-and-What-You-Should-Really-Know-.jpg"
+                    alt=""
+                  />
+                </div>
+                <hr />
+                <p>
+                  When it comes to outsourcing, different people have different
+                  opinions. And, some of such opinions are held tightly in
+                  ignorance. This article will focus on some outsourcing myths
+                  and the real truth about such myths. So, keep reading to learn
+                  more.
+                  <br /><br />
+                  Myth #1: Outsourcing is only for Big the Corporations
+                  <br /><br />
+                  Well, at the inception of this business solution called
+                  outsourcing, this myth was completely true. Then, only the big
+                  corporations and high class individuals could afford to
+                  implement outsourcing. It wasn’t within the reach of medium
+                  and small businesses. But, thankfully, the advent of the
+                  internet has eliminated this myth completely! It doesn’t
+                  matter the size your business, you can now use outsourcing in
+                  so many beneficial ways that include cost cutting, access to
+                  larger skill pool, and affordable expertise. The internet
+                  eliminated the big gap and provided more outsourcing vendors,
+                  both onshore and offshore. In fact, offshore outsourcing has
+                  become even more popular as it facilitates far better cost
+                  saving.
+                  <br /><br />
+                  Outsourcing cost has now become highly competitive as there
+                  are thousands of providers. The best part is that you can bid
+                  for the best rate with just a click of the button and from
+                  your comfort zone.
+                  <br /><br />
+                  Myth #2: Outsourcing is Drying up Job at Home
+                  <br /><br />
+                  Another outsourcing myth that is indeed causing a lot of
+                  hullabaloos recently is that offshore outsourcing is taking
+                  jobs away from home, rendering many citizens jobless. Well,
+                  this is not really true, depending on how you look at it. The
+                  truth is, anyone who is jobless at home has probably not
+                  distinguished himself from the pack. If you are really an
+                  authority in what you do, there’s a job waiting for you at
+                  home and you can even be the one dictating the pace in terms
+                  of remuneration.
+                  <br /><br />
+                  Besides, the companies who outsource jobs abroad also have a
+                  portion that they reserve at home. The whole truth is; you
+                  can’t stop businesses from outsourcing jobs offshore since it
+                  provides them with significant cost saving benefits.
+                  <br /><br />
+                  Myth #3: Quality is not always guaranteed
+                  <br /><br />
+                  The truth is, whether or not quality is guaranteed depends on
+                  the person hiring. Even if you decide to use in-house staff,
+                  things can still go wrong if you did not hire the right
+                  persons for the task. So, if you are not getting the desired
+                  quality from outsourcing, it’s simply because you did not
+                  employ due diligence in hiring an outsourcing vendor.
+                  <br /><br />
+                  So, you should lay these outsourcing myths to rest from
+                  henceforth!
+                  <br /><br />
+                  Daven Michaels is a New York Times Best Selling Author and CEO
+                  of premiere global outsourcing company, 123Employee. The
+                  company employs hundreds of young bright individuals on three
+                  continents. His International event, Beyond Marketing Live!
+                  inspires entrepreneurs to build & grow their business with
+                  revolutionary new theories and systems allowing them to design
+                  the business and personal lifestyle of their dreams.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="overlay"></div>
+        </div>
+        <script src="assets/js/modal.js"></script>
+      </div>
+    </section>
+
+    <!--partners section-->
+    <section class="partners">
+      <div class="partner-logos slider">
+        <div class="slide"><img src="assets/images/abc-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/forbes-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/nbc-logo.png" alt="logo" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/fox-news-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/news-week-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/images/USA Today logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/cbs-logo.png" alt="" /></div>
+        <div class="slide">
+          <img src="assets/images/yahoo-logo.png" alt="" />
+        </div>
+        <div class="slide"><img src="assets/images/wsj-logo.png" alt="" /></div>
+      </div>
+    </section>
+    <script>
+      $(document).ready(function () {
+        $(".partner-logos").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1500,
+          arrows: false,
+          dots: false,
+          pauseOnHover: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              setting: {
+                slidesToShow: 4,
+              },
+            },
+            {
+              breakpoint: 520,
+              setting: {
+                slidesToShow: 3,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <!-- footer -->
+
+    <div class="footer-bar">
+      Copyright © 2024 Sixeleven Global Services - Workforce. All rights
+      reserved. | <a href="contact-us.html">Contact Us</a> |
+      <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Sitemap</a>
+      <p class="number">Have Questions? <span>Call: 1-(844) 483-4176</span></p>
+    </div>
+  </body>
+</html>
