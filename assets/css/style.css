@@ -807,24 +807,20 @@ ul li:nth-child(5) a span:nth-child(2) {
 }
 
 /* services css */
-.services-image {
-  margin-top: 4rem;
-  position: relative;
+.services-container {
+  margin-bottom: 100px;
 }
 
-.services-image img {
-  border-radius: 10px;
+.services-video video {
+  border-radius: 20px;
 }
-
 .services-grid {
   position: relative;
-  bottom: 2rem;
   width: calc(100% - 4rem);
   padding: 1rem;
-  margin: 0 2rem;
+  margin: -150px 2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   background-color: var(--primary-color-light);
   border-radius: 10px;
 }
