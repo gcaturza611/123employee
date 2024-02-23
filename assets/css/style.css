@@ -1217,7 +1217,7 @@ ul li:nth-child(5) a span:nth-child(2) {
 }
 .testimonials-modal .modal {
   height: 700px;
-  width: 50%;
+  width: 80%;
   position: fixed;
   top: -50%;
   left: 50%;
@@ -1483,7 +1483,7 @@ ul li:nth-child(5) a span:nth-child(2) {
 }
 .blog-modal .modal {
   height: 700px;
-  width: 100%;
+  width: 80%;
   position: fixed;
   top: -50%;
   left: 50%;
