@@ -168,34 +168,6 @@
         </div>
       </div>
     </section>
-    <script>
-      ScrollReveal({
-        reset: true,
-        distance: "80px",
-        duration: 2500,
-        delay: 400,
-      });
-
-      ScrollReveal().reveal("", { delay: 300, origin: "top" });
-      ScrollReveal().reveal(".about-image", { delay: 500, origin: "left" });
-      ScrollReveal().reveal(".about-content", { delay: 800, origin: "right" });
-      ScrollReveal().reveal("", {
-        delay: 200,
-        origin: "bottom",
-        interval: 300,
-      });
-      ScrollReveal().reveal("", { delay: 400, origin: "top" });
-      ScrollReveal().reveal("", {
-        delay: 800,
-        origin: "bottom",
-        interval: 1000,
-      });
-      ScrollReveal().reveal("", {
-        delay: 500,
-        origin: "bottom",
-      });
-      ScrollReveal().reveal("", { delay: 3000, origin: "left" });
-    </script>
 
     <!-- footer -->
 
@@ -206,4 +178,58 @@
       <p class="number">Have Questions? <span>Call: 1-(844) 483-4176</span></p>
     </div>
   </body>
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: "80px",
+      duration: 2500,
+      delay: 400,
+    });
+
+    ScrollReveal().reveal("", { delay: 300, origin: "top" });
+    ScrollReveal().reveal(".about-image", { delay: 500, origin: "left" });
+    ScrollReveal().reveal(".about-content", { delay: 800, origin: "right" });
+    ScrollReveal().reveal("", {
+      delay: 200,
+      origin: "bottom",
+      interval: 300,
+    });
+    ScrollReveal().reveal("", { delay: 400, origin: "top" });
+    ScrollReveal().reveal("", {
+      delay: 800,
+      origin: "bottom",
+      interval: 1000,
+    });
+    ScrollReveal().reveal("", {
+      delay: 500,
+      origin: "bottom",
+    });
+    ScrollReveal().reveal("", { delay: 3000, origin: "left" });
+  </script>
+  <script>
+    //disable inspect element and copy pasting
+    document.oncontextmenu = () => {
+      alert("Nice try badi");
+      return false;
+    };
+
+    document.onkeydown = (e) => {
+      if (e.key == "F12") {
+        alert("Shut the fuck up motherfucker");
+        return false;
+      }
+      if (e.ctrlKey && e.key == "u") {
+        alert("Do not not do this until you do");
+        return false;
+      }
+      if (e.ctrlKey && e.key == "c") {
+        alert("Don't try to fuck this up nigga");
+        return false;
+      }
+      if (e.ctrlKey && e.key == "v") {
+        alert("Don't try the try of don't so please don't");
+        return false;
+      }
+    };
+  </script>
 </html>
