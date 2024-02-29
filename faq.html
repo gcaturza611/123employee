@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>123 Employee | Home</title>
+    <title>123 Employee | FAQ</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="icon"
@@ -14,6 +14,14 @@
     <!-- font/icon links -->
 
     <!-- style links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
 
     <!-- script links -->
     <script
@@ -271,7 +279,11 @@
             <i class="fa-solid fa-caret-down"></i>
           </div>
           <div class="answer">
-            <p>Of course, simply tell us what your needs</p>
+            <p>
+              Of course. We have an expert rep for each area of your business.
+              Whether it is an expert in data entry, chat, technical support, or
+              document processing. You name it! We got you covered!
+            </p>
           </div>
         </div>
 
@@ -312,59 +324,49 @@
 
     <!-- Redundant usage -->
 
-    <!--partners section-->
+    <!-- partners section -->
     <section class="partners">
-      <div class="partner-logos slider">
-        <div class="slide"><img src="assets/images/abc-logo.png" alt="" /></div>
-        <div class="slide">
-          <img src="assets/images/forbes-logo.png" alt="" />
+      <div class="brand-carousel section-padding owl-carousel">
+        <div class="single-logo">
+          <img alt="" src="assets/images/abc-logo.png" />
         </div>
-        <div class="slide">
-          <img src="assets/images/nbc-logo.png" alt="logo" />
+        <div class="single-logo">
+          <img alt="" src="assets/images/cbs-logo.png" />
         </div>
-        <div class="slide">
-          <img src="assets/images/fox-news-logo.png" alt="" />
+        <div class="single-logo">
+          <img alt="" src="assets/images/nbc-logo.png" />
         </div>
-        <div class="slide">
-          <img src="assets/images/news-week-logo.png" alt="" />
+        <div class="single-logo">
+          <img alt="" src="assets/images/wsj-logo.png" />
         </div>
-        <div class="slide">
-          <img src="assets/images/USA Today logo.png" alt="" />
+        <div class="single-logo">
+          <img alt="" src="assets/images/yahoo-logo.png" />
         </div>
-        <div class="slide"><img src="assets/images/cbs-logo.png" alt="" /></div>
-        <div class="slide">
-          <img src="assets/images/yahoo-logo.png" alt="" />
+        <div class="single-logo">
+          <img alt="" src="assets/images/forbes-logo.png" />
         </div>
-        <div class="slide"><img src="assets/images/wsj-logo.png" alt="" /></div>
       </div>
-    </section>
-    <script>
-      $(document).ready(function () {
-        $(".partner-logos").slick({
-          slidesToShow: 6,
-          slidesToScroll: 1,
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+        $(".brand-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
           autoplay: true,
-          autoplaySpeed: 1500,
-          arrows: false,
-          dots: false,
-          pauseOnHover: false,
-          responsive: [
-            {
-              breakpoint: 768,
-              setting: {
-                slidesToShow: 4,
-              },
+          responsive: {
+            0: {
+              items: 1,
             },
-            {
-              breakpoint: 520,
-              setting: {
-                slidesToShow: 3,
-              },
+            600: {
+              items: 3,
             },
-          ],
+            1000: {
+              items: 5,
+            },
+          },
         });
-      });
-    </script>
+      </script>
+    </section>
     <!--partners section ends here-->
     <!-- footer -->
 

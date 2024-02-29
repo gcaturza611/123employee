@@ -14,15 +14,23 @@
     <!-- font/icon links -->
 
     <!-- style links -->
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
     <!-- script links -->
+
     <script
       src="https://kit.fontawesome.com/76c9115e26.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <!-- main navigation -->
@@ -134,58 +142,47 @@
 
     <!-- partners section -->
     <section class="partners">
-      <div class="partner-logos slider">
-        <div class="slide"><img src="assets/images/abc-logo.png" alt="" /></div>
-        <div class="slide">
-          <img src="assets/images/forbes-logo.png" alt="" />
+      <div class="brand-carousel section-padding owl-carousel">
+        <div class="single-logo">
+          <img alt="" src="assets/images/abc-logo.png" />
         </div>
-        <div class="slide">
-          <img src="assets/images/nbc-logo.png" alt="logo" />
+        <div class="single-logo">
+          <img alt="" src="assets/images/cbs-logo.png" />
         </div>
-        <div class="slide">
-          <img src="assets/images/fox-news-logo.png" alt="" />
+        <div class="single-logo">
+          <img alt="" src="assets/images/nbc-logo.png" />
         </div>
-        <div class="slide">
-          <img src="assets/images/news-week-logo.png" alt="" />
+        <div class="single-logo">
+          <img alt="" src="assets/images/wsj-logo.png" />
         </div>
-        <div class="slide">
-          <img src="assets/images/USA Today logo.png" alt="" />
+        <div class="single-logo">
+          <img alt="" src="assets/images/yahoo-logo.png" />
         </div>
-        <div class="slide"><img src="assets/images/cbs-logo.png" alt="" /></div>
-        <div class="slide">
-          <img src="assets/images/yahoo-logo.png" alt="" />
+        <div class="single-logo">
+          <img alt="" src="assets/images/forbes-logo.png" />
         </div>
-        <div class="slide"><img src="assets/images/wsj-logo.png" alt="" /></div>
       </div>
-    </section>
-    <!-- partners section script -->
-    <script>
-      $(document).ready(function () {
-        $(".partner-logos").slick({
-          slidesToShow: 6,
-          slidesToScroll: 1,
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+        $(".brand-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
           autoplay: true,
-          autoplaySpeed: 1500,
-          arrows: false,
-          dots: false,
-          pauseOnHover: false,
-          responsive: [
-            {
-              breakpoint: 768,
-              setting: {
-                slidesToShow: 4,
-              },
+          responsive: {
+            0: {
+              items: 1,
             },
-            {
-              breakpoint: 520,
-              setting: {
-                slidesToShow: 3,
-              },
+            600: {
+              items: 3,
             },
-          ],
+            1000: {
+              items: 5,
+            },
+          },
         });
-      });
-    </script>
+      </script>
+    </section>
 
     <!-- landing page section -->
     <section class="section-container landing-container">
@@ -372,15 +369,19 @@
 
     <!-- NOTE/HIGHLIGHT -->
     <section class="highlight">
-      <div class="highlight-text">
+      <!-- <div class="highlight-text">
         <p>
           <b>Enterprise Services</b> is a specialized division of 123Employee,
           the premier US managed Marketing and BPO service provider. Enterprise
           Services provide exceptional voice trained employees to provide a
           range of voice related services
         </p>
+      </div> -->
+      <div class="wrapper">
+        <div id="app"></div>
       </div>
     </section>
+    <script src="assets/js/typewriter.js"></script>
 
     <!--services-->
     <section class="section-container services-container">
@@ -466,14 +467,14 @@
     <!-- explore grid section -->
     <section class="section-container explore-container">
       <div class="explore-header">
-        <h5 class="section-header">
+        <h2>
           Your success depends on our success, and our success depends on our
           employees. Our company culture encourages team building, community
           service and empowerment. This results in happier team members and
           lower attrition. <br /><br />
           Take a look at just some of our culture, team building and community
           outreach programs:
-        </h5>
+        </h2>
       </div>
       <div class="explore-grid">
         <div class="explore-card">
@@ -515,27 +516,22 @@
     <!-- Redundant usage -->
 
     <!-- Testimonials slider -->
-    <section class="section-container testim" id="testim">
-      <div class="testim-title">
-        <h2>All The Top Marketers Use 123Employee!</h2>
-        <h3>Clients who have used 123 Employee Virtual Assistant</h3>
-      </div>
-      <div class="wrap">
-        <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
-        <span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+    <section class="section-container testimonials-section">
+      <!-- Section Header Starts -->
+      <header class="section-header">
+        <h1>What Clients Say</h1>
+      </header>
+      <!-- Section Header Ends -->
 
-        <ul class="dots" id="testim-dots">
-          <li class="dot active"></li>
-          <li class="dot"></li>
-          <li class="dot"></li>
-          <li class="dot"></li>
-          <li class="dot"></li>
-        </ul>
-
-        <div class="cont" id="testim-content">
-          <div class="active">
-            <div class="img"><img src="assets/images/testim-2.jpg" /></div>
-            <h2>Larry Steinhouse</h2>
+      <!-- Owl Carousel Slider Starts -->
+      <div class="owl-carousel owl-theme testimonials-container">
+        <!-- Item1 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Larry Steinhouse</h2>
+            </div>
             <p>
               I am so amazed at the professionalism of 123Employee but even more
               important, Cassie, as my Virtual Assistant, is wonderful! She
@@ -547,13 +543,36 @@
               as my Virtual Assistant and Daven’s company 123Employee, my
               chances of making that happen will greatly increase!
             </p>
-          </div>
-
-          <div>
-            <div class="img">
-              <img src="assets/images/collin-daymude.jpg" />
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
-            <h2>Collin Daymude</h2>
+            <div class="btn" onclick="location.href='testimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="assets/images/testim-2.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Larry Steinhouse</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item1 Ends -->
+
+        <!-- Item2 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Collin Daymude</h2>
+            </div>
             <p>
               She took seven thousand Gmail contacts and sorted them into
               folders. It was amazing! Everyday she checks my inbox, filters
@@ -569,13 +588,36 @@
               get 123Employee, check it out, call Daven, it will be the best
               thing you’ve ever done.
             </p>
-          </div>
-
-          <div>
-            <div class="img">
-              <img src="assets/images/anushka-drescher.jpg" />
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
-            <h2>Tim McCoy</h2>
+            <div class="btn" onclick="location.href='testimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="assets/images/collin-daymude.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Collin Daymude</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item2 Ends -->
+
+        <!-- Item3 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Tim McCoy</h2>
+            </div>
             <p>
               She has helped build a database of customers. Right now I’m here
               at Super Teaching at CEO Space, I take my electronic notes
@@ -587,11 +629,36 @@
               that I came across her and she’s going to save me a lot of time
               and money.
             </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="btn" onclick="location.href='testimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="assets/images/tim-maccoy.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Tim McCoy</span>
+              <span>Description</span>
+            </div>
           </div>
+        </div>
+        <!-- Item3 Ends -->
 
-          <div>
-            <div class="img"><img src="assets/images/roy-meyer.jpg" /></div>
-            <h2>Roy Meyers</h2>
+        <!-- Item4 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Roy Meyers</h2>
+            </div>
             <p>
               I’ve been working with 123 for a couple of years now, and I can
               tell you they have made all the difference in the success of my
@@ -601,13 +668,36 @@
               simply just don’t have time to do. It allowed me just to focus on
               the IGAs or income generating activities in my business.
             </p>
-          </div>
-
-          <div>
-            <div class="img">
-              <img src="assets/images/casey-eberhart.jpg" />
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
             </div>
-            <h2>Casey Eberhart</h2>
+            <div class="btn" onclick="location.href='testimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="assets/images/roy-meyer.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Roy Meyers</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item4 Ends -->
+
+        <!-- Item5 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Casey Eberhart</h2>
+            </div>
             <p>
               I got to tell you, before we got involved in 123Employee and
               outsourcing some of our scheduling and inbound and outbound calls
@@ -622,14 +712,59 @@
               ever find somebody here to do it. I highly, highly recommend using
               123Employee to take care of all of your tasks.
             </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="btn" onclick="location.href='testimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="assets/images/casey-eberhart.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Casey Eberhart</span>
+              <span>Description</span>
+            </div>
           </div>
         </div>
+        <!-- Item5 Ends -->
       </div>
-      <div class="testim-button">
-        <a href="testimonial.html"
-          ><button class="btn box-btn">Read More</button></a
-        >
-      </div>
+
+      <!-- Owl Carousel Slider Ends -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+        $(".testimonials-container").owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 6000,
+          margin: 10,
+          nav: true,
+          navText: [
+            "<i class='fa-solid fa-arrow-left'></i>",
+            "<i class='fa-solid fa-arrow-right'></i>",
+          ],
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            600: {
+              items: 1,
+              nav: true,
+            },
+            768: {
+              items: 2,
+            },
+          },
+        });
+      </script>
     </section>
 
     <!-- footer bar -->
@@ -642,6 +777,7 @@
   </body>
 
   <script src="assets/js/script.js"></script>
+
   <script>
     $(window).scroll(function () {
       if ($(window).scrollTop()) {
