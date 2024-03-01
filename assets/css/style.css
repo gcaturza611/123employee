@@ -15,6 +15,12 @@
   --youtube: #ff0000;
   --max-width: 1200px;
   --highlighted-text: #47a390;
+
+  /* blog colors */
+  --container-color: #1a1e21;
+  --second-color: rgba(77, 228, 255);
+  --text-color: #172317;
+  --bg-color: #fff;
 }
 * {
   padding: 0;
@@ -167,8 +173,8 @@ head .info-head {
 .menu-list li a:hover {
   background: var(--primary-color-light);
   color: var(--white);
-  padding: 0 10px;
-  border-radius: 20%;
+  padding: 0px 10px;
+  border-radius: 10%;
 }
 .icon {
   color: #fff;
@@ -985,7 +991,7 @@ ul li:nth-child(5) a span:nth-child(2) {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.top-clients .clients .profile img {
+.top-clients .clients .top-profile img {
   height: 200px;
   width: 100%;
   border-radius: 50%;
@@ -995,18 +1001,17 @@ ul li:nth-child(5) a span:nth-child(2) {
   margin-bottom: 20px;
 }
 @media (width < 900px) {
-  .top-clients .clients .profile img {
+  .top-clients .clients .top-profile img {
     border-radius: 20px;
   }
 }
-.top-clients .clients .profile span {
+.top-clients .clients .top-profile span {
   color: var(--text-light);
   font-size: 20px;
   font-weight: 600;
 }
-.top-clients .clients .profile span:hover {
-  color: var(--primary-color-extra-light);
-  font-size: 1.5rem;
+.top-clients .clients .top-profile span:hover {
+  color: var(--primary-color-dark);
   transition: 0.3s;
 }
 .top-clients-header {
@@ -1250,7 +1255,127 @@ ul li:nth-child(5) a span:nth-child(2) {
 }
 
 /* blog.html css starts here */
-.blog-header {
+
+.about-blog {
+  position: relative;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.about-blog .contentBx {
+  max-width: 50%;
+  width: 50%;
+  text-align: left;
+  padding-right: 40px;
+}
+.titleText {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.title-text {
+  font-size: 1em;
+}
+.about-blog .imgBx {
+  position: relative;
+  min-width: 50%;
+  width: 50%;
+  min-height: 500px;
+}
+.post-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-top: 2rem !important;
+}
+.post-filter .filter-item:hover {
+  color: var(--text-light);
+  border-radius: 4px;
+  padding: 4px 10px;
+  background: var(--primary-color-dark);
+}
+.filter-item {
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.active-filter {
+  background: var(--primary-color-dark);
+  color: var(--text-light);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  justify-content: center;
+  gap: 1.5rem;
+}
+.post-box {
+  background: var(--primary-color);
+  box-shadow: 0 4px 14px hsl(35deg 25% 15% / 40%);
+  padding: 15px;
+  border-radius: 0.5rem;
+}
+.post-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+.category {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.post-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text-light);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.post-date {
+  display: flex;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-top: 4px;
+  font-weight: 400;
+}
+.post-description {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin: 5px 0 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid var(--primary-color-dark);
+}
+.profile-name {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+/* .blog-header {
   position: relative;
   padding-top: 2rem;
   display: grid;
@@ -1424,7 +1549,7 @@ ul li:nth-child(5) a span:nth-child(2) {
 }
 .blog-modal .modal-content {
   padding-bottom: 40px;
-}
+} */
 
 /* resource.html css starts here */
 /* resources css */
@@ -1959,4 +2084,10 @@ ul li:nth-child(5) a span:nth-child(2) {
 .form-btn:hover {
   color: var(--white);
   background-color: var(--secondary-color);
+}
+
+/* blog folder css */
+.blog-content {
+  color: var(--text-light);
+  font-size: 18px;
 }
