@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/123Enterprise.png"
+      type="image/x-icon"
+    />
+
+    <!-- style links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+
+    <!-- font -->
+    <script
+      src="https://kit.fontawesome.com/76c9115e26.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../assets/images/123Enterprise.png" alt=""
+          /></a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="../blog.html">Return to Blogs</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+        body.classList.add("disabledScroll");
+      };
+      cancelBtn.onclick = () => {
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        body.classList.remove("disabledScroll");
+      };
+
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+
+    <!-- social side navigation -->
+    <side>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/123Employee" target="_blank"
+            ><span>facebook</span
+            ><span><i class="fa-brands fa-facebook"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/davenmichaels" target="_blank"
+            ><span>twitter</span
+            ><span><i class="fa-brands fa-x-twitter"></i></span
+          ></a>
+        </li>
+        <li class="telephone">
+          <a href="contact-us.html"
+            ><span id="number">1-(844) 483-4176</span
+            ><span><i class="fa-solid fa-phone fa-shake"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/davenmichaels" target="_blank"
+            ><span>LinkedIn</span
+            ><span><i class="fa-brands fa-linkedin"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/Outsourcing4Business" target="_blank"
+            ><span>youtube</span
+            ><span><i class="fa-brands fa-youtube"></i></span
+          ></a>
+        </li>
+      </ul>
+    </side>
+
+    <header class="section-container">
+      <div class="header-content">
+        <img
+          src="../assets/images/Digital-marketing-in-2021-and-beyond.png"
+          alt=""
+        />
+      </div>
+    </header>
+
+    <section>
+      <div class="section-container blog-content">
+        <div class="section-header">
+          <h2>Digital Marketing In 2021 And beyond</h2>
+        </div>
+        <p>
+          The digital marketing landscape may always be in a state of constant
+          flux with technology changing all the time, but the one thing that
+          never changes is the need for leads to fill company’s sales funnels.
+          And a lot of these leads come from digital marketing efforts.
+          <br /><br />
+          Many companies find themselves trying to do it all, but when it comes
+          to filling the sales pipeline it might be most beneficial to place the
+          process of collecting leads through digital efforts in the hands of
+          the most capable. If that’s in-house, great! However, the complex
+          world of digital marketing is often more cost effective to partner
+          with a third-party expert.
+          <br /><br />
+          Focus on what your business does best.
+          <br /><br />
+          When launching a business, it’s critical to do what you are good at;
+          sticking with your core competency is an absolute must. So, before
+          deciding whether to partner with the experts you need to understand
+          your company and its capabilities.
+          <br /><br />
+          If you’re fantastic at creating a product, but not so good at taking
+          it to market, then that should be your main focus and you should let
+          the experts handle creating the demand to drive sales.
+          <br /><br />
+          A lot of companies have limited resources in the way of marketing,
+          with interns or a very small team responsible for driving all channels
+          including email, paid search, search engine optimization (SEO),
+          content creation, social media presence, etc. While most of these
+          channels are relatively easy to setup, not everyone understand how to
+          drive results or there are simply too many to manage efficiently and
+          effectively for a small team.
+          <br /><br />
+          Marketing is not cheap and is often one of the first budgets to get
+          cut when costs need to decrease. The general rule of thumb suggests
+          between 6-20 percent of total revenue for most businesses’ marketing
+          budget. This includes all paid advertisements, all of the necessary
+          tools, and the salaries of the staff members if you choose to keep
+          your efforts in-house.
+          <br /><br />
+          Inbound marketing is all about creating new leads for your business.
+          If you opt for in-house, full-time digital marketing staff, it’s going
+          to entail a significant investment of both time and money.
+          <br /><br />
+          Financial concerns aside, the digital marketing industry is changing
+          all the time. Frankly, the task of planning and carrying out your
+          marketing efforts may be so time-consuming that it makes it
+          near-impossible to stay up to date with every new strategy and trend
+          that comes along.
+          <br /><br />
+          Third-party partners dedicate their entire business to making sure
+          they are aware of the latest trends in digital marketing, so the
+          burden of doing so does not fall to their client. They are often
+          flexible and have the ability to pivot based on new technology or the
+          latest best practice.
+          <br /><br />
+          Perhaps you’re not ready to relinquish complete control of your
+          digital marketing efforts. There is always the option of taking a
+          blended approach and only partnering with the experts for tasks you
+          feel the least comfortable managing like SEO which can be rather
+          complex.
+          <br /><br />
+          They will be able to help you in the planning stage to help you best
+          utilize your budget to help you avoid gaps and keep new leads coming
+          into your sales funnel.
+          <br /><br />
+          Daven Michaels is a New York Times Best Selling Author and CEO of
+          premiere global outsourcing company, 123Employee. The company employs
+          hundreds of young bright individuals on three continents. His
+          International event, Beyond Marketing Live! inspires entrepreneurs to
+          build & grow their business with revolutionary new theories and
+          systems allowing them to design the business and personal lifestyle of
+          their dreams.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials slider -->
+    <section class="section-container testimonials-section">
+      <!-- Section Header Starts -->
+      <header class="section-header">
+        <h1>What Clients Say</h1>
+      </header>
+      <!-- Section Header Ends -->
+
+      <!-- Owl Carousel Slider Starts -->
+      <div class="owl-carousel owl-theme testimonials-container">
+        <!-- Item1 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Larry Steinhouse</h2>
+            </div>
+            <p>
+              I am so amazed at the professionalism of 123Employee but even more
+              important, Cassie, as my Virtual Assistant, is wonderful! She
+              really takes on the tasks with full responsibility. She even makes
+              suggestions and researches ideas that will bring me business or
+              traffic to my website. The only thing she can’t do is bring me
+              coffee! Our Mall Stars Video Production Studios is a concept that
+              we expect to go national, and frankly I believe that with Cassie
+              as my Virtual Assistant and Daven’s company 123Employee, my
+              chances of making that happen will greatly increase!
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="btn" onclick="location.href='../testimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="../assets/images/testim-2.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Larry Steinhouse</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item1 Ends -->
+
+        <!-- Item2 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Collin Daymude</h2>
+            </div>
+            <p>
+              She took seven thousand Gmail contacts and sorted them into
+              folders. It was amazing! Everyday she checks my inbox, filters
+              things, she sorts them, she gets rid of the junk, she took my PDF
+              copies of all my expenses for the last year's bank statement, and
+              categorized all of them. Amazing! She saves me so much time which
+              is unbelievable. I have to ask her, she comes to me when she’s
+              done with the project, she says Collin what else do you have for
+              me? I mean when else do you ever get that kind of treatment from
+              somebody? I had to go back to Daven with a long list of stuff to
+              figure out. Oh! she can do this, she can do that and then I give
+              her another project plus the ongoing stuff she has. So you gotta
+              get 123Employee, check it out, call Daven, it will be the best
+              thing you’ve ever done.
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="btn" onclick="location.href='../testimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="../assets/images/collin-daymude.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Collin Daymude</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item2 Ends -->
+
+        <!-- Item3 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Tim McCoy</h2>
+            </div>
+            <p>
+              She has helped build a database of customers. Right now I’m here
+              at Super Teaching at CEO Space, I take my electronic notes
+              everyday, I highlight the parts that are action items, I email her
+              my notes everyday and she creates another visual mind map of all
+              the actions I need to take. When I get home I know exactly what I
+              need to do. Maria has been amazing, she’s always ready to please,
+              she’s always friendly, she’s always helpful. I am just so grateful
+              that I came across her and she’s going to save me a lot of time
+              and money.
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="btn" onclick="location.href='../testimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="../assets/images/tim-maccoy.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Tim McCoy</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item3 Ends -->
+
+        <!-- Item4 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Roy Meyers</h2>
+            </div>
+            <p>
+              I’ve been working with 123 for a couple of years now, and I can
+              tell you they have made all the difference in the success of my
+              business and the reason my business has grown and continuesto
+              generate more and more income. Now one of the things that’s been
+              great is it’s freed me up from having to do all the tasks that I
+              simply just don’t have time to do. It allowed me just to focus on
+              the IGAs or income generating activities in my business.
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="btn" onclick="location.href='../testimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="../assets/images/roy-meyer.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Roy Meyers</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item4 Ends -->
+
+        <!-- Item5 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Casey Eberhart</h2>
+            </div>
+            <p>
+              I got to tell you, before we got involved in 123Employee and
+              outsourcing some of our scheduling and inbound and outbound calls
+              and our social media, we had an office that was completely
+              disorganized and messy. Just to give you a quick example, 6 months
+              ago my Twitter account had a couple of thousand followers, now as
+              of today I’m in about 20,000. You can check that out, very easy
+              for you to go check out, you can follow me on Twitter and figure
+              that out all on your own and I got to tell you the outsourced
+              employees over there are friendly, they’re fantastic, they get
+              done what they say they’re going to do in less time that I could
+              ever find somebody here to do it. I highly, highly recommend using
+              123Employee to take care of all of your tasks.
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="btn" onclick="location.href='../estimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="../assets/images/casey-eberhart.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Casey Eberhart</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item5 Ends -->
+      </div>
+
+      <!-- Owl Carousel Slider Ends -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+        $(".testimonials-container").owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 6000,
+          margin: 10,
+          nav: true,
+          navText: [
+            "<i class='fa-solid fa-arrow-left'></i>",
+            "<i class='fa-solid fa-arrow-right'></i>",
+          ],
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            600: {
+              items: 1,
+              nav: true,
+            },
+            768: {
+              items: 2,
+            },
+          },
+        });
+      </script>
+    </section>
+
+    <!-- partners section -->
+    <section class="partners">
+      <div class="brand-carousel section-padding owl-carousel">
+        <div class="single-logo">
+          <img alt="" src="../assets/images/abc-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="../assets/images/cbs-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="../assets/images/nbc-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="../assets/images/wsj-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="../assets/images/yahoo-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="../assets/images/forbes-logo.png" />
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+        $(".brand-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      </script>
+    </section>
+
+    <!-- footer bar -->
+    <div class="footer-bar">
+      Copyright © 2024 Sixeleven Global Services - Workforce. All rights
+      reserved. | <a href="contact-us.html">Contact Us</a> |
+      <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Sitemap</a>
+      <p class="number">Have Questions? <span>Call: 1-(844) 483-4176</span></p>
+    </div>
+  </body>
+</html>

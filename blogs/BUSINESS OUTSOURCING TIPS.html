@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/123Enterprise.png"
+      type="image/x-icon"
+    />
+
+    <!-- style links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+
+    <!-- font -->
+    <script
+      src="https://kit.fontawesome.com/76c9115e26.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="../index.html"
+            ><img src="../assets/images/123Enterprise.png" alt=""
+          /></a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="../blog.html">Return to Blogs</a></li>
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <script>
+      const body = document.querySelector("body");
+      const navbar = document.querySelector(".navbar");
+      const menu = document.querySelector(".menu-list");
+      const menuBtn = document.querySelector(".menu-btn");
+      const cancelBtn = document.querySelector(".cancel-btn");
+      menuBtn.onclick = () => {
+        menu.classList.add("active");
+        menuBtn.classList.add("hide");
+        cancelBtn.classList.add("show");
+        body.classList.add("disabledScroll");
+      };
+      cancelBtn.onclick = () => {
+        menu.classList.remove("active");
+        menuBtn.classList.remove("hide");
+        cancelBtn.classList.remove("show");
+        body.classList.remove("disabledScroll");
+      };
+
+      window.onscroll = () => {
+        this.scrollY > 20
+          ? navbar.classList.add("sticky")
+          : navbar.classList.remove("sticky");
+      };
+    </script>
+
+    <!-- social side navigation -->
+    <side>
+      <ul class="social">
+        <li>
+          <a href="https://www.facebook.com/123Employee" target="_blank"
+            ><span>facebook</span
+            ><span><i class="fa-brands fa-facebook"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/davenmichaels" target="_blank"
+            ><span>twitter</span
+            ><span><i class="fa-brands fa-x-twitter"></i></span
+          ></a>
+        </li>
+        <li class="telephone">
+          <a href="contact-us.html"
+            ><span id="number">1-(844) 483-4176</span
+            ><span><i class="fa-solid fa-phone fa-shake"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="http://www.linkedin.com/in/davenmichaels" target="_blank"
+            ><span>LinkedIn</span
+            ><span><i class="fa-brands fa-linkedin"></i></span
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/Outsourcing4Business" target="_blank"
+            ><span>youtube</span
+            ><span><i class="fa-brands fa-youtube"></i></span
+          ></a>
+        </li>
+      </ul>
+    </side>
+
+    <header class="section-container">
+      <div class="header-content">
+        <img src="../assets/images/BUSINESS-OUTSOURCING-TIPS.png" alt="" />
+      </div>
+    </header>
+
+    <section>
+      <div class="section-container blog-content">
+        <div class="section-header">
+          <h2>BUSINESS OUTSOURCING TIPS</h2>
+        </div>
+        <p>
+          The global economic environment is caught up with an interesting trend
+          known as outsourcing. Business outsourcing covers different areas of a
+          company or organization’s business activities and operations.
+          Outsourcing has completely changed the mode of operating business in
+          this present dispensation. <br /><br />
+          Basically, there is in-country outsourcing and offshore outsourcing.
+          When a company outsources part of its business activities to an
+          outsourcing contractor in the same country where the business is
+          residing, this is called in-country outsourcing. But, when the
+          outsourcing contractor resides in another part of the world other than
+          the country where the outsourced company resides, this is known as
+          offshore outsourcing. Business IT is one of the most outsourced
+          operations or functions, both in-country and offshore.
+          <br /><br />
+          <b><i>Why Should You Outsource Your Business Operations</i></b
+          ><br /><br />
+          <b>1. It can be cost-effective</b> <br /><br />
+          Business outsourcing can be cost-effective sometimes compared to
+          carrying out the functions in-house. The overall cost of certain areas
+          of business operations such as IT Management can be greatly reduced by
+          embarking on outsourcing. Generally, areas covered under cost-savings
+          include re-pricing, scope reduction, cost-restructuring,
+          re-negotiation as well as quality levels definitions.
+          <br /><br />
+          <b>2. Access to Talent</b> <br /><br />
+          An organization or company gains access to a larger talent pool when
+          it chooses business outsourcing. Such company would also become a
+          beneficiary of sustainable source of skills, particularly in IT,
+          engineering as well as science. This is a big plus to a company that
+          has limited or less knowledge and skill set in these specified areas.
+          So, a company needs not to lag in certain areas just because it does
+          not have the required manpower skills or adequate facilities in such
+          area. Outsourcing has made everything possible for a business or
+          organization.
+          <br /><br />
+          <b>3. Liability Shift</b> <br /><br />
+          As a company outsources specific business processes or functions that
+          are not within its core expertise, it indirectly shifts or transfers
+          part of the company’s liability to the outsourcing contractor. Thus,
+          the outsourcing company bears part or whole responsibility of any
+          undesirable out come. Well, it all depends on the terms of the
+          contract that is binding on both parties. Now, when embarking on
+          business outsourcing, ensure that sufficient research is carried out
+          on the outsourcing contractor. Some of the things you should research
+          about the company include;
+          <br /><br />
+          Proof of required skill possession in the intended business operation
+          or function. An outsourcing company that is specialized in IT
+          outsourcing may not perform satisfactorily in HR outsourcing, except
+          it has multi-skilled staff. It is really more efficient to contract a
+          company that has proven skills in the business area you need
+          outsourced.
+          <br /><br />
+          Check the portfolio: the portfolio should contain certifications in
+          specific outsourcing areas as well as general outsourcing
+          certifications. It should also contain proof of membership to relevant
+          outsourcing body, either locally or internationally. Also, references
+          of past projects and their contacts should be part of the portfolio of
+          a competent business outsourcing vendor.
+          <br /><br />
+          <i
+            >Business outsourcing will help your business in several areas,
+            including gaining a competitive edge in the present harsh business
+            environment.</i
+          >
+          <br /><br />
+          Daven Michaels is a New York Times Best Selling Author and CEO of
+          premiere global outsourcing company, 123Employee. The company employs
+          hundreds of young bright individuals on three continents. His
+          International event, Beyond Marketing Live! inspires entrepreneurs to
+          build & grow their business with revolutionary new theories and
+          systems allowing them to design the business and personal lifestyle of
+          their dreams. <br /><br />
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials slider -->
+    <section class="section-container testimonials-section">
+      <!-- Section Header Starts -->
+      <header class="section-header">
+        <h1>What Clients Say</h1>
+      </header>
+      <!-- Section Header Ends -->
+
+      <!-- Owl Carousel Slider Starts -->
+      <div class="owl-carousel owl-theme testimonials-container">
+        <!-- Item1 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Larry Steinhouse</h2>
+            </div>
+            <p>
+              I am so amazed at the professionalism of 123Employee but even more
+              important, Cassie, as my Virtual Assistant, is wonderful! She
+              really takes on the tasks with full responsibility. She even makes
+              suggestions and researches ideas that will bring me business or
+              traffic to my website. The only thing she can’t do is bring me
+              coffee! Our Mall Stars Video Production Studios is a concept that
+              we expect to go national, and frankly I believe that with Cassie
+              as my Virtual Assistant and Daven’s company 123Employee, my
+              chances of making that happen will greatly increase!
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="btn" onclick="location.href='../testimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="../assets/images/testim-2.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Larry Steinhouse</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item1 Ends -->
+
+        <!-- Item2 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Collin Daymude</h2>
+            </div>
+            <p>
+              She took seven thousand Gmail contacts and sorted them into
+              folders. It was amazing! Everyday she checks my inbox, filters
+              things, she sorts them, she gets rid of the junk, she took my PDF
+              copies of all my expenses for the last year's bank statement, and
+              categorized all of them. Amazing! She saves me so much time which
+              is unbelievable. I have to ask her, she comes to me when she’s
+              done with the project, she says Collin what else do you have for
+              me? I mean when else do you ever get that kind of treatment from
+              somebody? I had to go back to Daven with a long list of stuff to
+              figure out. Oh! she can do this, she can do that and then I give
+              her another project plus the ongoing stuff she has. So you gotta
+              get 123Employee, check it out, call Daven, it will be the best
+              thing you’ve ever done.
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="btn" onclick="location.href='../testimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="../assets/images/collin-daymude.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Collin Daymude</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item2 Ends -->
+
+        <!-- Item3 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Tim McCoy</h2>
+            </div>
+            <p>
+              She has helped build a database of customers. Right now I’m here
+              at Super Teaching at CEO Space, I take my electronic notes
+              everyday, I highlight the parts that are action items, I email her
+              my notes everyday and she creates another visual mind map of all
+              the actions I need to take. When I get home I know exactly what I
+              need to do. Maria has been amazing, she’s always ready to please,
+              she’s always friendly, she’s always helpful. I am just so grateful
+              that I came across her and she’s going to save me a lot of time
+              and money.
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="btn" onclick="location.href='../testimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="../assets/images/tim-maccoy.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Tim McCoy</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item3 Ends -->
+
+        <!-- Item4 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Roy Meyers</h2>
+            </div>
+            <p>
+              I’ve been working with 123 for a couple of years now, and I can
+              tell you they have made all the difference in the success of my
+              business and the reason my business has grown and continuesto
+              generate more and more income. Now one of the things that’s been
+              great is it’s freed me up from having to do all the tasks that I
+              simply just don’t have time to do. It allowed me just to focus on
+              the IGAs or income generating activities in my business.
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="btn" onclick="location.href='../testimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="../assets/images/roy-meyer.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Roy Meyers</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item4 Ends -->
+
+        <!-- Item5 Starts -->
+        <div class="item testimonial-card">
+          <main class="test-card-body">
+            <div class="quote">
+              <i class="fa fa-quote-left"></i>
+              <h2>Casey Eberhart</h2>
+            </div>
+            <p>
+              I got to tell you, before we got involved in 123Employee and
+              outsourcing some of our scheduling and inbound and outbound calls
+              and our social media, we had an office that was completely
+              disorganized and messy. Just to give you a quick example, 6 months
+              ago my Twitter account had a couple of thousand followers, now as
+              of today I’m in about 20,000. You can check that out, very easy
+              for you to go check out, you can follow me on Twitter and figure
+              that out all on your own and I got to tell you the outsourced
+              employees over there are friendly, they’re fantastic, they get
+              done what they say they’re going to do in less time that I could
+              ever find somebody here to do it. I highly, highly recommend using
+              123Employee to take care of all of your tasks.
+            </p>
+            <div class="ratings">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="btn" onclick="location.href='../estimonial.html'">
+              Read More
+            </div>
+          </main>
+          <div class="profile">
+            <div class="profile-image">
+              <img src="../assets/images/casey-eberhart.jpg" />
+            </div>
+            <div class="profile-desc">
+              <span>Casey Eberhart</span>
+              <span>Description</span>
+            </div>
+          </div>
+        </div>
+        <!-- Item5 Ends -->
+      </div>
+
+      <!-- Owl Carousel Slider Ends -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+        $(".testimonials-container").owlCarousel({
+          loop: true,
+          autoplay: true,
+          autoplayTimeout: 6000,
+          margin: 10,
+          nav: true,
+          navText: [
+            "<i class='fa-solid fa-arrow-left'></i>",
+            "<i class='fa-solid fa-arrow-right'></i>",
+          ],
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            600: {
+              items: 1,
+              nav: true,
+            },
+            768: {
+              items: 2,
+            },
+          },
+        });
+      </script>
+    </section>
+
+    <!-- partners section -->
+    <section class="partners">
+      <div class="brand-carousel section-padding owl-carousel">
+        <div class="single-logo">
+          <img alt="" src="../assets/images/abc-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="../assets/images/cbs-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="../assets/images/nbc-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="../assets/images/wsj-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="../assets/images/yahoo-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="../assets/images/forbes-logo.png" />
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+        $(".brand-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      </script>
+    </section>
+
+    <!-- footer bar -->
+    <div class="footer-bar">
+      Copyright © 2024 Sixeleven Global Services - Workforce. All rights
+      reserved. | <a href="contact-us.html">Contact Us</a> |
+      <a href="#">Privacy</a> | <a href="#">Terms</a> | <a href="#">Sitemap</a>
+      <p class="number">Have Questions? <span>Call: 1-(844) 483-4176</span></p>
+    </div>
+  </body>
+</html>
