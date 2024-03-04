@@ -176,6 +176,13 @@ head .info-head {
   padding: 0px 10px;
   border-radius: 10%;
 }
+.menu-list li a.active {
+  background: var(--primary-color-light);
+  color: var(--white);
+  padding: 0px 10px;
+  border-radius: 10%;
+}
+
 .icon {
   color: #fff;
   font-size: 20px;
@@ -1287,7 +1294,7 @@ ul li:nth-child(5) a span:nth-child(2) {
   justify-content: center;
   align-items: center;
   column-gap: 1.5rem;
-  margin-top: 2rem !important;
+  margin-top: 8rem !important;
 }
 .post-filter .filter-item:hover {
   color: var(--text-light);
