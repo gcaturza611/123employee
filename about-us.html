@@ -12,8 +12,15 @@
     />
 
     <!-- font/icon links -->
-
     <!-- style links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
 
     <!-- script links -->
     <script
@@ -21,7 +28,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
@@ -111,34 +117,6 @@
       </ul>
     </side>
 
-    <header class="section-container about-header">
-      <div class="header-content">
-        <span class="bg-blur"></span>
-        <span class="bg-blur header-blur"></span>
-        <h2>
-          <i
-            >We are experts in showing effective business results to our
-            clients. . . This has been proven for over 8 years of delivering
-            only the best pool of business talent . . ."</i
-          >
-        </h2>
-      </div>
-      <div class="header-image">
-        <img src="assets/images/enterprise-index-pic.png" alt="header" />
-      </div>
-    </header>
-    <section class="highlight">
-      <div class="highlight-text">
-        <p>
-          123Employee specializes in high-quality business processing services.
-          Our skilled employees operate from our flagship facility,
-          strategically located near two well-known regional colleges in Davao
-          City. Need competent professionals for your business? We’ve got you
-          covered!
-        </p>
-      </div>
-    </section>
-
     <!-- about -->
     <section class="section-container about-container">
       <h2 class="section-header">
@@ -168,6 +146,102 @@
           </button>
         </div>
       </div>
+    </section>
+    <section class="section-container our">
+      <div class="accordion-about">
+        <div class="about">
+          <div class="question">
+            <h2>"Our Core Values"</h2>
+            <p class="sub-question">
+              At 123Employee, we believe in fostering a culture that reflects
+              our commitment to excellence, integrity, and client satisfaction.
+              Our core values shape our actions, define our identity, and drive
+              our success. Here’s what we stand for:
+            </p>
+          </div>
+          <div class="answer">
+            <p>
+              1. Client-Centric Approach: Our clients are at the heart of
+              everything we do. We listen, understand, and tailor our services
+              to meet their unique needs. Your success is our success.
+              <br /><br />
+              2. Continuous Learning and Training: Our team of over 350 virtual
+              assistants receives ongoing training to stay ahead of industry
+              trends. We believe in investing in our employees’ development to
+              provide top-notch service to our clients. <br /><br />
+              3. Philippines-Based Excellence: Our center is strategically
+              located in the Philippines. Why? Because of the language skills,
+              light accent, and affinity for American culture. We create
+              opportunities for people while helping businesses increase
+              productivity and lower expenses.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="results">
+        <h2>“Our Results”</h2>
+        <p>
+          We are committed to delivering only the best results in what we do.
+          This is proven by how our clients elevate their businesses to new
+          heights through our services. Since our agents and virtual assistants
+          have the expertise to elevate their businesses, let them help yours.
+          123employee is particular about its results. We are not only bringing
+          you the service, we are bringing you the value!
+        </p>
+      </div>
+    </section>
+    <script src="assets/js/accordion.js"></script>
+
+    <section class="partners">
+      <div class="brand-carousel section-padding owl-carousel">
+        <div class="single-logo">
+          <img alt="" src="assets/images/abc-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="assets/images/forbes-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="assets/images/nbc-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="assets/images/fox-news-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="assets/images/news-week-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="assets/images/USA Today logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="assets/images/cbs-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="assets/images/yahoo-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="assets/images/wsj-logo.png" />
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+        $(".brand-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      </script>
     </section>
 
     <!-- footer -->
