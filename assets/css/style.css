@@ -762,60 +762,122 @@ ul li:nth-child(5) a span:nth-child(2) {
 }
 
 /* Explore css */
-.explore-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+/* flip css */
+/* flip title header */
+.explore-container .section-header {
+  font-size: 20px;
+  text-align: left;
+}
+.explore-container .section-subheader {
+  margin: 0;
+  font-size: 18px;
+  text-align: left;
+  max-width: 100%;
+}
+.maincontainer {
+  margin-top: 2rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  max-height: 900px;
+  height: 220px;
+  background: none;
   gap: 2rem;
+}
+@media (max-width: 900px) {
+  .maincontainer {
+    height: 800px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (width < 500px) {
+  .maincontainer {
+    height: 800px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover {
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+.thefront {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: var(--primary-color-dark);
+  color: #000;
+  text-align: center;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1 {
+  font-family: "zilla slab", sans-serif;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
   color: var(--text-light);
 }
-.explore-header .section-header {
-  font-size: 1rem;
-  text-align: start;
-}
-.explore-nav {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.explore-nav span {
-  padding: 0 6px;
-  font-size: 1.5rem;
-  color: var(--white);
-  border: 2px solid var(--white);
-  border-radius: 100%;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.explore-nav span:hover {
-  color: var(--secondary-color);
-  border-color: var(--secondary-color);
-}
-
-.explore-grid {
-  margin-top: 4rem;
-  display: flex;
-  gap: 2rem;
-}
-
-.explore-card {
-  padding: 1rem;
-  background-color: var(--primary-color-light);
-  border: 2px solid transparent;
-  border-radius: 10px;
-  transition: 0.3s;
+.theback h1 {
+  font-family: "zilla slab", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
   text-align: center;
-  width: 500px;
+  margin: 2rem 2rem 0;
+}
+.thefront span i {
+  margin-top: 2rem;
+  color: var(--text-light);
+  font-size: 5rem;
 }
 
-.explore-card:hover {
-  background-color: var(--primary-color-extra-light);
-  border-color: var(--secondary-color);
+.thefront p,
+.theback p {
+  font-family: "zilla slab", sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
 }
-
-.explore-card span {
+/* .thefront i {
   margin: -150px;
   display: inline-block;
   padding: 2px 9px;
@@ -824,26 +886,11 @@ ul li:nth-child(5) a span:nth-child(2) {
   color: var(--white);
   background-color: var(--secondary-color-dark);
   border-radius: 5px;
-}
-
-.explore-card h4 {
-  margin-bottom: 0.5rem;
-  font-size: 18px;
-  font-weight: 600;
-  color: var(--white);
-}
-/* explore responsiveness under 900px */
-@media (width < 900px) {
-  .explore-grid {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
+} */
 /* pricing.html css starts here */
 .price-header {
   position: relative;
-  padding-top: 2rem;
+  padding-top: 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -859,7 +906,7 @@ ul li:nth-child(5) a span:nth-child(2) {
   }
 }
 .price-header::before {
-  content: "PRICING";
+  content: "";
   position: absolute;
   bottom: 5rem;
   right: 20rem;
@@ -1203,7 +1250,7 @@ ul li:nth-child(5) a span:nth-child(2) {
 }
 
 .faq-header::before {
-  content: "FAQs";
+  content: "";
   position: absolute;
   bottom: 5rem;
   right: 20rem;
@@ -1400,7 +1447,7 @@ ul li:nth-child(5) a span:nth-child(2) {
 /* resources css */
 .resources-container {
   position: relative;
-  padding-top: 2rem;
+  padding-top: 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -1483,7 +1530,7 @@ ul li:nth-child(5) a span:nth-child(2) {
 /* order-articles.html css starts here */
 .order-articles-container {
   position: relative;
-  padding-top: 2rem;
+  padding-top: 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -1495,7 +1542,7 @@ ul li:nth-child(5) a span:nth-child(2) {
   }
 }
 .order-articles-container::before {
-  content: "Articles";
+  content: "";
   position: absolute;
   bottom: 5rem;
   right: 20rem;
@@ -1731,6 +1778,7 @@ ul li:nth-child(5) a span:nth-child(2) {
   margin-top: 5rem;
 }
 .about-flex {
+  margin-top: 5rem;
   display: flex;
   gap: 2rem;
 }
@@ -1783,10 +1831,10 @@ ul li:nth-child(5) a span:nth-child(2) {
 .accordion-about .answer p {
   padding-top: 1rem;
   line-height: 1.6;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 .accordion-about .about.active .answer {
-  max-height: 300px;
+  max-height: 850px;
   animation: fade 1s ease-in-out;
 }
 .accordion-about .about.active i {
@@ -1815,14 +1863,19 @@ ul li:nth-child(5) a span:nth-child(2) {
   color: var(--text-light);
 }
 .results p {
+  margin-bottom: 2rem;
   color: var(--text-light);
+}
+.results .btn {
+  cursor: pointer;
+  margin-top: 5rem;
 }
 /* contact-us.html css starts here */
 /* form card css */
 /*contact css starts here*/
 .contact-header {
   position: relative;
-  padding-top: 2rem;
+  padding-top: 5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -1834,7 +1887,7 @@ ul li:nth-child(5) a span:nth-child(2) {
   }
 }
 .contact-header::before {
-  content: "CONTACT US";
+  content: "";
   position: absolute;
   bottom: 5rem;
   right: 20rem;
