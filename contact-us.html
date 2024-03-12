@@ -14,6 +14,14 @@
         <!-- font/icon links -->
     
         <!-- style links -->
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
     
         <!-- script links -->
         <script
@@ -31,7 +39,7 @@
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
           </div>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="home.html">Home</a></li>
           <li><a href="about-us.html">About</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a class="active" href="contact-us.html">Contact</a></li>
@@ -70,7 +78,6 @@
         this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
       }
     </script>
-    <!-- social side navigation -->
     <!-- social side navigation -->
     <side>
       <ul class="social">
@@ -112,15 +119,10 @@
         <span class="bg-blur"></span>
         <span class="bg-blur header-blur"></span>
         <h2>
-          "Fill out your info below. We will get right back to you."
+          "Fill out your information in the form. We will get right back to you."
         </h2>
-      </div>
-      <div class="header-image">
         <img src="assets/images/contact.jpg" alt="header" />
       </div>
-    </header>
-    <!-- contact us -->
-    <section class="section-container" id="contact">
       <div class="form-grid">
         <div class="form-card">
           <div class="form-card-content">
@@ -166,6 +168,50 @@
           </div>
         </div>
       </div>
+    </header>
+
+    <!-- partners section -->
+    <section class="partners">
+      <div class="brand-carousel section-padding owl-carousel">
+        <div class="single-logo">
+          <img alt="" src="assets/images/abc-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="assets/images/cbs-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="assets/images/nbc-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="assets/images/wsj-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="assets/images/yahoo-logo.png" />
+        </div>
+        <div class="single-logo">
+          <img alt="" src="assets/images/forbes-logo.png" />
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script>
+        $(".brand-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      </script>
     </section>
 
     
@@ -176,28 +222,4 @@
       <p class="number">Have Questions? <span>Call: 1-(844) 483-4176</span></p>
     </div>
   </body>
-  <script>//disable inspect element and copy pasting
-    document.oncontextmenu = () => {
-      alert("Error");
-      return false;
-    };
-    
-    document.onkeydown = (e) => {
-      if (e.key == "F12") {
-        alert("Error");
-        return false;
-      }
-      if (e.ctrlKey && e.key == "u") {
-        alert("Error");
-        return false;
-      }
-      if (e.ctrlKey && e.key == "c") {
-        alert("Error");
-        return false;
-      }
-      if (e.ctrlKey && e.key == "v") {
-        alert("Error");
-        return false;
-      }
-    };</script>
 </html>

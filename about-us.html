@@ -40,7 +40,7 @@
           <div class="icon cancel-btn">
             <i class="fas fa-times"></i>
           </div>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="home.html">Home</a></li>
           <li><a class="active" href="about-us.html">About</a></li>
           <li><a href="pricing.html">Pricing</a></li>
           <li><a href="contact-us.html">Contact</a></li>
@@ -282,31 +282,5 @@
       origin: "bottom",
     });
     ScrollReveal().reveal("", { delay: 3000, origin: "left" });
-  </script>
-  <script>
-    //disable inspect element and copy pasting
-    document.oncontextmenu = () => {
-      alert("Error");
-      return false;
-    };
-
-    document.onkeydown = (e) => {
-      if (e.key == "F12") {
-        alert("Error");
-        return false;
-      }
-      if (e.ctrlKey && e.key == "u") {
-        alert("Error");
-        return false;
-      }
-      if (e.ctrlKey && e.key == "c") {
-        alert("Error");
-        return false;
-      }
-      if (e.ctrlKey && e.key == "v") {
-        alert("Error");
-        return false;
-      }
-    };
   </script>
 </html>
