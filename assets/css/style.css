@@ -1276,7 +1276,7 @@ head .owl-carousel {
 /* accordion css */
 .faq-header {
   position: relative;
-  padding-top: 2rem;
+  padding-top: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -1489,7 +1489,7 @@ head .owl-carousel {
 /* resources css */
 .resources-container {
   position: relative;
-  padding-top: 5rem;
+  padding-top: 10rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
