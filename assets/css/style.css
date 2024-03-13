@@ -355,7 +355,7 @@ head .owl-carousel {
 
 .slide-content h1 {
   font-family: "Anton", serif;
-  font-size: 70px;
+  font-size: 60px;
   text-transform: uppercase;
 }
 
@@ -363,7 +363,6 @@ head .owl-carousel {
   font-family: "Lato", serif;
   font-size: 30px;
   margin-bottom: 20px;
-  text-wrap: nowrap;
 }
 
 .slide-content button {
@@ -1785,6 +1784,8 @@ head .owl-carousel {
 /* about-us.html css starts here */
 .about-container .section-header {
   margin-top: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 .about-flex {
   margin-top: 5rem;
