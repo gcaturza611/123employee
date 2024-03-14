@@ -314,7 +314,7 @@ ul li:nth-child(5) a span:nth-child(2) {
 }
 
 /* new header */
-head .owl-carousel {
+header .owl-carousel {
   width: 100%;
   height: 100vh;
 }
@@ -345,14 +345,11 @@ head .owl-carousel {
   background-image: url(../images/123gallery/gallery-2.jpg);
 }
 .slide-content {
+  color: var(--text-light);
+  position: relative;
   text-align: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #fff;
-  padding: 0 20%;
+  padding: 350px;
 }
-
 .slide-content h1 {
   font-family: "Anton", serif;
   font-size: 60px;
@@ -373,6 +370,10 @@ head .owl-carousel {
   padding: 10px 25px;
   border: none;
   cursor: pointer;
+  transition: 0.5s;
+}
+.slide-content button:hover {
+  transform: scale(1.25);
 }
 
 .owl-dots {
